@@ -1,0 +1,104 @@
+<template>
+  <form class="wk-form">
+    <div class="wk-form-field">
+      <span class="wk-form-field__title">Ваше имя</span>
+      <input type="text" class="wk-form-field__input">
+      <div class="wk-form-field__line">
+        <span></span>
+      </div>
+    </div>
+    <div class="wk-form-field">
+      <span class="wk-form-field__title">Телефон</span>
+      <input type="number" class="wk-form-field__input">
+      <div class="wk-form-field__line wk-form-field__line--error">
+        <span>Неверный номер</span>
+      </div>
+    </div>
+    <button class="wk-form__button">узнать больше</button>
+  </form>
+</template>
+
+<script>
+export default {
+  name: 'wk-form'
+}
+</script>
+
+<style lang="stylus" scoped>
+  .wk-form {
+    box-sizing border-box
+    max-width 35rem
+
+    display flex
+    flex-direction column
+    padding 4rem
+    background rgba(25, 29, 41, .60)
+
+    @media (max-width: 1040px) {
+      padding 2.4rem
+    }
+
+    &-field {
+      width 100%
+      display flex
+      flex-direction column
+      align-items left
+
+      &__title {
+        font-size 1.2rem
+        color #6E7383
+        letter-spacing 1px
+        line-height 1.3rem
+        text-shadow 0 8px 24px rgba(27, 28, 41, .64)
+      }
+
+      &__input {
+        font-size 1.6rem
+        color #FFFFFF
+        background initial
+        letter-spacing 1px
+        line-height 3.2rem
+        text-shadow 0 8px 24px rgba(27, 28, 41, .64)
+      }
+
+      &__line {
+        border-top 1px solid #555B6A
+        height 2.4rem
+        span {
+          display none
+        }
+        &--error {
+          border-top 1px solid #F77585
+          span {
+            display block
+            margin-top .5rem
+            font-size 10px
+            color #F77585
+            letter-spacing 1px
+            line-height 24px
+            text-shadow 0 8px 24px rgba(27, 28, 41, .64)
+          }
+        }
+      }
+    }
+
+    &__button {
+      height 4rem
+      margin-top 1.6rem
+      background #FFFFFF
+      font-size 1.4rem
+      color #1C212D
+      letter-spacing 1px
+      text-align center
+      line-height 4rem
+      text-transform uppercase
+      font-weight bold
+      @media (max-width: 1040px) {
+        height 3.2rem
+        font-size 1rem
+        letter-spacing: 0.5px
+        line-height 3.2rem
+      }
+    }
+  }
+</style>

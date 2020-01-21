@@ -1,29 +1,63 @@
 <template>
-  <div class="layout">
-    <!--<HelloWorld msg="Welcome to Your Vue.js App"/>-->
+  <div class="background">
+   <div class="layout">
+     <hello-i18n></hello-i18n>
+     <div>
+       <router-link :to="{name: 'home'}">RU</router-link>
+       <router-link :to="{name: 'lang-home', params: {lang: 'en'}}">EN</router-link>
+     </div>
+     <template v-if="false">
+       <wk-header title="Маршруты" id="routes"></wk-header>
+       <wk-header title="Наши катера" id="boats"></wk-header>
+       <wk-header title="Контакты" id="contacts"></wk-header>
+
+       <wkContacts></wkContacts>
+     </template>
+   </div>
   </div>
 </template>
 
 <script>
-// import HelloWorld from '@/components/HelloWorld.vue'
+import HelloI18n from '@/components/HelloI18n.vue'
+import wkHeader from '@/components/header/index.vue'
+import wkContacts from '@/components/contacts/index.vue'
 
 export default {
   name: 'home',
   components: {
-    // HelloWorld
+    HelloI18n,
+    wkHeader,
+    wkContacts
+  },
+  watch: {
+    $route () {
+      this.$i18n.locale = this.$route.params.lang || 'ru'
+    }
+  },
+  mounted () {
+    this.$i18n.locale = this.$route.params.lang || 'ru'
   }
 }
 </script>
 
 <style lang="stylus">
-  .layout {
+  .background {
     width 100%
-    max-width 104rem
+    max-width 144rem
     margin 0 auto
     min-height 100vh
+
+    background-image url('../assets/images/bg_desktop.png')
+    background-size cover
+  }
+
+  .layout {
+    max-width 104rem
+    margin 0 auto
     display flex
     flex-direction column
-    background-image url('../assets/bg_desktop.png')
-    background-size cover
+    @media (max-width: 1088px) {
+      padding 0 2.4rem
+    }
   }
 </style>
