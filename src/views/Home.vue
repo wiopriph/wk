@@ -6,13 +6,11 @@
        <router-link :to="{name: 'home'}">RU</router-link>
        <router-link :to="{name: 'lang-home', params: {lang: 'en'}}">EN</router-link>
      </div>
-     <template v-if="false">
        <wk-header title="Маршруты" id="routes"></wk-header>
        <wk-header title="Наши катера" id="boats"></wk-header>
        <wk-header title="Контакты" id="contacts"></wk-header>
 
        <wkContacts></wkContacts>
-     </template>
    </div>
   </div>
 </template>
@@ -47,7 +45,7 @@ export default {
     margin 0 auto
     min-height 100vh
 
-    background-image url('../assets/images/bg_desktop.png')
+    background-image url('../assets/images/bg_desktop.jpg')
     background-size cover
   }
 
