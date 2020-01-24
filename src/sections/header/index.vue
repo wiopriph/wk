@@ -113,7 +113,7 @@ export default {
   .wk-button {
     background #FFFFFF
     padding .8rem
-    font-family Helvetica
+    font-family SFProText-Heavy
     font-size 14px
     color #182130
     letter-spacing 1.17px
@@ -126,7 +126,7 @@ export default {
     border 1px solid rgba(255, 255, 255, 0.2)
     color #FFFFFF
     padding .8rem
-    font-family Helvetica
+    font-family SFProText-Heavy
     font-size 14px
     letter-spacing 1.17px
     text-align center

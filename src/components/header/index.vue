@@ -32,9 +32,11 @@ export default {
     flex-direction row
     justify-content space-between
     align-items center
+    margin-top 14rem
     margin-bottom 4rem
 
     @media (max-width: 1040px) {
+      margin-top 4rem
       margin-bottom 1.6rem
     }
 

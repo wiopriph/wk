@@ -1,11 +1,13 @@
 <template>
   <div class="background">
    <div class="layout">
-     <sections-header/>
+    <sections-header/>
      <sections-home/>
 
      <wk-header title="Маршруты" id="routes"></wk-header>
+
      <wk-header title="Наши катера" id="boats"></wk-header>
+     <sections-boat></sections-boat>
 
      <wk-header title="Контакты" id="contacts"></wk-header>
      <sections-contacts/>
@@ -18,6 +20,7 @@ import wkHeader from '@/components/header/index.vue'
 import sectionsHeader from '@/sections/header/index.vue'
 import sectionsHome from '@/sections/home/index.vue'
 import sectionsContacts from '@/sections/contacts/index.vue'
+import sectionsBoat from '@/sections/boats/index.vue'
 
 export default {
   name: 'home',
@@ -25,6 +28,7 @@ export default {
     sectionsHeader,
     sectionsHome,
     sectionsContacts,
+    sectionsBoat,
     wkHeader
   },
   watch: {

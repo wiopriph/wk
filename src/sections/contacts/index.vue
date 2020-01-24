@@ -10,7 +10,7 @@ import wkContacts from '@/components/contacts/index.vue'
 import wkForm from '@/components/form/index.vue'
 
 export default {
-  name: 'home',
+  name: 'contacts',
   components: {
     wkContacts,
     wkForm

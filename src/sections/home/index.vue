@@ -108,13 +108,13 @@ export default {
   }
 
   .home-look {
-    margin 16rem 0
+    margin 16rem 0 2rem 0
     display flex
     align-items center
     justify-content center
 
     @media (max-width: 1040px) {
-      margin 2.4rem 0
+      margin 2.4rem 0 2rem 0
     }
 
     div {
