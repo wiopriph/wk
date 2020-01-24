@@ -1,26 +1,37 @@
 <template>
   <div class="wk-contacts">
-    <div>
-      <span></span>
-      <a href="tel:+78000000000">8 (800) 000-00-00</a>
-    </div>
+    <a href="tel:+78000000000"><phone-icon class="wk-contacts__icon"/> 8 (800) 000-00-00</a>
+
     <div class="divider"></div>
-    <div>
-      <span></span>
-      <a href="mailto:wild@kamchatka.com">wild@kamchatka.com</a>
-    </div>
+
+    <a href="mailto:wild@kamchatka.com"><mail-icon class="wk-contacts__icon"/>wild@kamchatka.com</a>
+
     <div class="divider"></div>
+
     <div>
-      <button>1</button>
-      <button>2</button>
-      <button>3</button>
+      <button><inst-logo/></button>
+      <button><vk-logo/></button>
+      <button><fb-logo/></button>
     </div>
   </div>
 </template>
 
 <script>
+import InstLogo from '@/assets/svg/socials/inst.svg?inline'
+import VkLogo from '@/assets/svg/socials/vk.svg?inline'
+import FbLogo from '@/assets/svg/socials/fb.svg?inline'
+import PhoneIcon from '@/assets/svg/phone.svg?inline'
+import MailIcon from '@/assets/svg/mail.svg?inline'
+
 export default {
-  name: 'wk-contacts'
+  name: 'wk-contacts',
+  components: {
+    InstLogo,
+    VkLogo,
+    FbLogo,
+    PhoneIcon,
+    MailIcon
+  }
 }
 </script>
 
@@ -29,7 +40,6 @@ export default {
     box-sizing border-box
     max-width 46rem
     padding 3.2rem
-
     display flex
     flex-direction column
     background rgba(25, 29, 41, .60)
@@ -39,18 +49,41 @@ export default {
     }
 
     a {
+      display flex
+      align-items center
       font-size 1.6rem
       color #FFFFFF
       line-height 3.2rem
+      font-family SFProText-Regular
+      letter-spacing 1px
+      text-shadow 0 8px 24px rgba(27, 28, 41, .64)
+
+      @media (max-width: 1040px) {
+        font-size 1.4rem
+        letter-spacing .5px
+      }
+    }
+
+    &__icon {
+      margin-right 1.6rem
+      width 2.4rem
+      height @width
+      color #FECC7B
     }
 
     button {
       margin-right 2.4rem
+      padding 0
       width 4.8rem
       height @width
-      background #FECC7B
+      color #FECC7B
+
       &:last-child {
         margin-right 0
+      }
+
+      @media (max-width: 1040px) {
+        margin-right 1.4rem
       }
     }
   }

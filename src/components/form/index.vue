@@ -10,7 +10,7 @@
     <div class="wk-form-field">
       <span class="wk-form-field__title">Телефон</span>
       <input type="number" class="wk-form-field__input">
-      <div class="wk-form-field__line wk-form-field__line--error">
+      <div class="wk-form-field__line" :class="{'wk-form-field__line--error': false}">
         <span>Неверный номер</span>
       </div>
     </div>
@@ -32,7 +32,7 @@ export default {
     display flex
     flex-direction column
     padding 4rem
-    background rgba(25, 29, 41, .60)
+    background rgba(25, 29, 41, .95)
 
     @media (max-width: 1040px) {
       padding 2.4rem
@@ -45,6 +45,7 @@ export default {
       align-items left
 
       &__title {
+        font-family SFProText-Regular
         font-size 1.2rem
         color #6E7383
         letter-spacing 1px
@@ -53,9 +54,11 @@ export default {
       }
 
       &__input {
+        font-family SFProText-Regular
         font-size 1.6rem
         color #FFFFFF
         background initial
+        appearance textfield
         letter-spacing 1px
         line-height 3.2rem
         text-shadow 0 8px 24px rgba(27, 28, 41, .64)
@@ -87,12 +90,12 @@ export default {
       margin-top 1.6rem
       background #FFFFFF
       font-size 1.4rem
+      font-family SFProText-Heavy
       color #1C212D
       letter-spacing 1px
       text-align center
       line-height 4rem
       text-transform uppercase
-      font-weight bold
       @media (max-width: 1040px) {
         height 3.2rem
         font-size 1rem

@@ -32,6 +32,11 @@ export default {
     flex-direction row
     justify-content space-between
     align-items center
+    margin-bottom 4rem
+
+    @media (max-width: 1040px) {
+      margin-bottom 1.6rem
+    }
 
     &__title {
       font-size 4rem
@@ -40,6 +45,7 @@ export default {
       line-height 4rem
       text-transform uppercase
       text-shadow 0 8px 24px rgba(27, 28, 41, 0.64)
+      font-family PFAgoraSlabPro-Black
 
       @media (max-width: 1040px) {
         font-size 2rem
@@ -69,9 +75,11 @@ export default {
       margin-left 1.6rem
       background #FECC7B
       opacity .8
+
       &--first {
         opacity .4
       }
+
       &--last {
         opacity 1
       }
