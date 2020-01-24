@@ -28,7 +28,7 @@ export default {
   .wk-form {
     box-sizing border-box
     max-width 35rem
-
+    width 100%
     display flex
     flex-direction column
     padding 4rem

@@ -4,30 +4,28 @@
      <sections-header/>
      <sections-home/>
 
-     <div v-if="false">
-       <!--<wk-header title="Маршруты" id="routes"></wk-header>-->
-       <!--<wk-header title="Наши катера" id="boats"></wk-header>-->
-       <!--<wk-header title="Контакты" id="contacts"></wk-header>-->
+     <wk-header title="Маршруты" id="routes"></wk-header>
+     <wk-header title="Наши катера" id="boats"></wk-header>
 
-       <wkContacts></wkContacts>
-     </div>
+     <wk-header title="Контакты" id="contacts"></wk-header>
+     <sections-contacts/>
    </div>
   </div>
 </template>
 
 <script>
-// import wkHeader from '@/components/header/index.vue'
-import wkContacts from '@/components/contacts/index.vue'
+import wkHeader from '@/components/header/index.vue'
 import sectionsHeader from '@/sections/header/index.vue'
 import sectionsHome from '@/sections/home/index.vue'
+import sectionsContacts from '@/sections/contacts/index.vue'
 
 export default {
   name: 'home',
   components: {
     sectionsHeader,
     sectionsHome,
-    wkContacts
-    // wkFooter
+    sectionsContacts,
+    wkHeader
   },
   watch: {
     $route () {

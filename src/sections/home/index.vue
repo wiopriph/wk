@@ -55,11 +55,8 @@ export default {
     }
 
     &__form {
-      width 35rem
       @media (max-width: 1040px) {
         margin-top 1.5rem
-        width 100%
-        max-width 35rem
       }
 
     }

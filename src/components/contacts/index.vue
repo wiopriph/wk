@@ -39,6 +39,7 @@ export default {
   .wk-contacts {
     box-sizing border-box
     max-width 46rem
+    width 100%
     padding 3.2rem
     display flex
     flex-direction column
