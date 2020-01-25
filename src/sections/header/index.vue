@@ -7,8 +7,8 @@
         <phone-icon class="header__icon"/>
         <a class="header__phone" href="tel:+78000000000">8 (800) 000-00-00</a>
 
-        <router-link :to="{name: 'lang-home', params: {lang: 'ru'}}" class="wk-button">ru</router-link>
-        <router-link :to="{name: 'lang-home', params: {lang: 'en'}}" class="wk-button--active">en</router-link>
+        <router-link :to="{name: 'lang-home', params: {lang: 'ru'}}" class="wk-button" active-class="wk-button--active">ru</router-link>
+        <router-link :to="{name: 'lang-home', params: {lang: 'en'}}" class="wk-button" active-class="wk-button--active">en</router-link>
       </div>
 
       <div class="header__mobile">
@@ -111,27 +111,24 @@ export default {
   }
 
   .wk-button {
-    background #FFFFFF
+    display inline-block
     padding .8rem
     font-family SFProText-Heavy
     font-size 14px
-    color #182130
     letter-spacing 1.17px
     text-align center
     line-height 16px
     text-transform uppercase
+
+    border 1px solid rgba(255, 255, 255, 0.2)
+    background initial
+    color #FFFFFF
   }
 
   .wk-button--active {
-    border 1px solid rgba(255, 255, 255, 0.2)
-    color #FFFFFF
-    padding .8rem
-    font-family SFProText-Heavy
-    font-size 14px
-    letter-spacing 1.17px
-    text-align center
-    line-height 16px
-    text-transform uppercase
+    border 1px solid #FFFFFF
+    background #FFFFFF
+    color #182130
   }
 
   .mobile-menu {

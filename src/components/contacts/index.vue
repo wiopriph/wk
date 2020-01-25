@@ -1,17 +1,15 @@
 <template>
   <div class="wk-contacts">
-    <a href="tel:+78000000000"><phone-icon class="wk-contacts__icon"/> 8 (800) 000-00-00</a>
-
+    <a href="tel:+78000000000" class="wk-contacts__link"><phone-icon class="wk-contacts__icon"/>8 (800) 000-00-00</a>
     <div class="divider"></div>
 
-    <a href="mailto:wild@kamchatka.com"><mail-icon class="wk-contacts__icon"/>wild@kamchatka.com</a>
-
+    <a href="mailto:wild@kamchatka.com" class="wk-contacts__link"><mail-icon class="wk-contacts__icon"/>wild@kamchatka.com</a>
     <div class="divider"></div>
 
     <div>
-      <button><inst-logo/></button>
-      <button><vk-logo/></button>
-      <button><fb-logo/></button>
+      <a href="" target="_blank" class="wk-contacts__socials"><inst-logo/></a>
+      <a href="" target="_blank" class="wk-contacts__socials"><vk-logo/></a>
+      <a href="" target="_blank" class="wk-contacts__socials"><fb-logo/></a>
     </div>
   </div>
 </template>
@@ -49,7 +47,7 @@ export default {
       padding 2.4rem
     }
 
-    a {
+    &__link {
       display flex
       align-items center
       font-size 1.6rem
@@ -72,7 +70,8 @@ export default {
       color #FECC7B
     }
 
-    button {
+    &__socials {
+      display inline-block
       margin-right 2.4rem
       padding 0
       width 4.8rem

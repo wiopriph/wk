@@ -2,12 +2,12 @@
   <div>
     <div class="home">
       <div class="home__description">
-        <p>Морские туры <br><strong>на Камчатке</strong></p>
+        <p>{{$t('sea-tours')}} <br><strong>{{$t('in-kamchatka')}}</strong></p>
 
         <ul>
-          <li><span></span>Каждый день.</li>
-          <li><span></span>Уникальные маршруты.</li>
-          <li><span></span>Комфортные катера.</li>
+          <li><span></span>{{$t('everyday')}}</li>
+          <li><span></span>{{$t('unique-routes')}}</li>
+          <li><span></span>{{$t('comfort-boats')}}</li>
         </ul>
       </div>
 
@@ -17,11 +17,34 @@
     <div class="home-look">
       <div>
         <arrow-icon class="home-look__icon"/>
-        <span class="home-look__text">Посмотреть маршруты</span>
+        <router-link to="#routes" class="home-look__text">{{$t('view-routes')}}</router-link>
       </div>
     </div>
   </div>
 </template>
+
+<i18n>
+{
+  "ru": {
+    "sea-tours": "Морские туры",
+    "in-kamchatka": "на Камчатке",
+    "view-routes": "Посмотреть маршруты",
+
+    "everyday": "Каждый день.",
+    "unique-routes": "Уникальные маршруты.",
+    "comfort-boats": "Комфортные катера."
+  },
+  "en": {
+    "sea-tours": "Sea tours in",
+    "in-kamchatka": "Kamchatka",
+    "view-routes": "View Routes",
+
+    "everyday": "Everyday.",
+    "unique-routes": "Unique routes.",
+    "comfort-boats": "Comfort boats."
+  }
+}
+</i18n>
 
 <script>
 import wkForm from '@/components/form/index.vue'
@@ -140,8 +163,6 @@ export default {
       color #FFFFFF
       font-size 1.4rem
       text-transform uppercase
-      /*font-size 1rem*/
-      /*line-height: 32px*/
     }
   }
 </style>

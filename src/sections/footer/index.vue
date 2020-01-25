@@ -1,38 +1,138 @@
 <template>
   <div class="footer">
-      <span>Морские туры</span>
-      <a href=""></a>
-      <a href=""></a>
+    <logo-icon class="footer__logo"/>
 
-      <span>О нас</span>
-      <div>
-        <div>
-          <a href=""></a>
+    <h3>{{$t('tours')}}</h3>
 
-          <a href=""></a>
-          <a href=""></a>
-        </div>
-        <span class="company">ООО “Виртус-тур”, ОГРН</span>
+    <router-link to="#routes" class="footer__link">{{$t('routes')}}</router-link>
+    <router-link to="#boats" class="footer__link">{{$t('boats')}}</router-link>
+
+    <h3>{{$t('about')}}</h3>
+
+    <div class="footer__contacts">
+      <div class="footer__links">
+        <router-link to="#contacts" class="footer__link">{{$t('contacts')}}</router-link>
+
+        <a href="" target="_blank" class="footer__socials"><inst-logo/></a>
+        <a href="" target="_blank" class="footer__socials"><vk-logo/></a>
+        <a href="" target="_blank" class="footer__socials"><fb-logo/></a>
       </div>
+      <span class="footer__company">ООО “Виртус-тур”, ОГРН</span>
+    </div>
   </div>
 </template>
 
+<i18n>
+{
+  "ru": {
+    "tours": "Морские туры",
+    "about": "О нас",
+    "routes": "Маршруты",
+    "boats": "Катера",
+    "contacts": "Контакты"
+  },
+  "en": {
+    "tours": "Tours",
+    "about": "About",
+    "routes": "Routes",
+    "boats": "Boats",
+    "contacts": "Contacts"
+  }
+}
+</i18n>
+
 <script>
-export default {}
+import LogoIcon from '@/assets/svg/logo.svg?inline'
+import InstLogo from '@/assets/svg/socials/inst.svg?inline'
+import VkLogo from '@/assets/svg/socials/vk.svg?inline'
+import FbLogo from '@/assets/svg/socials/fb.svg?inline'
+
+export default {
+  components: {
+    LogoIcon,
+    InstLogo,
+    VkLogo,
+    FbLogo
+  }
+}
 </script>
 
 <style lang="stylus" scoped>
 .footer {
   padding 8.5rem 0
-  background-image linear-gradient(180deg, rgba(25,30,40,0.30) 0%, rgba(25,30,40,0.60) 100%)
+  //background-image linear-gradient(180deg, rgba(25,30,40,0.30) 0%, rgba(25,30,40,0.60) 100%)
+
+  &__logo {
+    height 1.5rem
+  }
+
+  &__contacts {
+    display flex
+    flex-direction row
+    justify-content space-between
+    align-items center
+
+    @media (max-width: 1040px) {
+      flex-direction column
+      align-items start
+    }
+  }
+
+  &__links {
+    display flex
+  }
+
+  &__link {
+    margin-right 2.4rem
+    display inline-block
+    border 2px solid rgba(255, 255, 255, 0.2)
+    color #FFFFFF
+    padding .8rem
+    font-family SFProText-Heavy
+    font-size 14px
+    letter-spacing 1.17px
+    text-align center
+    line-height 16px
+    text-transform uppercase
+  }
+
+  &__socials {
+    margin-right 2.4rem
+    display inline-block
+    padding 0
+    width 4rem
+    height @width
+    color #FECC7B
+
+    &:last-child {
+      margin-right 0
+    }
+
+    @media (max-width: 1040px) {
+      margin-right 1.4rem
+    }
+  }
+
+  &__company {
+    font-family SFProText-Regular
+    font-size 1.6rem
+    color #FFFFFF
+    opacity 0.4
+
+    @media (max-width: 1040px) {
+      margin-top 2.4rem
+      font-size 1.4rem
+    }
+  }
 }
 
-.company {
-  opacity 0.4
-  font-family SFProText-Regular
-  font-size 1.6rem
-  @media (max-width: 1040px) {
-    font-size 1.4rem
-  }
+h3 {
+  margin 2.4rem 0 1.6rem 0
+  font-family PFAgoraSlabPro-Black
+  letter-spacing 3px
+  font-size 2.4rem
+  text-transform uppercase
+  color #FFFFFF
+  line-height 4rem
 }
 </style>

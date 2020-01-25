@@ -1,22 +1,42 @@
 <template>
   <form class="wk-form">
     <div class="wk-form-field">
-      <span class="wk-form-field__title">Ваше имя</span>
+      <span class="wk-form-field__title">{{$t('name')}}</span>
       <input type="text" class="wk-form-field__input">
       <div class="wk-form-field__line">
         <span></span>
       </div>
     </div>
+
     <div class="wk-form-field">
-      <span class="wk-form-field__title">Телефон</span>
+      <span class="wk-form-field__title">{{$t('phone')}}</span>
       <input type="number" class="wk-form-field__input">
+
       <div class="wk-form-field__line" :class="{'wk-form-field__line--error': false}">
-        <span>Неверный номер</span>
+        <span>{{$t('phone-wrong')}}</span>
       </div>
     </div>
-    <button class="wk-form__button">узнать больше</button>
+
+    <button class="wk-form__button">{{$t('learn-more')}}</button>
   </form>
 </template>
+
+<i18n>
+{
+  "ru": {
+    "name": "Ваше имя",
+    "phone": "Телефон",
+    "phone-wrong": "Неверный номер",
+    "learn-more": "узнать больше"
+  },
+  "en": {
+    "name": "Name",
+    "phone": "Phone",
+    "phone-wrong": "Wrong number",
+    "learn-more": "Learn more"
+  }
+}
+</i18n>
 
 <script>
 export default {
@@ -67,11 +87,14 @@ export default {
       &__line {
         border-top 1px solid #555B6A
         height 2.4rem
+
         span {
           display none
         }
+
         &--error {
           border-top 1px solid #F77585
+
           span {
             display block
             margin-top .5rem
@@ -96,6 +119,7 @@ export default {
       text-align center
       line-height 4rem
       text-transform uppercase
+
       @media (max-width: 1040px) {
         height 3.2rem
         font-size 1rem

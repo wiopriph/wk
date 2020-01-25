@@ -1,3 +1,5 @@
 {
-  "hello": "hello!"
+  "routes": "Routes",
+  "boats": "Boats",
+  "contacts": "Contacts"
 }

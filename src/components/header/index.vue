@@ -1,9 +1,10 @@
 <template>
   <div class="wk-header">
-    <h2 :id="id" class="wk-header__title">{{title}}</h2>
+    <h2 :id="id" class="wk-header__title">{{$t(title)}}</h2>
 
     <div class="wk-header__whistles">
       <div class="wk-header__line"></div>
+
       <span class="wk-header__box wk-header__box--first"></span>
       <span class="wk-header__box"></span>
       <span class="wk-header__box wk-header__box--last"></span>
