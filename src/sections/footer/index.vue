@@ -60,7 +60,10 @@ export default {
 <style lang="stylus" scoped>
 .footer {
   padding 8.5rem 0
-  //background-image linear-gradient(180deg, rgba(25,30,40,0.30) 0%, rgba(25,30,40,0.60) 100%)
+
+  @media (max-width: 1040px) {
+    padding 3.2rem 0
+  }
 
   &__logo {
     height 1.5rem
@@ -84,7 +87,8 @@ export default {
 
   &__link {
     margin-right 2.4rem
-    display inline-block
+    display inline-flex
+    align-items center
     border 2px solid rgba(255, 255, 255, 0.2)
     color #FFFFFF
     padding .8rem

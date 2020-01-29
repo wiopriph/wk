@@ -5,6 +5,7 @@
      <sections-home/>
 
      <wk-header title="routes" id="routes"/>
+     <sections-routes/>
 
      <wk-header title="boats" id="boats"/>
      <sections-boat/>
@@ -22,6 +23,7 @@ import wkHeader from '@/components/header/index.vue'
 
 import sectionsHeader from '@/sections/header/index.vue'
 import sectionsHome from '@/sections/home/index.vue'
+import sectionsRoutes from '@/sections/routes/index.vue'
 import sectionsContacts from '@/sections/contacts/index.vue'
 import sectionsBoat from '@/sections/boats/index.vue'
 import sectionsFooter from '@/sections/footer/index.vue'
@@ -31,6 +33,7 @@ export default {
   components: {
     sectionsHeader,
     sectionsHome,
+    sectionsRoutes,
     sectionsContacts,
     sectionsBoat,
     sectionsFooter,

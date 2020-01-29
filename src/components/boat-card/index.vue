@@ -41,7 +41,7 @@ export default {
   &__gallery {
     width 100%
     height 30.2rem
-    background #396A94
+    background url("../../../src/assets/images/temp/boat.jpg")
 
     @media (max-width: 1040px) {
       height 17rem

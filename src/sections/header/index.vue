@@ -7,7 +7,7 @@
         <phone-icon class="header__icon"/>
         <a class="header__phone" href="tel:+78000000000">8 (800) 000-00-00</a>
 
-        <router-link :to="{name: 'lang-home', params: {lang: 'ru'}}" class="wk-button" active-class="wk-button--active">ru</router-link>
+        <router-link :to="{name: 'lang-home', params: {lang: 'ru'}}" class="wk-button" active-class="wk-button--active" :class="{'wk-button--active': isRu}">ru</router-link>
         <router-link :to="{name: 'lang-home', params: {lang: 'en'}}" class="wk-button" active-class="wk-button--active">en</router-link>
       </div>
 
@@ -31,6 +31,11 @@ export default {
     LogoIcon,
     PhoneIcon,
     BurgerIcon
+  },
+  computed: {
+    isRu () {
+      return this.$i18n.locale === 'ru'
+    }
   }
 }
 </script>
