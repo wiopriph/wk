@@ -17,7 +17,7 @@
     <div class="home-look">
       <div>
         <arrow-icon class="home-look__icon"/>
-        <router-link to="#routes" class="home-look__text">{{$t('view-routes')}}</router-link>
+        <router-link to="#routes" v-smooth-scroll="{ duration: 1000, offset: -20 }" class="home-look__text">{{$t('view-routes')}}</router-link>
       </div>
     </div>
   </div>

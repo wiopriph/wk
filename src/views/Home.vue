@@ -5,7 +5,7 @@
      <sections-home/>
 
      <wk-header title="routes" id="routes"/>
-     <sections-routes/>
+     <sections-routes v-if="false"/>
 
      <wk-header title="boats" id="boats"/>
      <sections-boat/>

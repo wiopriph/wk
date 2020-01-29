@@ -12,29 +12,88 @@
       </div>
 
       <div class="header__mobile">
-        <burger-icon class="header__burger"/>
-        <!--menu-->
-        <div class="mobile-menu">
+        <burger-icon v-if="!showMenu" class="header__burger" @click="shangeMenu"/>
+
+        <div v-if="showMenu" class="mobile-menu">
+          <div class="mobile-menu__logo">
+            <logo-icon class="header__logo"/>
+            <close-icon class="header__burger" @click="shangeMenu"/>
+          </div>
+
+          <div class="mobile-menu__items">
+            <router-link to="#routes" v-smooth-scroll="{ offset: -20 }" class="footer__link" @click.native="shangeMenu">{{$t('routes')}}</router-link>
+            <div class="divider"></div>
+            <router-link to="#boats" v-smooth-scroll="{ offset: -20 }" class="footer__link" @click.native="shangeMenu">{{$t('boats')}}</router-link>
+            <div class="divider"></div>
+            <router-link to="#contacts" v-smooth-scroll="{ offset: -20 }" class="footer__link" @click.native="shangeMenu">{{$t('contacts')}}</router-link>
+          </div>
+
+          <div class="mobile-menu__socials">
+            <div>
+              <a href="" target="_blank" class="mobile-menu__social-link"><inst-logo/></a>
+              <a href="" target="_blank" class="mobile-menu__social-link"><vk-logo/></a>
+              <a href="" target="_blank" class="mobile-menu__social-link"><fb-logo/></a>
+            </div>
+
+            <div>
+              <router-link :to="{name: 'lang-home', params: {lang: 'ru'}}" class="wk-button" active-class="wk-button--active" :class="{'wk-button--active': isRu}" @click.native="shangeMenu">ru</router-link>
+              <router-link :to="{name: 'lang-home', params: {lang: 'en'}}" class="wk-button" active-class="wk-button--active" @click.native="shangeMenu">en</router-link>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </template>
 
+<i18n>
+{
+  "ru": {
+    "routes": "Маршруты",
+    "boats": "Катера",
+    "contacts": "Контакты"
+  },
+  "en": {
+    "routes": "Routes",
+    "boats": "Boats",
+    "contacts": "Contacts"
+  }
+}
+</i18n>
+
 <script>
 import LogoIcon from '@/assets/svg/logo.svg?inline'
 import PhoneIcon from '@/assets/svg/phone.svg?inline'
 import BurgerIcon from '@/assets/burger.svg?inline'
+import CloseIcon from '@/assets/close.svg?inline'
+
+import InstLogo from '@/assets/svg/socials/inst.svg?inline'
+import VkLogo from '@/assets/svg/socials/vk.svg?inline'
+import FbLogo from '@/assets/svg/socials/fb.svg?inline'
 
 export default {
   components: {
     LogoIcon,
     PhoneIcon,
-    BurgerIcon
+    BurgerIcon,
+    CloseIcon,
+    InstLogo,
+    VkLogo,
+    FbLogo
   },
   computed: {
     isRu () {
       return this.$i18n.locale === 'ru'
+    }
+  },
+  data () {
+    return {
+      showMenu: false
+    }
+  },
+  methods: {
+    shangeMenu () {
+      this.showMenu = !this.showMenu
     }
   }
 }
@@ -46,6 +105,10 @@ export default {
     display flex
     justify-content space-between
 
+    @media (max-width: 1040px) {
+      padding 2.4rem 0 0 0
+    }
+
     &__desktop {
       display flex
       flex-direction row
@@ -53,7 +116,6 @@ export default {
 
       @media (max-width: 1040px) {
         display none
-
       }
     }
 
@@ -61,6 +123,9 @@ export default {
       display none
 
       @media (max-width: 1040px) {
+        position fixed
+        top 2.4rem
+        right 2.4rem
         display flex
         flex-direction row
         align-items center
@@ -115,6 +180,14 @@ export default {
     }
   }
 
+  .divider {
+    margin 2.4rem 0
+    width 100%
+    height 1px
+    background #fff
+    opacity .2
+  }
+
   .wk-button {
     display inline-block
     padding .8rem
@@ -128,15 +201,69 @@ export default {
     border 1px solid rgba(255, 255, 255, 0.2)
     background initial
     color #FFFFFF
-  }
 
-  .wk-button--active {
-    border 1px solid #FFFFFF
-    background #FFFFFF
-    color #182130
+    &--active {
+      border 1px solid #FFFFFF
+      background #FFFFFF
+      color #182130
+    }
   }
 
   .mobile-menu {
+    padding 2.4rem
+    position fixed
+    top 0
+    bottom 0
+    left 0
+    right 0
+    display flex
+    flex-direction column
+    justify-content space-between
+    background rgba(25, 29, 41, .9)
+    backdrop-filter blur(5px)
 
+    &__logo {
+      display flex
+      flex-direction row
+      justify-content space-between
+    }
+
+    &__items {
+      margin-top 4rem
+      display flex
+      flex auto
+      flex-direction column
+
+      a {
+        font-family SFProText-Heavy
+        font-size 2rem
+        color #FFFFFF
+        text-transform uppercase
+        letter-spacing 1px
+      }
+    }
+
+    &__socials {
+      display flex
+      flex-direction row
+      justify-content space-between
+    }
+
+    &__social-link {
+      margin-right 2.4rem
+      display inline-block
+      padding 0
+      width 3.4rem
+      height @width
+      color #FECC7B
+
+      &:last-child {
+        margin-right 0
+      }
+
+      @media (max-width: 1040px) {
+        margin-right 1.4rem
+      }
+    }
   }
 </style>

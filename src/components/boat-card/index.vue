@@ -70,7 +70,7 @@ export default {
   }
 
   &__age {
-    opacity 0.4
+    /*opacity 0.4*/
     font-family SFProText-Regular
     font-size 1.6rem
     color #FFFFFF

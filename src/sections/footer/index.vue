@@ -4,14 +4,14 @@
 
     <h3>{{$t('tours')}}</h3>
 
-    <router-link to="#routes" class="footer__link">{{$t('routes')}}</router-link>
-    <router-link to="#boats" class="footer__link">{{$t('boats')}}</router-link>
+    <router-link to="#routes" v-smooth-scroll="{ offset: -20 }" class="footer__link">{{$t('routes')}}</router-link>
+    <router-link to="#boats" v-smooth-scroll="{ offset: -20 }" class="footer__link">{{$t('boats')}}</router-link>
 
     <h3>{{$t('about')}}</h3>
 
     <div class="footer__contacts">
       <div class="footer__links">
-        <router-link to="#contacts" class="footer__link">{{$t('contacts')}}</router-link>
+        <router-link to="#contacts" v-smooth-scroll="{ offset: -20 }" class="footer__link">{{$t('contacts')}}</router-link>
 
         <a href="" target="_blank" class="footer__socials"><inst-logo/></a>
         <a href="" target="_blank" class="footer__socials"><vk-logo/></a>
