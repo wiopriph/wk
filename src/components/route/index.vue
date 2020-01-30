@@ -1,14 +1,16 @@
 <template>
   <div class="route" :class="classes">
-    <div class="route__image"></div>
+    <div class="route__image">
+      <img :src="image" alt="">
+    </div>
 
     <div class="route__description">
       <div class="route__line">
-        <span class="route__title">Морская прогулка</span>
-        <span class="route__time"><clock-icon class="route__clock"/> 3 часа</span>
+        <span class="route__name">{{name}}</span>
+        <span class="route__time"><clock-icon class="route__clock"/> {{time}} {{$numerate($t('time'), this.time)}}</span>
       </div>
 
-      <span class="route__cash">4000 ₽</span>
+      <span class="route__cash">{{price}} ₽</span>
 
       <div class="route__buttons">
         <button class="wk-button">{{$t('booking')}}</button>
@@ -21,10 +23,12 @@
 <i18n>
 {
   "ru": {
+    "time": "час:::часа:::часов",
     "booking": "Забронировать",
     "description": "Описание"
   },
   "en": {
+    "time": "hour:::hours:::hours",
     "booking": "Booking",
     "description": "Description"
   }
@@ -40,15 +44,22 @@ export default {
     ClockIcon
   },
   props: {
-    id: Number,
-    active: Boolean
+    active: Boolean,
+    name: String,
+    image: String,
+    time: Number,
+    price: Number,
+    description: String,
+    images: Array
   },
-
   computed: {
     classes () {
       return {
         'active': this.active
       }
+    },
+    style () {
+      return `background-image: url("${this.image}");`
     }
   }
 }
@@ -75,12 +86,12 @@ export default {
     transition background 400ms ease
     &__image {
       position relative
+      width 100%
       height 140px
       margin-bottom -30px
       background-position top
       transition height 400ms ease
-      width 100%
-      background url("../../../src/assets/images/temp/boat.jpg")
+      overflow hidden
 
       &:after {
         content ""
@@ -93,6 +104,11 @@ export default {
         height 100%
         transition background-image 400ms ease
         background-image: linear-gradient(180deg, rgba(25,29,40,0.00) 0%, #191D28 100%);
+      }
+
+      img {
+        width 100%
+        height auto
       }
     }
 
@@ -108,7 +124,7 @@ export default {
       align-items center
     }
 
-    &__title {
+    &__name {
       font-family SFProText-Medium
       font-size 2rem
       color #FFFFFF
@@ -120,7 +136,7 @@ export default {
       display flex
       flex-direction row
       align-items center
-      font-family SFProText-Semibold
+      font-family SFProText-Medium
       letter-spacing 1px
       font-size 1.6rem
       color #FFFFFF

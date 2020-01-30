@@ -4,7 +4,9 @@ import router from './router'
 import i18n from './i18n'
 import Numerate from './plugins/numerate'
 
+// https://github.com/SSENSE/vue-carousel
 import VueCarousel from 'vue-carousel'
+// https://github.com/ocordeiro/vue-smooth-scroll
 import vueSmoothScroll from 'vue-smooth-scroll'
 
 Vue.use(vueSmoothScroll)

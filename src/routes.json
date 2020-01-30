@@ -1,0 +1,56 @@
+{
+  "ru": {
+    "summer": [
+      {
+        "name": "Морская прогулка",
+        "image": "https://www.breeze41.ru/assets/images/KAMCHATKA-TOURS/gallery/526_russkaya_0.jpg",
+        "time": 2,
+        "price": 4000,
+        "description": "Морская прогулка - птичий заповедник на Камчатке.  На нем живут 44 гнездовых колоний и 11 видов морской колониальной птицы. Среди них баклан Берингова, баклан Краснолицего, моевки, чистики тихоокеанские и очковые, кайры толстоклювые и тонкоклювые, ипатки, топорики и знаменитые старики.",
+        "images": [
+          "https://www.breeze41.ru/assets/images/KAMCHATKA-TOURS/gallery/526_russkaya_0.jpg",
+          "https://lh6.googleusercontent.com/-GlUqJyMfBWI/TkZKa0FwK6I/AAAAAAAACmo/qq98UNhz6JM/IMG_6482.jpg"
+        ]
+      },
+      {
+        "name": "Морская прогулка 2",
+        "image": "https://i.ytimg.com/vi/f4aKk2DEg-4/maxresdefault.jpg",
+        "time": 12,
+        "price": 5000,
+        "description": "Морская прогулка - птичий заповедник на Камчатке.  На нем живут 44 гнездовых колоний и 11 видов морской колониальной птицы. Среди них баклан Берингова, баклан Краснолицего, моевки, чистики тихоокеанские и очковые, кайры толстоклювые и тонкоклювые, ипатки, топорики и знаменитые старики.",
+        "images": [
+          "https://lh6.googleusercontent.com/-GlUqJyMfBWI/TkZKa0FwK6I/AAAAAAAACmo/qq98UNhz6JM/IMG_6482.jpg",
+          "https://i.ytimg.com/vi/f4aKk2DEg-4/maxresdefault.jpg"
+        ]
+      },
+      {
+        "name": "Остров Старичкова",
+        "image": "https://www.breeze41.ru/assets/images/KAMCHATKA-TOURS/gallery/527_tihaya_2.jpg",
+        "time": 6,
+        "price": 6000,
+        "description": "Остров Старичков - птичий заповедник на Камчатке.  На нем живут 44 гнездовых колоний и 11 видов морской колониальной птицы. Среди них баклан Берингова, баклан Краснолицего, моевки, чистики тихоокеанские и очковые, кайры толстоклювые и тонкоклювые, ипатки, топорики и знаменитые старики.",
+        "images": [
+          "https://www.breeze41.ru/assets/images/KAMCHATKA-TOURS/gallery/527_tihaya_2.jpg",
+          "https://www.breeze41.ru/assets/images/KAMCHATKA-TOURS/gallery/527_tihaya_2.jpg"
+        ]
+      }
+    ],
+    "winter": [
+      {
+        "name": "Остров Старичкова",
+        "image": "https://img.yachtsworld.ru/data/images/yachts/11530/04.jpg",
+        "time": 6,
+        "price": 6000,
+        "description": "Остров Старичков - птичий заповедник на Камчатке.  На нем живут 44 гнездовых колоний и 11 видов морской колониальной птицы. Среди них баклан Берингова, баклан Краснолицего, моевки, чистики тихоокеанские и очковые, кайры толстоклювые и тонкоклювые, ипатки, топорики и знаменитые старики.",
+        "images": [
+          "https://img.yachtsworld.ru/data/images/yachts/11530/04.jpg",
+          "https://i.ytimg.com/vi/f4aKk2DEg-4/maxresdefault.jpg"
+        ]
+      }
+    ]
+  },
+  "en": {
+    "summer": [],
+    "winter": []
+  }
+}

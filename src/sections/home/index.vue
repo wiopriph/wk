@@ -84,6 +84,7 @@ export default {
 
     }
   }
+
   p {
     margin 0
     font-family PFAgoraSlabPro-Medium

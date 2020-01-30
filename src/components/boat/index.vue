@@ -1,22 +1,22 @@
 <template>
-    <div class="boat">
-      <carousel autoplay loop autoplayHoverPause :autoplayTimeout="4000" :perPage="1" :paginationEnabled="false" class="boat__gallery">
-        <slide v-for="(img, index) in images" :key="img.id">
-          <img :src="img" :alt="`${name}-${index}`" class="boat__img">
-        </slide>
-      </carousel>
+  <div class="boat">
+    <carousel autoplay loop autoplayHoverPause :autoplayTimeout="4000" :perPage="1" :paginationEnabled="false" class="boat__gallery">
+      <slide v-for="(img, index) in images" :key="img.id">
+        <img :src="img" :alt="`${name}-${index}`" class="boat__img">
+      </slide>
+    </carousel>
 
-      <div class="boat__about">
-        <h3 class="boat__name">{{name}}</h3>
-        <span class="boat__age">{{age}}</span>
-        <p class="boat__description">{{description}}</p>
+    <div class="boat__about">
+      <h3 class="boat__name">{{name}}</h3>
+      <span class="boat__age">{{age}}</span>
+      <p class="boat__description">{{description}}</p>
 
-        <div class="boat__capacity">
-          <users-logo class="boat__icon"/>
-          <span class="boat__people">{{people}} {{$numerate($t('person'), this.people)}}</span>
-        </div>
+      <div class="boat__capacity">
+        <users-logo class="boat__icon"/>
+        <span class="boat__people">{{people}} {{$numerate($t('person'), this.people)}}</span>
       </div>
     </div>
+  </div>
 </template>
 
 <i18n>
@@ -55,6 +55,7 @@ export default {
 .boat {
   max-width 50.8rem
   width 100%
+  background #151822
 
   &__gallery {
     width 100%
@@ -72,7 +73,6 @@ export default {
 
   &__about {
     padding 3.2rem
-    background #151822
 
     @media (max-width: 1040px) {
       padding 2rem

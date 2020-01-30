@@ -1,33 +1,37 @@
 <template>
   <div class="routes">
     <div class="routes__buttons">
-      <button class="wk-button">{{$t('summer')}}</button>
-      <button class="wk-button">{{$t('winter')}}</button>
+      <button
+        v-for="item in routesKeys"
+        :key="item.id"
+        class="wk-button"
+        :class="{'wk-button--active': activeKey === item}"
+        @click="activeKey = item"
+      >{{$t(item)}}</button>
     </div>
 
-    <div v-if="false" class="routes__body">
+    <div class="routes__body">
       <div class="routes__list">
         <route
-          :active="item"
+          v-for="(rout, index) in list"
+          :active="active === index"
+          :key="rout.id"
+          :name="rout.name"
+          :image="rout.image"
+          :time="rout.time"
+          :price="rout.price"
+          :description="rout.description"
+          :images="rout.images"
           class="routes__routes"
-          @mouseenter.native="item = true"
-          @mouseleave.native="item = false"
-          @click.native="item = !item"
-        />
-
-        <route
-          :active="item2"
-          class="routes__routes"
-          @mouseenter.native="item2 = true"
-          @mouseleave.native="item2 = false"
-          @click.native="item2 = !item2"
+          @mouseenter.native="active = index"
+          @click.native="active = index"
         />
       </div>
 
       <div class="routes__gallery">
-        <!--<img src="https://img.gazeta.ru/files3/845/7947845/upload-shutterstock_117062077-pic4_zoom-1500x1500-7036.jpg" alt="">-->
-        <!--<img src="https://img.gazeta.ru/files3/845/7947845/upload-shutterstock_117062077-pic4_zoom-1500x1500-7036.jpg" alt="">-->
-        <!--<img src="https://img.gazeta.ru/files3/845/7947845/upload-shutterstock_117062077-pic4_zoom-1500x1500-7036.jpg" alt="">-->
+        <div v-for="img in images" :key="img.id" class="routes__img">
+          <img :src="img" :alt="img">
+        </div>
       </div>
     </div>
   </div>
@@ -48,6 +52,7 @@
 
 <script>
 import route from '@/components/route/index.vue'
+import routes from '@/routes.json'
 
 export default {
   name: 'home',
@@ -56,19 +61,23 @@ export default {
   },
   data () {
     return {
-      // list: [true],
-      item: false,
-      item2: false
+      activeKey: '',
+      active: 0
     }
   },
-  methods: {
-    // change (id) {
-    //   this.list = this.list.fill(false)
-    //   this.$nextTick(() => {
-    //     this.list[ id ] = true
-    //     console.log('lol', id)
-    //   })
-    // }
+  computed: {
+    routesKeys () {
+      return Object.keys(routes[this.$i18n.locale])
+    },
+    list () {
+      return routes[this.$i18n.locale][this.activeKey] || {}
+    },
+    images () {
+      return (this.list[this.active] || {}).images
+    }
+  },
+  mounted () {
+    this.activeKey = this.routesKeys[0]
   }
 }
 </script>
@@ -96,6 +105,7 @@ export default {
     &__body {
       display flex
       flex-direction row
+      justify-content space-between
       margin-top 2.4rem
     }
 
@@ -121,15 +131,20 @@ export default {
       width 100%
       display flex
       flex-direction column
+      @media (max-width: 1040px) {
+        display none
+      }
+    }
+
+    &__img {
+      width 55rem
+      height 36rem
+      overflow hidden
+      margin-bottom 2.4rem
 
       img {
-        display block
-        object-fit contain
-        margin-bottom 2.4rem
-
-        &:last-child {
-          margin-bottom 0
-        }
+        width auto
+        height 100%
       }
     }
   }
@@ -147,11 +162,11 @@ export default {
     border 1px solid rgba(255, 255, 255, 0.2)
     background initial
     color #FFFFFF
-  }
 
-  .wk-button--active {
-    border 1px solid #FFFFFF
-    background #FFFFFF
-    color #182130
+    &--active {
+      border 1px solid #FFFFFF
+      background #FFFFFF
+      color #182130
+    }
   }
 </style>
