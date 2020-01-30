@@ -26,17 +26,11 @@
 {
   "ru": {
     "tours": "Морские туры",
-    "about": "О нас",
-    "routes": "Маршруты",
-    "boats": "Катера",
-    "contacts": "Контакты"
+    "about": "О нас"
   },
   "en": {
     "tours": "Tours",
-    "about": "About",
-    "routes": "Routes",
-    "boats": "Boats",
-    "contacts": "Contacts"
+    "about": "About"
   }
 }
 </i18n>

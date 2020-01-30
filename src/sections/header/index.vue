@@ -46,21 +46,6 @@
   </div>
 </template>
 
-<i18n>
-{
-  "ru": {
-    "routes": "Маршруты",
-    "boats": "Катера",
-    "contacts": "Контакты"
-  },
-  "en": {
-    "routes": "Routes",
-    "boats": "Boats",
-    "contacts": "Contacts"
-  }
-}
-</i18n>
-
 <script>
 import LogoIcon from '@/assets/svg/logo.svg?inline'
 import PhoneIcon from '@/assets/svg/phone.svg?inline'
@@ -163,6 +148,7 @@ export default {
 
     &__burger {
       width 1.8rem
+      height @width
       outline none
     }
   }

@@ -4,13 +4,13 @@
      <sections-header/>
      <sections-home/>
 
-     <wk-header title="routes" id="routes"/>
-     <sections-routes v-if="false"/>
+     <heading title="routes" id="routes"/>
+     <sections-routes/>
 
-     <wk-header title="boats" id="boats"/>
+     <heading title="boats" id="boats"/>
      <sections-boat/>
 
-     <wk-header title="contacts" id="contacts"/>
+     <heading title="contacts" id="contacts"/>
      <sections-contacts/>
 
      <sections-footer/>
@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import wkHeader from '@/components/header/index.vue'
+import heading from '@/components/heading/index.vue'
 
 import sectionsHeader from '@/sections/header/index.vue'
 import sectionsHome from '@/sections/home/index.vue'
@@ -37,7 +37,7 @@ export default {
     sectionsContacts,
     sectionsBoat,
     sectionsFooter,
-    wkHeader
+    heading
   },
   watch: {
     $route () {

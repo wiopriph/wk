@@ -1,20 +1,20 @@
 <template>
-  <div class="wk-header">
-    <h2 :id="id" class="wk-header__title">{{$t(title)}}</h2>
+  <div class="heading">
+    <h2 :id="id" class="heading__title">{{$t(title)}}</h2>
 
-    <div class="wk-header__whistles">
-      <div class="wk-header__line"></div>
+    <div class="heading__whistles">
+      <div class="heading__line"></div>
 
-      <span class="wk-header__box wk-header__box--first"></span>
-      <span class="wk-header__box"></span>
-      <span class="wk-header__box wk-header__box--last"></span>
+      <span class="heading__box heading__box--first"></span>
+      <span class="heading__box"></span>
+      <span class="heading__box heading__box--last"></span>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'wk-header',
+  name: 'heading',
   props: {
     title: {
       type: String
@@ -28,7 +28,7 @@ export default {
 </script>
 
 <style lang="stylus">
-  .wk-header {
+  .heading {
     display flex
     flex-direction row
     justify-content space-between

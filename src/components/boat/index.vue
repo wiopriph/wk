@@ -1,52 +1,75 @@
 <template>
-    <div class="boat-card">
-      <div class="boat-card__gallery"></div>
+    <div class="boat">
+      <carousel autoplay loop autoplayHoverPause :autoplayTimeout="4000" :perPage="1" :paginationEnabled="false" class="boat__gallery">
+        <slide v-for="(img, index) in images" :key="img.id">
+          <img :src="img" :alt="`${name}-${index}`" class="boat__img">
+        </slide>
+      </carousel>
 
-      <div class="boat-card__about">
-        <h3 class="boat-card__name">Инсайт</h3>
-        <span class="boat-card__age">2014 года выпуска</span>
-        <p class="boat-card__description">Катер для отважных туристов, любящих захватывающие места Камчатки, выбирайте его если готовы к не забываемым преключениям.</p>
+      <div class="boat__about">
+        <h3 class="boat__name">{{name}}</h3>
+        <span class="boat__age">{{age}}</span>
+        <p class="boat__description">{{description}}</p>
 
-        <div class="boat-card__capacity">
-          <users-logo class="boat-card__icon"/>
-          <span class="boat-card__people">5 человек</span>
+        <div class="boat__capacity">
+          <users-logo class="boat__icon"/>
+          <span class="boat__people">{{people}} {{$numerate($t('person'), this.people)}}</span>
         </div>
       </div>
     </div>
 </template>
 
+<i18n>
+{
+  "ru": {
+    "person": "человек:::человека:::человек"
+  },
+  "en": {
+    "person": "person:::person:::person"
+  }
+}
+</i18n>
+
 <script>
+import { Carousel, Slide } from 'vue-carousel'
 import UsersLogo from '@/assets/svg/users.svg?inline'
 
 export default {
-  name: 'boat-card',
+  name: 'boat',
   components: {
+    Carousel,
+    Slide,
     UsersLogo
   },
   props: {
-    images: [],
+    images: Array,
     name: String,
     age: String,
     description: String,
-    people: String
+    people: Number
   }
 }
 </script>
 
 <style lang="stylus" scoped>
-.boat-card {
+.boat {
   max-width 50.8rem
   width 100%
 
   &__gallery {
     width 100%
     height 30.2rem
-    background url("../../../src/assets/images/temp/boat.jpg")
 
     @media (max-width: 1040px) {
       height 17rem
     }
   }
+
+  &__img {
+    width 100%
+    height 100%
+  }
+
   &__about {
     padding 3.2rem
     background #151822
@@ -70,10 +93,9 @@ export default {
   }
 
   &__age {
-    /*opacity 0.4*/
     font-family SFProText-Regular
     font-size 1.6rem
-    color #FFFFFF
+    color #72747A
     letter-spacing 1px
     line-height 3.2rem
 

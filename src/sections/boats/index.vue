@@ -1,17 +1,31 @@
 <template>
   <div class="boats">
-    <boat-card class="boats__item"/>
-    <boat-card class="boats__item"/>
+    <boat
+      v-for="boat in list"
+      :key="boat.id"
+      :name="boat.name"
+      :age="boat.age"
+      :description="boat.description"
+      :people="boat.people"
+      :images="boat.images"
+      class="boats__item"
+    />
   </div>
 </template>
 
 <script>
-import boatCard from '@/components/boat-card/index.vue'
+import boat from '@/components/boat/index.vue'
+import boats from '@/boats.json'
 
 export default {
   name: 'boats',
   components: {
-    boatCard
+    boat
+  },
+  computed: {
+    list () {
+      return boats[this.$i18n.locale]
+    }
   }
 }
 </script>
