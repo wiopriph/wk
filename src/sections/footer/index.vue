@@ -92,6 +92,11 @@ export default {
     text-align center
     line-height 16px
     text-transform uppercase
+    transition all 400ms ease
+
+    &:hover {
+      border 2px solid #FFFFFF
+    }
   }
 
   &__socials {
@@ -101,6 +106,11 @@ export default {
     width 4rem
     height @width
     color #FECC7B
+    transition color 400ms ease
+
+    &:hover {
+      color #E7A761
+    }
 
     &:last-child {
       margin-right 0

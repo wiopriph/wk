@@ -1,7 +1,7 @@
 <template>
   <div class="route" :class="classes">
     <div class="route__image">
-      <img :src="image" alt="">
+      <img :src="image" :alt="name">
     </div>
 
     <div class="route__description">
@@ -13,8 +13,8 @@
       <span class="route__cash">{{price}} ₽</span>
 
       <div class="route__buttons">
-        <button class="wk-button">{{$t('booking')}}</button>
-        <button class="wk-button">{{$t('description')}}</button>
+        <button class="route__button" :class="{'route__button--active': active}">{{$t('booking')}}</button>
+        <button class="route__button">{{$t('description')}}</button>
       </div>
     </div>
   </div>
@@ -57,9 +57,6 @@ export default {
       return {
         'active': this.active
       }
-    },
-    style () {
-      return `background-image: url("${this.image}");`
     }
   }
 }
@@ -70,7 +67,11 @@ export default {
     background #2B3245!important
     .route {
       &__image {
-        height 290px
+        height 29rem
+
+        @media (max-width: 1040px) {
+          height 14rem
+        }
 
         &:after {
           transition background-image 400ms ease
@@ -82,8 +83,9 @@ export default {
   .route {
     width 100%
     max-width 45.8rem
+    border 2px solid #2B303D
     background #191D28
-    transition background 400ms ease
+
     &__image {
       position relative
       width 100%
@@ -115,6 +117,10 @@ export default {
     &__description {
       z-index 4
       padding 0 3.2rem 3.2rem 3.2rem
+
+      @media (max-width: 1040px) {
+        padding 0 2rem 2rem 2rem
+      }
     }
 
     &__line {
@@ -129,7 +135,10 @@ export default {
       font-size 2rem
       color #FFFFFF
       letter-spacing 1px
-      text-shadow 0 8px 24px rgba(27,28,41,0.64)
+
+      @media (max-width: 1040px) {
+        font-size 1.2rem
+      }
     }
 
     &__time {
@@ -141,6 +150,10 @@ export default {
       font-size 1.6rem
       color #FFFFFF
       opacity .4
+
+      @media (max-width: 1040px) {
+        font-size 1rem
+      }
     }
 
     &__clock {
@@ -156,6 +169,11 @@ export default {
       font-size 2.4rem
       color #FFFFFF
       letter-spacing 3px
+
+      @media (max-width: 1040px) {
+        font-size 1.6rem
+        letter-spacing 2px
+      }
     }
 
     &__buttons {
@@ -164,6 +182,10 @@ export default {
       flex-direction row
       justify-content space-between
       align-items center
+
+      @media (max-width: 1040px) {
+        margin-top 1.3rem
+      }
 
       button {
         flex 1
@@ -174,26 +196,40 @@ export default {
         }
       }
     }
-  }
 
-  .wk-button {
-    display inline-block
-    padding .8rem
-    font-family SFProText-Heavy
-    font-size 14px
-    letter-spacing 1.17px
-    text-align center
-    line-height 16px
-    text-transform uppercase
+    &__button {
+      display inline-block
+      padding .8rem
+      font-family SFProText-Heavy
+      font-size 14px
+      letter-spacing 1.17px
+      text-align center
+      line-height 16px
+      text-transform uppercase
 
-    border 1px solid rgba(255, 255, 255, 0.2)
-    background initial
-    color #FFFFFF
-  }
+      border 1px solid rgba(255, 255, 255, 0.2)
+      background initial
+      color #FFFFFF
+      transition all 400ms ease
 
-  .wk-button--active {
-    border 1px solid #FFFFFF
-    background #FFFFFF
-    color #182130
+      @media (max-width: 1040px) {
+        font-size 1rem
+      }
+
+      &:hover {
+        border 1px solid #FFFFFF
+      }
+
+      &--active {
+        border 1px solid #FECC7B
+        background #FECC7B
+        color #182130
+
+        &:hover {
+          border 1px solid #E7A761
+          background #E7A761
+        }
+      }
+    }
   }
 </style>

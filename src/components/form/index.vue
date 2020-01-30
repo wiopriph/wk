@@ -2,7 +2,7 @@
   <form class="wk-form">
     <div class="wk-form-field">
       <span class="wk-form-field__title">{{$t('name')}}</span>
-      <input type="text" class="wk-form-field__input">
+      <input v-model="name" type="text" class="wk-form-field__input">
       <div class="wk-form-field__line">
         <span></span>
       </div>
@@ -10,14 +10,14 @@
 
     <div class="wk-form-field">
       <span class="wk-form-field__title">{{$t('phone')}}</span>
-      <input type="number" class="wk-form-field__input">
+      <input v-model="phone" type="number" class="wk-form-field__input">
 
       <div class="wk-form-field__line" :class="{'wk-form-field__line--error': false}">
         <span>{{$t('phone-wrong')}}</span>
       </div>
     </div>
 
-    <button class="wk-form__button">{{$t('learn-more')}}</button>
+    <button class="wk-form__button" :class="{'wk-form__button--invalid': !validate}" @click="send">{{$t('learn-more')}}</button>
   </form>
 </template>
 
@@ -40,7 +40,25 @@
 
 <script>
 export default {
-  name: 'wk-form'
+  name: 'wk-form',
+  data () {
+    return {
+      name: '',
+      phone: ''
+    }
+  },
+  computed: {
+    validate () {
+      return this.phone.length > 10 && this.name
+    }
+  },
+  methods: {
+    send (e) {
+      if (!this.validate) {
+        e.preventDefault()
+      }
+    }
+  }
 }
 </script>
 
@@ -111,7 +129,6 @@ export default {
     &__button {
       height 4rem
       margin-top 1.6rem
-      background #FFFFFF
       font-size 1.4rem
       font-family SFProText-Heavy
       color #1C212D
@@ -119,6 +136,12 @@ export default {
       text-align center
       line-height 4rem
       text-transform uppercase
+      background #FECC7B
+
+      &--invalid {
+        cursor not-allowed
+        background #FFFFFF
+      }
 
       @media (max-width: 1040px) {
         height 3.2rem

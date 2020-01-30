@@ -136,7 +136,9 @@ export default {
     display flex
     align-items center
     justify-content center
-
+    &:hover &__icon {
+      box-shadow 0 4px 24px 0 rgba(254,204,123,0.56)
+    }
     @media (max-width: 1040px) {
       margin 2.4rem 0 2rem 0
     }
@@ -157,6 +159,7 @@ export default {
       margin-right 1.6rem
       width 2.4rem
       height @width
+      transition box-shadow 400ms ease
     }
 
     &__text {

@@ -14,7 +14,7 @@
       <div class="routes__list">
         <route
           v-for="(rout, index) in list"
-          :active="active === index"
+          :active="isMobile || active === index"
           :key="rout.id"
           :name="rout.name"
           :image="rout.image"
@@ -59,10 +59,16 @@ export default {
   components: {
     route
   },
+  watch: {
+    activeKey () {
+      this.active = 0
+    }
+  },
   data () {
     return {
       activeKey: '',
-      active: 0
+      active: 0,
+      isMobile: false
     }
   },
   computed: {
@@ -78,6 +84,7 @@ export default {
   },
   mounted () {
     this.activeKey = this.routesKeys[0]
+    this.isMobile = window.innerWidth < 1040
   }
 }
 </script>
@@ -116,7 +123,7 @@ export default {
 
     &__routes {
       margin-bottom 2.4rem
-      min-width 45.8rem
+      max-width 45.8rem
       width 100%
       display flex
       flex-direction column
@@ -131,6 +138,7 @@ export default {
       width 100%
       display flex
       flex-direction column
+
       @media (max-width: 1040px) {
         display none
       }
@@ -162,6 +170,11 @@ export default {
     border 1px solid rgba(255, 255, 255, 0.2)
     background initial
     color #FFFFFF
+    transition all 400ms ease
+
+    &:hover {
+      border 1px solid #FFFFFF
+    }
 
     &--active {
       border 1px solid #FFFFFF

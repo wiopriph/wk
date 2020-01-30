@@ -67,7 +67,6 @@ export default {
       margin-right 1.6rem
       width 2.4rem
       height @width
-      color #FECC7B
     }
 
     &__socials {
@@ -77,6 +76,11 @@ export default {
       width 4.8rem
       height @width
       color #FECC7B
+      transition color 400ms ease
+
+      &:hover {
+        color #E7A761
+      }
 
       &:last-child {
         margin-right 0

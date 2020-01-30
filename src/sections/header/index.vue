@@ -111,6 +111,7 @@ export default {
         position fixed
         top 2.4rem
         right 2.4rem
+        z-index 9999
         display flex
         flex-direction row
         align-items center
