@@ -15,13 +15,13 @@ const routes = [
     path: '/:lang(ru|en)',
     name: 'lang-home',
     component: Home
-  },
-  {
-    path: '*',
-    redirect: {
-      name: 'home'
-    }
   }
+  // {
+  //   path: '*',
+  //   redirect: {
+  //     name: 'home'
+  //   }
+  // }
 ]
 
 const router = new VueRouter({

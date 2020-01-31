@@ -37,7 +37,7 @@
     ],
     "winter": [
       {
-        "name": "Остров Старичкова",
+        "name": "Авачинская бухта",
         "image": "https://img.yachtsworld.ru/data/images/yachts/11530/04.jpg",
         "time": 6,
         "price": 6000,
@@ -50,7 +50,53 @@
     ]
   },
   "en": {
-    "summer": [],
-    "winter": []
+    "summer": [
+      {
+        "name": "Boat trip",
+        "image": "https://www.breeze41.ru/assets/images/KAMCHATKA-TOURS/gallery/526_russkaya_0.jpg",
+        "time": 2,
+        "price": 4000,
+        "description": "A boat trip is a bird sanctuary in Kamchatka. 44 nesting colonies and 11 species of sea colonial bird live on it. Among them are the Beringov cormorant, the Red-faced cormorant, Poleworms, Pacific and spectacled guards, thick-billed and thin-billed guillemots, Ipatki, hatchets and famous old people. ",
+        "images": [
+          "https://www.breeze41.ru/assets/images/KAMCHATKA-TOURS/gallery/526_russkaya_0.jpg",
+          "https://lh6.googleusercontent.com/-GlUqJyMfBWI/TkZKa0FwK6I/AAAAAAAAmomo/qq98UNhz6JM/IMG_6482.jpg"
+        ]
+      },
+      {
+        "name": "Boat trip 2",
+        "image": "https://i.ytimg.com/vi/f4aKk2DEg-4/maxresdefault.jpg",
+        "time": 12,
+        "price": 5000,
+        "description": "A boat trip is a bird sanctuary in Kamchatka. 44 nesting colonies and 11 species of sea colonial bird live on it. Among them are the Beringov cormorant, the Red-faced cormorant, Poleworms, Pacific and spectacled guards, thick-billed and thin-billed guillemots, Ipatki, hatchets and famous old people. ",
+        "images": [
+          "https://lh6.googleusercontent.com/-GlUqJyMfBWI/TkZKa0FwK6I/AAAAAAAAACmo/qq98UNhz6JM/IMG_6482.jpg",
+          "https://i.ytimg.com/vi/f4aKk2DEg-4/maxresdefault.jpg"
+        ]
+      },
+      {
+        "name": "Starichkova Island",
+        "image": "https://www.breeze41.ru/assets/images/KAMCHATKA-TOURS/gallery/527_tihaya_2.jpg",
+        "time": 6,
+        "price": 6000,
+        "description": "Starichkov Island is a bird sanctuary in Kamchatka. 44 nesting colonies and 11 species of sea colonial bird live on it. Among them are the Beringov’s cormorant, Red-faced cormorant, Pacific Rifles and Spectacles, thick-billed and thin-billed guillemots, Ipatki, hatchets and famous old people. ",
+        "images": [
+          "https://www.breeze41.ru/assets/images/KAMCHATKA-TOURS/gallery/527_tihaya_2.jpg",
+          "https://www.breeze41.ru/assets/images/KAMCHATKA-TOURS/gallery/527_tihaya_2.jpg"
+        ]
+      }
+    ],
+    "winter": [
+      {
+        "name": "Avacha Bay",
+        "image": "https://img.yachtsworld.ru/data/images/yachts/11530/04.jpg",
+        "time": 6,
+        "price": 6000,
+        "description": "Starichkov Island is a bird sanctuary in Kamchatka. 44 nesting colonies and 11 species of sea colonial bird live on it. Among them are the Beringov’s cormorant, Red-faced cormorant, Pacific Rifles and Spectacles, thick-billed and thin-billed guillemots, Ipatki, hatchets and famous old people. ",
+        "images": [
+          "https://img.yachtsworld.ru/data/images/yachts/11530/04.jpg",
+          "https://i.ytimg.com/vi/f4aKk2DEg-4/maxresdefault.jpg"
+        ]
+      }
+    ]
   }
 }
