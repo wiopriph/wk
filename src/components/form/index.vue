@@ -17,7 +17,7 @@
       </div>
     </div>
 
-    <button class="wk-form__button" :class="{'wk-form__button--invalid': !validate}" @click="send">{{$t('learn-more')}}</button>
+    <button class="wk-form__button" :class="{'wk-form__button--invalid': !validate}">{{$t('learn-more')}}</button>
   </div>
 </template>
 
@@ -39,8 +39,6 @@
 </i18n>
 
 <script>
-import axios from 'axios'
-
 export default {
   name: 'wk-form',
   data () {
@@ -52,24 +50,6 @@ export default {
   computed: {
     validate () {
       return this.phone.length && this.name
-    }
-  },
-  methods: {
-    send (e) {
-      console.log('axios', axios)
-
-      if (!this.validate) {
-        return e.preventDefault()
-      }
-      // console.log('str', str)
-
-      axios.post('http://localhost:3000/', `{ "data": [["${this.name}", "${this.phone}"]] }`)
-        .then((response) => {
-          console.log(response)
-        })
-        .catch((error) => {
-          console.log(error)
-        })
     }
   }
 }
