@@ -55,7 +55,6 @@ export default {
       line-height 3.2rem
       font-family SFProText-Regular
       letter-spacing 1px
-      text-shadow 0 8px 24px rgba(27, 28, 41, .64)
 
       @media (max-width: 1040px) {
         font-size 1.4rem

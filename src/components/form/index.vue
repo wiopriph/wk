@@ -1,5 +1,5 @@
 <template>
-  <form class="wk-form">
+  <div class="wk-form">
     <div class="wk-form-field">
       <span class="wk-form-field__title">{{$t('name')}}</span>
       <input v-model="name" type="text" class="wk-form-field__input">
@@ -18,7 +18,7 @@
     </div>
 
     <button class="wk-form__button" :class="{'wk-form__button--invalid': !validate}" @click="send">{{$t('learn-more')}}</button>
-  </form>
+  </div>
 </template>
 
 <i18n>
@@ -39,6 +39,8 @@
 </i18n>
 
 <script>
+import axios from 'axios'
+
 export default {
   name: 'wk-form',
   data () {
@@ -49,14 +51,25 @@ export default {
   },
   computed: {
     validate () {
-      return this.phone.length > 10 && this.name
+      return this.phone.length && this.name
     }
   },
   methods: {
     send (e) {
+      console.log('axios', axios)
+
       if (!this.validate) {
-        e.preventDefault()
+        return e.preventDefault()
       }
+      // console.log('str', str)
+
+      axios.post('http://localhost:3000/', `{ "data": [["${this.name}", "${this.phone}"]] }`)
+        .then((response) => {
+          console.log(response)
+        })
+        .catch((error) => {
+          console.log(error)
+        })
     }
   }
 }
@@ -88,7 +101,6 @@ export default {
         color #6E7383
         letter-spacing 1px
         line-height 1.3rem
-        text-shadow 0 8px 24px rgba(27, 28, 41, .64)
       }
 
       &__input {
@@ -120,7 +132,6 @@ export default {
             color #F77585
             letter-spacing 1px
             line-height 24px
-            text-shadow 0 8px 24px rgba(27, 28, 41, .64)
           }
         }
       }

@@ -15,6 +15,8 @@
 
      <sections-footer/>
    </div>
+
+    <popup-info/>
   </div>
 </template>
 
@@ -28,6 +30,8 @@ import sectionsContacts from '@/sections/contacts/index.vue'
 import sectionsBoat from '@/sections/boats/index.vue'
 import sectionsFooter from '@/sections/footer/index.vue'
 
+import popupInfo from '@/components/popup/info/index.vue'
+
 export default {
   name: 'home',
   components: {
@@ -37,7 +41,8 @@ export default {
     sectionsContacts,
     sectionsBoat,
     sectionsFooter,
-    heading
+    heading,
+    popupInfo
   },
   watch: {
     $route () {

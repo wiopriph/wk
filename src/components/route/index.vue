@@ -1,20 +1,20 @@
 <template>
   <div class="route" :class="classes">
     <div class="route__image">
-      <img :src="image" :alt="name">
+      <img :src="data.image" :alt="data.name">
     </div>
 
     <div class="route__description">
       <div class="route__line">
-        <span class="route__name">{{name}}</span>
-        <span class="route__time"><clock-icon class="route__clock"/> {{time}} {{$numerate($t('time'), this.time)}}</span>
+        <span class="route__name">{{data.name}}</span>
+        <span class="route__time"><clock-icon class="route__clock"/> {{data.time}} {{$numerate($t('time'), this.data.time)}}</span>
       </div>
 
-      <span class="route__cash">{{price}} ₽</span>
+      <span class="route__cash">{{data.price}} ₽</span>
 
       <div class="route__buttons">
-        <button class="route__button" :class="{'route__button--active': active}">{{$t('booking')}}</button>
-        <button class="route__button">{{$t('description')}}</button>
+        <button class="route__button" :class="{'route__button--active': data.active}">{{$t('booking')}}</button>
+        <button class="route__button" @click="showInfo">{{$t('description')}}</button>
       </div>
     </div>
   </div>
@@ -45,12 +45,7 @@ export default {
   },
   props: {
     active: Boolean,
-    name: String,
-    image: String,
-    time: Number,
-    price: Number,
-    description: String,
-    images: Array
+    data: Object
   },
   computed: {
     classes () {
@@ -58,11 +53,16 @@ export default {
         'active': this.active
       }
     }
+  },
+  methods: {
+    showInfo () {
+      return this.$root.$emit('popup-info', { data: this.data })
+    }
   }
 }
 </script>
 
-<style lang="stylus">
+<style lang="stylus" scoped>
   .active {
     background #2B3245!important
     .route {
@@ -75,7 +75,7 @@ export default {
 
         &:after {
           transition background-image 400ms ease
-          background-image: linear-gradient(179deg, rgba(43,50,69,0.00) 50%, #2B3245 100%);
+          background-image linear-gradient(179deg, rgba(43,50,69,0.00) 50%, #2B3245 100%)
         }
       }
     }
@@ -105,7 +105,7 @@ export default {
         width 100%
         height 100%
         transition background-image 400ms ease
-        background-image: linear-gradient(180deg, rgba(25,29,40,0.00) 0%, #191D28 100%);
+        background-image linear-gradient(180deg, rgba(25, 29, 40, 0) 0%, #191D28 100%)
       }
 
       img {
@@ -148,8 +148,7 @@ export default {
       font-family SFProText-Medium
       letter-spacing 1px
       font-size 1.6rem
-      color #FFFFFF
-      opacity .4
+      color #686C74
 
       @media (max-width: 1040px) {
         font-size 1rem
@@ -159,6 +158,7 @@ export default {
     &__clock {
       width 1.6rem
       height @width
+      color #686C74
       margin-right .8rem
     }
 

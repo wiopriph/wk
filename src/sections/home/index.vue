@@ -48,7 +48,7 @@
 
 <script>
 import wkForm from '@/components/form/index.vue'
-import ArrowIcon from '@/assets/arrow.svg?inline'
+import ArrowIcon from '@/assets/svg/arrow.svg?inline'
 
 export default {
   name: 'home',

@@ -12,20 +12,20 @@
       </div>
 
       <div class="header__mobile">
-        <burger-icon v-if="!showMenu" class="header__burger" @click="shangeMenu"/>
+        <burger-icon v-if="!showMenu" class="header__burger" @click="openMenu"/>
 
         <div v-if="showMenu" class="mobile-menu">
           <div class="mobile-menu__logo">
             <logo-icon class="header__logo"/>
-            <close-icon class="header__burger" @click="shangeMenu"/>
+            <close-icon class="header__burger" @click="closeMenu"/>
           </div>
 
           <div class="mobile-menu__items">
-            <router-link to="#routes" v-smooth-scroll="{ offset: -20 }" class="footer__link" @click.native="shangeMenu">{{$t('routes')}}</router-link>
+            <router-link to="#routes" v-smooth-scroll="{ offset: -20 }" class="footer__link" @click.native="closeMenu">{{$t('routes')}}</router-link>
             <div class="divider"></div>
-            <router-link to="#boats" v-smooth-scroll="{ offset: -20 }" class="footer__link" @click.native="shangeMenu">{{$t('boats')}}</router-link>
+            <router-link to="#boats" v-smooth-scroll="{ offset: -20 }" class="footer__link" @click.native="closeMenu">{{$t('boats')}}</router-link>
             <div class="divider"></div>
-            <router-link to="#contacts" v-smooth-scroll="{ offset: -20 }" class="footer__link" @click.native="shangeMenu">{{$t('contacts')}}</router-link>
+            <router-link to="#contacts" v-smooth-scroll="{ offset: -20 }" class="footer__link" @click.native="closeMenu">{{$t('contacts')}}</router-link>
           </div>
 
           <div class="mobile-menu__socials">
@@ -36,8 +36,8 @@
             </div>
 
             <div>
-              <router-link :to="{name: 'lang-home', params: {lang: 'ru'}}" class="wk-button" active-class="wk-button--active" :class="{'wk-button--active': isRu}" @click.native="shangeMenu">ru</router-link>
-              <router-link :to="{name: 'lang-home', params: {lang: 'en'}}" class="wk-button" active-class="wk-button--active" @click.native="shangeMenu">en</router-link>
+              <router-link :to="{name: 'lang-home', params: {lang: 'ru'}}" class="wk-button" active-class="wk-button--active" :class="{'wk-button--active': isRu}" @click.native="closeMenu">ru</router-link>
+              <router-link :to="{name: 'lang-home', params: {lang: 'en'}}" class="wk-button" active-class="wk-button--active" @click.native="closeMenu">en</router-link>
             </div>
           </div>
         </div>
@@ -47,10 +47,12 @@
 </template>
 
 <script>
+import disabledScroll from '@/plugins/disabled-scroll'
+
 import LogoIcon from '@/assets/svg/logo.svg?inline'
 import PhoneIcon from '@/assets/svg/phone.svg?inline'
-import BurgerIcon from '@/assets/burger.svg?inline'
-import CloseIcon from '@/assets/close.svg?inline'
+import BurgerIcon from '@/assets/svg/burger.svg?inline'
+import CloseIcon from '@/assets/svg/close.svg?inline'
 
 import InstLogo from '@/assets/svg/socials/inst.svg?inline'
 import VkLogo from '@/assets/svg/socials/vk.svg?inline'
@@ -77,8 +79,13 @@ export default {
     }
   },
   methods: {
-    shangeMenu () {
-      this.showMenu = !this.showMenu
+    openMenu () {
+      this.showMenu = true
+      disabledScroll(true)
+    },
+    closeMenu () {
+      this.showMenu = false
+      disabledScroll(false)
     }
   }
 }
@@ -132,7 +139,6 @@ export default {
       color #FFFFFF
       letter-spacing 1px
       font-family SFProText-Regular
-      text-shadow 0 8px 24px rgba(27, 28, 41, .64)
 
       @media (max-width: 1040px) {
         font-size 1.4rem

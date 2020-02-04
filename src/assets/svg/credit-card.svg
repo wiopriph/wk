@@ -1,0 +1,8 @@
+<svg version="1.1" viewBox="0 0 24 18" xmlns="http://www.w3.org/2000/svg">
+    <g fill="none" fill-rule="evenodd">
+        <g transform="translate(1 1)" stroke="currentColor" stroke-width="2">
+            <polyline points="20 11 20 16 0 16 0 4.9738e-14 20 5.6843e-14 20 5"/>
+            <polygon points="15 6 22 6 22 10 15 10"/>
+        </g>
+    </g>
+</svg>
