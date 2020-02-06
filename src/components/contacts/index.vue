@@ -1,15 +1,15 @@
 <template>
   <div class="wk-contacts">
-    <a href="tel:+78000000000" class="wk-contacts__link"><phone-icon class="wk-contacts__icon"/>8 (800) 000-00-00</a>
+    <a href="tel:+74152307307" class="wk-contacts__link"><phone-icon class="wk-contacts__icon"/>8 (4152) 307-307</a>
     <div class="divider"></div>
 
     <a href="mailto:wild@kamchatka.com" class="wk-contacts__link"><mail-icon class="wk-contacts__icon"/>wild@kamchatka.com</a>
     <div class="divider"></div>
 
     <div>
-      <a href="" target="_blank" class="wk-contacts__socials"><inst-logo/></a>
+      <a href="https://instagram.com/wild.k.a.m.c.h.a.t.k.a?r=nametag" target="_blank" class="wk-contacts__socials"><inst-logo/></a>
       <a href="" target="_blank" class="wk-contacts__socials"><vk-logo/></a>
-      <a href="" target="_blank" class="wk-contacts__socials"><fb-logo/></a>
+      <a href="https://www.facebook.com/wild.kamchatka.50" target="_blank" class="wk-contacts__socials"><fb-logo/></a>
     </div>
   </div>
 </template>

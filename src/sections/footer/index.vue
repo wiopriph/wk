@@ -13,11 +13,11 @@
       <div class="footer__links">
         <router-link to="#contacts" v-smooth-scroll="{ offset: -20 }" class="footer__link">{{$t('contacts')}}</router-link>
 
-        <a href="" target="_blank" class="footer__socials"><inst-logo/></a>
+        <a href="https://instagram.com/wild.k.a.m.c.h.a.t.k.a?r=nametag" target="_blank" class="footer__socials"><inst-logo/></a>
         <a href="" target="_blank" class="footer__socials"><vk-logo/></a>
-        <a href="" target="_blank" class="footer__socials"><fb-logo/></a>
+        <a href="https://www.facebook.com/wild.kamchatka.50" target="_blank" class="footer__socials"><fb-logo/></a>
       </div>
-      <span class="footer__company">ООО “Виртус-тур”, ОГРН</span>
+      <span class="footer__company">ООО “Виртус-тур”, ИНН 4101179182 КПП 410101001 ОГРН 1174101011743, Юридический адрес: 683000, Камчатский край, г. Петропавловск-Камчатский, ул. Ленинская, д.34, офис 1</span>
     </div>
   </div>
 </template>
@@ -122,12 +122,14 @@ export default {
   }
 
   &__company {
+    max-width 50%
     font-family SFProText-Regular
     font-size 1.6rem
     color #FFFFFF
     opacity 0.4
 
     @media (max-width: 1040px) {
+      max-width 100%
       margin-top 2.4rem
       font-size 1.4rem
     }

@@ -5,7 +5,7 @@
     <div>
       <div class="header__desktop">
         <phone-icon class="header__icon"/>
-        <a class="header__phone" href="tel:+78000000000">8 (800) 000-00-00</a>
+        <a class="header__phone" href="tel:8(4152)307-307">8 (4152) 307-307</a>
 
         <router-link :to="{name: 'lang-home', params: {lang: 'ru'}}" class="wk-button" active-class="wk-button--active" :class="{'wk-button--active': isRu}">ru</router-link>
         <router-link :to="{name: 'lang-home', params: {lang: 'en'}}" class="wk-button" active-class="wk-button--active">en</router-link>
@@ -30,9 +30,9 @@
 
           <div class="mobile-menu__socials">
             <div>
-              <a href="" target="_blank" class="mobile-menu__social-link"><inst-logo/></a>
+              <a href="https://instagram.com/wild.k.a.m.c.h.a.t.k.a?r=nametag" target="_blank" class="mobile-menu__social-link"><inst-logo/></a>
               <a href="" target="_blank" class="mobile-menu__social-link"><vk-logo/></a>
-              <a href="" target="_blank" class="mobile-menu__social-link"><fb-logo/></a>
+              <a href="https://www.facebook.com/wild.kamchatka.50" target="_blank" class="mobile-menu__social-link"><fb-logo/></a>
             </div>
 
             <div>
