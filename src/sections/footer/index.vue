@@ -26,10 +26,12 @@
 {
   "ru": {
     "tours": "Морские туры",
+    "boats": "Катера",
     "about": "О нас"
   },
   "en": {
     "tours": "Tours",
+    "boats": "Boats",
     "about": "About"
   }
 }

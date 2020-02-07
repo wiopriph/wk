@@ -13,7 +13,7 @@
       <span class="route__cash">{{data.price}} ₽</span>
 
       <div class="route__buttons">
-        <button class="route__button" :class="{'route__button--active': data.active}">{{$t('booking')}}</button>
+        <button class="route__button" :class="{'route__button--active': data.active}" @click="bookingTour">{{$t('booking')}}</button>
         <button class="route__button" @click="showInfo">{{$t('description')}}</button>
       </div>
     </div>
@@ -57,6 +57,9 @@ export default {
   methods: {
     showInfo () {
       return this.$root.$emit('popup-info', { data: this.data })
+    },
+    bookingTour () {
+      return this.$root.$emit('popup-form', { data: this.data })
     }
   }
 }

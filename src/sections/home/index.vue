@@ -2,7 +2,7 @@
   <div>
     <div class="home">
       <div class="home__description">
-        <p>{{$t('sea-tours')}} <br><strong>{{$t('in-kamchatka')}}</strong></p>
+        <p>{{$t('sea-tours')}} <br><strong>{{$t('kamchatka')}}</strong></p>
 
         <ul>
           <li><span></span>{{$t('everyday')}}</li>
@@ -27,7 +27,7 @@
 {
   "ru": {
     "sea-tours": "Морские туры",
-    "in-kamchatka": "на Камчатке",
+    "kamchatka": "на Камчатке",
     "view-routes": "Посмотреть маршруты",
 
     "everyday": "Каждый день.",
@@ -35,8 +35,8 @@
     "comfort-boats": "Комфортные катера."
   },
   "en": {
-    "sea-tours": "Sea tours in",
-    "in-kamchatka": "Kamchatka",
+    "sea-tours": "Sea tours",
+    "kamchatka": "Kamchatka",
     "view-routes": "View Routes",
 
     "everyday": "Everyday.",

@@ -19,6 +19,8 @@
    </div>
 
     <popup-info/>
+    <popup-success/>
+    <popup-form/>
   </div>
 </template>
 
@@ -33,6 +35,8 @@ import sectionsBoat from '@/sections/boats/index.vue'
 import sectionsFooter from '@/sections/footer/index.vue'
 
 import popupInfo from '@/components/popup/info/index.vue'
+import popupSuccess from '@/components/popup/success/index.vue'
+import popupForm from '@/components/popup/form/index.vue'
 
 export default {
   name: 'home',
@@ -44,7 +48,9 @@ export default {
     sectionsBoat,
     sectionsFooter,
     heading,
-    popupInfo
+    popupInfo,
+    popupSuccess,
+    popupForm
   },
   watch: {
     $route () {

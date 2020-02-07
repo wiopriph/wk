@@ -2,7 +2,12 @@
   <div class="wk-form">
     <div class="wk-form-field">
       <span class="wk-form-field__title">{{$t('name')}}</span>
-      <input v-model="name" type="text" class="wk-form-field__input">
+      <input
+        v-model="name"
+        type="text"
+        placeholder="Иван"
+        class="wk-form-field__input"
+      >
       <div class="wk-form-field__line">
         <span></span>
       </div>
@@ -10,7 +15,12 @@
 
     <div class="wk-form-field">
       <span class="wk-form-field__title">{{$t('phone')}}</span>
-      <input v-model="phone" type="number" class="wk-form-field__input">
+      <input
+        v-model="phone"
+        type="number"
+        placeholder="+7 (800) 000 00 00"
+        class="wk-form-field__input"
+      >
 
       <div class="wk-form-field__line" :class="{'wk-form-field__line--error': false}">
         <span>{{$t('phone-wrong')}}</span>
@@ -91,7 +101,6 @@ export default {
         appearance textfield
         letter-spacing 1px
         line-height 3.2rem
-        text-shadow 0 8px 24px rgba(27, 28, 41, .64)
       }
 
       &__line {
@@ -141,5 +150,9 @@ export default {
         line-height 3.2rem
       }
     }
+  }
+
+  input::placeholder {
+    color #555B6A
   }
 </style>

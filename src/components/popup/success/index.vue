@@ -50,15 +50,18 @@ export default {
 
 <style lang="stylus" scoped>
   .success {
+    box-sizing border-box
     width 100%
-    max-width 45rem
+    max-width 40rem
     min-width 27rem
     height @width
+    min-height 40rem
     max-height 70rem
-
+    padding 2.4rem
     display flex
     flex-direction column
     align-items center
+    justify-content center
     background-color #2B3245
 
     &__icon {
@@ -67,15 +70,20 @@ export default {
     }
 
     &__title {
+      margin-top 1.6rem
       font-family SFProText-Bold
       font-size 1.6rem
+      text-align center
       color #FFFFFF
     }
 
     &__text {
+      margin-top .8rem
+      width 80%
       font-family SFProText-Regular
       font-size 1.4rem
       color #FFFFFF
+      text-align center
       line-height 2rem
     }
   }
