@@ -17,7 +17,7 @@
         <p class="info__body" v-html="data.description"></p>
 
         <div class="info__buttons">
-          <button class="info__button">{{$t('booking')}}</button>
+          <button class="info__button" @click="bookingTour">{{$t('booking')}}</button>
           <div class="info__note">{{$t('description')}}</div>
         </div>
       </div>
@@ -68,6 +68,10 @@ export default {
     },
     close () {
       this.$refs.popup.close()
+    },
+    bookingTour () {
+      this.close()
+      return this.$root.$emit('popup-form', { data: this.data })
     }
   },
   mounted () {

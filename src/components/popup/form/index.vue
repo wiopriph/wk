@@ -54,7 +54,7 @@
         </div>
 
         <div class="form__buttons">
-          <button class="form__button">{{$t('submit')}}</button>
+          <button class="form__button" :class="{'form__button--invalid': !validate}" @click="send">{{$t('submit')}}</button>
         </div>
       </div>
     </div>
@@ -83,10 +83,11 @@
 </i18n>
 
 <script>
+import api from '@/api/index'
 import popup from '../index'
 
 export default {
-  name: 'form',
+  name: 'popup-form',
   components: {
     popup
   },
@@ -99,6 +100,11 @@ export default {
       date: ''
     }
   },
+  computed: {
+    validate () {
+      return this.phone.length && this.name
+    }
+  },
   methods: {
     open ({ data }) {
       this.data = data
@@ -106,6 +112,32 @@ export default {
     },
     close () {
       this.$refs.popup.close()
+    },
+    send (e) {
+      if (!this.validate) {
+        return e.preventDefault()
+      }
+      api({
+        name: this.name,
+        phone: this.phone,
+        tour: this.data.name,
+        people: this.people,
+        date: this.date
+      })
+        .then(() => {
+          this.$root.$emit('popup-success')
+          this.clear()
+          this.close()
+        })
+        .catch((error) => {
+          console.error(error)
+        })
+    },
+    clear () {
+      this.name = ''
+      this.phone = ''
+      this.people = ''
+      this.date = ''
     }
   },
   mounted () {
@@ -251,6 +283,10 @@ export default {
       @media (max-width: 1040px) {
         padding 1.1rem
         font-size 1rem
+      }
+
+      &--invalid {
+        cursor not-allowed
       }
     }
   }

@@ -40,10 +40,10 @@ export default {
     }
   },
   mounted () {
-    this.$root.$on('merchant-confirm', this.open)
+    this.$root.$on('popup-success', this.open)
   },
   beforeDestroy () {
-    this.$root.$off('merchant-confirm', this.open)
+    this.$root.$off('popup-success', this.open)
   }
 }
 </script>

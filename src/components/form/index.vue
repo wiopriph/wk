@@ -27,7 +27,7 @@
       </div>
     </div>
 
-    <button class="wk-form__button" :class="{'wk-form__button--invalid': !validate}">{{$t('learn-more')}}</button>
+    <button class="wk-form__button" :class="{'wk-form__button--invalid': !validate}" @click="send">{{$t('learn-more')}}</button>
   </div>
 </template>
 
@@ -49,6 +49,8 @@
 </i18n>
 
 <script>
+import api from '@/api/index'
+
 export default {
   name: 'wk-form',
   data () {
@@ -60,6 +62,29 @@ export default {
   computed: {
     validate () {
       return this.phone.length && this.name
+    }
+  },
+  methods: {
+    send (e) {
+      if (!this.validate) {
+        return e.preventDefault()
+      }
+
+      api({
+        name: this.name,
+        phone: this.phone
+      })
+        .then(() => {
+          this.$root.$emit('popup-success')
+          this.clear()
+        })
+        .catch((error) => {
+          console.error(error)
+        })
+    },
+    clear () {
+      this.name = ''
+      this.phone = ''
     }
   }
 }
