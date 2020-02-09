@@ -129,9 +129,7 @@ export default {
           this.clear()
           this.close()
         })
-        .catch((error) => {
-          console.error(error)
-        })
+        .catch(() => {})
     },
     clear () {
       this.name = ''

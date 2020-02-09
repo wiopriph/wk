@@ -78,9 +78,7 @@ export default {
           this.$root.$emit('popup-success')
           this.clear()
         })
-        .catch((error) => {
-          console.error(error)
-        })
+        .catch(() => {})
     },
     clear () {
       this.name = ''
