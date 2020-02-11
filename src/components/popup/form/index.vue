@@ -126,6 +126,7 @@ export default {
       })
         .then(() => {
           this.$root.$emit('popup-success')
+          this.$metrika.reachGoal('send_application_frompopup')
           this.clear()
           this.close()
         })

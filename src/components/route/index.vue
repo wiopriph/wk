@@ -56,9 +56,11 @@ export default {
   },
   methods: {
     showInfo () {
+      this.$metrika.reachGoal('tour_descr_click')
       return this.$root.$emit('popup-info', { data: this.data })
     },
     bookingTour () {
+      this.$metrika.reachGoal('tour_order_click')
       return this.$root.$emit('popup-form', { data: this.data })
     }
   }

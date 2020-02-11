@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router'
 import i18n from './i18n'
 import Numerate from './plugins/numerate'
+import VueYandexMetrika from 'vue-yandex-metrika'
 
 // https://github.com/SSENSE/vue-carousel
 import VueCarousel from 'vue-carousel'
@@ -14,6 +15,11 @@ Vue.use(VueCarousel)
 
 Vue.config.productionTip = false
 Vue.prototype.$numerate = Numerate
+
+Vue.use(VueYandexMetrika, {
+  id: 57189649,
+  env: process.env.NODE_ENV
+})
 
 new Vue({
   router,

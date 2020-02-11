@@ -56,7 +56,9 @@ export default {
   data () {
     return {
       name: '',
-      phone: ''
+      phone: '',
+      changeName: false,
+      changePhone: false
     }
   },
   computed: {
@@ -76,6 +78,7 @@ export default {
       })
         .then(() => {
           this.$root.$emit('popup-success')
+          this.$metrika.reachGoal('learnmore')
           this.clear()
         })
         .catch(() => {})
@@ -83,6 +86,20 @@ export default {
     clear () {
       this.name = ''
       this.phone = ''
+    }
+  },
+  watch: {
+    name: function () {
+      if (!this.changeName) {
+        this.$metrika.reachGoal('name_input')
+        this.changeName = true
+      }
+    },
+    phone: function () {
+      if (!this.changePhone) {
+        this.$metrika.reachGoal('phone_input')
+        this.changePhone = true
+      }
     }
   }
 }
