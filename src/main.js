@@ -19,7 +19,7 @@ Vue.prototype.$numerate = Numerate
 
 Vue.use(VueYandexMetrika, {
   id: 57189649,
-  env: 'production'
+  env: process.env.NODE_ENV
 })
 
 new Vue({
