@@ -1,6 +1,6 @@
 <template>
   <div class="routes">
-    <div class="routes__buttons">
+    <div v-if="''" class="routes__buttons">
       <button
         v-for="item in routesKeys"
         :key="item.id"
@@ -146,8 +146,8 @@ export default {
       margin-bottom 2.4rem
 
       img {
-        width auto
-        height 100%
+        width 100%
+        height auto
       }
     }
   }

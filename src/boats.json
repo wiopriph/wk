@@ -6,8 +6,7 @@
       "description": "Катер для отважных туристов, любящих захватывающие места Камчатки, выбирайте его если готовы к не забываемым преключениям.",
       "people": 5,
       "images": [
-        "https://img.yachtsworld.ru/data/images/yachts/11530/04.jpg",
-        "https://i.ytimg.com/vi/f4aKk2DEg-4/maxresdefault.jpg"
+        "/images/insight/insight.jpg"
       ]
     },
     {
@@ -16,32 +15,29 @@
       "description": "Новая модель, не стареющей классики. Этот катер потресет тех, кто впервые на Камчатке, лучше один раз увидеть, чем жалеть что не взглянули на это!",
       "people": 2,
       "images": [
-        "https://admin.rangemarine.ru/app/uploads/2017/06/001_Flipper_880_ST_014.jpg",
-        "https://admin.rangemarine.ru/app/uploads/2017/06/006_Flipper_880_ST_068-2.jpg",
-        "https://admin.rangemarine.ru/app/uploads/2017/06/010_JAR_7160.jpg"
+        "/images/shavrc/shavrc_main.jpeg",
+        "/images/shavrc/shavrc_extra.jpg"
       ]
     }
   ],
   "en": [
     {
-      "name": "Insight",
-      "age": "2014 release",
-      "description": "A boat for courageous tourists who love the exciting places of Kamchatka, choose it if you are ready for unforgettable adventures.",
+      "name": "Insajt",
+      "age": "2014 goda vypuska",
+      "description": "Kater dlya otvazhnyh turistov, lyubyashchih zahvatyvayushchie mesta Kamchatki, vybirajte ego esli gotovy k ne zabyvaemym preklyucheniyam.",
       "people": 5,
       "images": [
-        "https://img.yachtsworld.ru/data/images/yachts/11530/04.jpg",
-        "https://i.ytimg.com/vi/f4aKk2DEg-4/maxresdefault.jpg"
+        "/images/insight/insight.jpg"
       ]
     },
     {
-      "name": "Schwarzengold",
-      "age": "2016 release",
-      "description": "A new model that is not aging classics. This boat will crash those who are for the first time in Kamchatka, it is better to see once than to regret not having looked at it!",
+      "name": "Shvarcengol'd",
+      "age": "2016 goda vypuska",
+      "description": "Novaya model', ne stareyushchej klassiki. Etot kater potreset tekh, kto vpervye na Kamchatke, luchshe odin raz uvidet', chem zhalet' chto ne vzglyanuli na eto!",
       "people": 2,
       "images": [
-        "https://admin.rangemarine.ru/app/uploads/2017/06/001_Flipper_880_ST_014.jpg",
-        "https://admin.rangemarine.ru/app/uploads/2017/06/006_Flipper_880_ST_068-2.jpg",
-        "https://admin.rangemarine.ru/app/uploads/2017/06/010_JAR_7160.jpg"
+        "/images/shavrc/shavrc_main.jpeg",
+        "/images/shavrc/shavrc_extra.jpg"
       ]
     }
   ]

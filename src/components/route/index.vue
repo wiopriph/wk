@@ -13,7 +13,7 @@
       <span class="route__cash">{{data.price}} ₽</span>
 
       <div class="route__buttons">
-        <button class="route__button" :class="{'route__button--active': data.active}" @click="bookingTour">{{$t('booking')}}</button>
+        <button class="route__button" :class="{'route__button--active': active}" @click="bookingTour">{{$t('booking')}}</button>
         <button class="route__button" @click="showInfo">{{$t('description')}}</button>
       </div>
     </div>

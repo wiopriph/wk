@@ -3,48 +3,50 @@
     "summer": [
       {
         "name": "Морская прогулка",
-        "image": "https://www.breeze41.ru/assets/images/KAMCHATKA-TOURS/gallery/526_russkaya_0.jpg",
+        "image": "/images/bukhta/main.jpg",
         "time": 2,
         "price": 4000,
         "description": "Морская прогулка - птичий заповедник на Камчатке.  На нем живут 44 гнездовых колоний и 11 видов морской колониальной птицы. Среди них баклан Берингова, баклан Краснолицего, моевки, чистики тихоокеанские и очковые, кайры толстоклювые и тонкоклювые, ипатки, топорики и знаменитые старики.",
         "images": [
-          "https://www.breeze41.ru/assets/images/KAMCHATKA-TOURS/gallery/526_russkaya_0.jpg",
-          "https://lh6.googleusercontent.com/-GlUqJyMfBWI/TkZKa0FwK6I/AAAAAAAACmo/qq98UNhz6JM/IMG_6482.jpg"
+          "/images/bukhta/extra_1.jpg",
+          "/images/bukhta/extra_2.jpg",
+          "/images/bukhta/extra_3.jpg"
         ]
       },
       {
-        "name": "Морская прогулка 2",
-        "image": "https://i.ytimg.com/vi/f4aKk2DEg-4/maxresdefault.jpg",
+        "name": "Три брата",
+        "image": "/images/tri_brata/main.jpg",
         "time": 12,
         "price": 5000,
         "description": "Морская прогулка - птичий заповедник на Камчатке.  На нем живут 44 гнездовых колоний и 11 видов морской колониальной птицы. Среди них баклан Берингова, баклан Краснолицего, моевки, чистики тихоокеанские и очковые, кайры толстоклювые и тонкоклювые, ипатки, топорики и знаменитые старики. Морская прогулка - птичий заповедник на Камчатке.  На нем живут 44 гнездовых колоний и 11 видов морской колониальной птицы. Среди них баклан Берингова, баклан Краснолицего, моевки, чистики тихоокеанские и очковые, кайры толстоклювые и тонкоклювые, ипатки, топорики и знаменитые старики.Морская прогулка - птичий заповедник на Камчатке.  На нем живут 44 гнездовых колоний и 11 видов морской колониальной птицы. Среди них баклан Берингова, баклан Краснолицего, моевки, чистики тихоокеанские и очковые, кайры толстоклювые и тонкоклювые, ипатки, топорики и знаменитые старики.",
         "images": [
-          "https://lh6.googleusercontent.com/-GlUqJyMfBWI/TkZKa0FwK6I/AAAAAAAACmo/qq98UNhz6JM/IMG_6482.jpg",
-          "https://i.ytimg.com/vi/f4aKk2DEg-4/maxresdefault.jpg"
+          "/images/tri_brata/extra_1.jpg",
+          "/images/tri_brata/extra_2.jpg",
+          "/images/tri_brata/extra_3.jpg"
         ]
       },
       {
         "name": "Остров Старичкова",
-        "image": "https://www.breeze41.ru/assets/images/KAMCHATKA-TOURS/gallery/527_tihaya_2.jpg",
+        "image": "/images/ostrov/main.jpg",
         "time": 6,
         "price": 6000,
         "description": "Остров Старичков - птичий заповедник на Камчатке.  На нем живут 44 гнездовых колоний и 11 видов морской колониальной птицы. Среди них баклан Берингова, баклан Краснолицего, моевки, чистики тихоокеанские и очковые, кайры толстоклювые и тонкоклювые, ипатки, топорики и знаменитые старики.",
         "images": [
-          "https://www.breeze41.ru/assets/images/KAMCHATKA-TOURS/gallery/527_tihaya_2.jpg",
-          "https://www.breeze41.ru/assets/images/KAMCHATKA-TOURS/gallery/527_tihaya_2.jpg"
+          "/images/ostrov/extra_1.jpg",
+          "/images/ostrov/extra_2.jpg",
+          "/images/ostrov/extra_3.jpg"
         ]
       }
     ],
     "winter": [
       {
-        "name": "Авачинская бухта",
-        "image": "https://img.yachtsworld.ru/data/images/yachts/11530/04.jpg",
-        "time": 6,
-        "price": 6000,
-        "description": "Остров Старичков - птичий заповедник на Камчатке.  На нем живут 44 гнездовых колоний и 11 видов морской колониальной птицы. Среди них баклан Берингова, баклан Краснолицего, моевки, чистики тихоокеанские и очковые, кайры толстоклювые и тонкоклювые, ипатки, топорики и знаменитые старики.",
+        "name": "",
+        "image": "",
+        "time": 0,
+        "price": 0,
+        "description": "",
         "images": [
-          "https://img.yachtsworld.ru/data/images/yachts/11530/04.jpg",
-          "https://i.ytimg.com/vi/f4aKk2DEg-4/maxresdefault.jpg"
+          ""
         ]
       }
     ]
@@ -52,49 +54,51 @@
   "en": {
     "summer": [
       {
-        "name": "Boat trip",
-        "image": "https://www.breeze41.ru/assets/images/KAMCHATKA-TOURS/gallery/526_russkaya_0.jpg",
+        "name": "Morskaya progulka",
+        "image": "/images/bukhta/main.jpg",
         "time": 2,
         "price": 4000,
-        "description": "A boat trip is a bird sanctuary in Kamchatka. 44 nesting colonies and 11 species of sea colonial bird live on it. Among them are the Beringov cormorant, the Red-faced cormorant, Poleworms, Pacific and spectacled guards, thick-billed and thin-billed guillemots, Ipatki, hatchets and famous old people. ",
+        "description": "Morskaya progulka - ptichij zapovednik na Kamchatke.  Na nem zhivut 44 gnezdovyh kolonij i 11 vidov morskoj kolonial'noj pticy. Sredi nih baklan Beringova, baklan Krasnolicego, moevki, chistiki tihookeanskie i ochkovye, kajry tolstoklyuvye i tonkoklyuvye, ipatki, toporiki i znamenitye stariki.",
         "images": [
-          "https://www.breeze41.ru/assets/images/KAMCHATKA-TOURS/gallery/526_russkaya_0.jpg",
-          "https://lh6.googleusercontent.com/-GlUqJyMfBWI/TkZKa0FwK6I/AAAAAAAAmomo/qq98UNhz6JM/IMG_6482.jpg"
+          "/images/bukhta/extra_1.jpg",
+          "/images/bukhta/extra_2.jpg",
+          "/images/bukhta/extra_3.jpg"
         ]
       },
       {
-        "name": "Boat trip 2",
-        "image": "https://i.ytimg.com/vi/f4aKk2DEg-4/maxresdefault.jpg",
+        "name": "Tri brata",
+        "image": "/images/tri_brata/main.jpg",
         "time": 12,
         "price": 5000,
-        "description": "A boat trip is a bird sanctuary in Kamchatka. 44 nesting colonies and 11 species of sea colonial bird live on it. Among them are the Beringov cormorant, the Red-faced cormorant, Poleworms, Pacific and spectacled guards, thick-billed and thin-billed guillemots, Ipatki, hatchets and famous old people. ",
+        "description": "Morskaya progulka - ptichij zapovednik na Kamchatke.  Na nem zhivut 44 gnezdovyh kolonij i 11 vidov morskoj kolonial'noj pticy. Sredi nih baklan Beringova, baklan Krasnolicego, moevki, chistiki tihookeanskie i ochkovye, kajry tolstoklyuvye i tonkoklyuvye, ipatki, toporiki i znamenitye stariki. Morskaya progulka - ptichij zapovednik na Kamchatke.  Na nem zhivut 44 gnezdovyh kolonij i 11 vidov morskoj kolonial'noj pticy. Sredi nih baklan Beringova, baklan Krasnolicego, moevki, chistiki tihookeanskie i ochkovye, kajry tolstoklyuvye i tonkoklyuvye, ipatki, toporiki i znamenitye stariki.Morskaya progulka - ptichij zapovednik na Kamchatke.  Na nem zhivut 44 gnezdovyh kolonij i 11 vidov morskoj kolonial'noj pticy. Sredi nih baklan Beringova, baklan Krasnolicego, moevki, chistiki tihookeanskie i ochkovye, kajry tolstoklyuvye i tonkoklyuvye, ipatki, toporiki i znamenitye stariki.",
         "images": [
-          "https://lh6.googleusercontent.com/-GlUqJyMfBWI/TkZKa0FwK6I/AAAAAAAAACmo/qq98UNhz6JM/IMG_6482.jpg",
-          "https://i.ytimg.com/vi/f4aKk2DEg-4/maxresdefault.jpg"
+          "/images/tri_brata/extra_1.jpg",
+          "/images/tri_brata/extra_2.jpg",
+          "/images/tri_brata/extra_3.jpg"
         ]
       },
       {
-        "name": "Starichkova Island",
-        "image": "https://www.breeze41.ru/assets/images/KAMCHATKA-TOURS/gallery/527_tihaya_2.jpg",
+        "name": "Ostrov Starichkova",
+        "image": "/images/ostrov/main.jpg",
         "time": 6,
         "price": 6000,
-        "description": "Starichkov Island is a bird sanctuary in Kamchatka. 44 nesting colonies and 11 species of sea colonial bird live on it. Among them are the Beringov’s cormorant, Red-faced cormorant, Pacific Rifles and Spectacles, thick-billed and thin-billed guillemots, Ipatki, hatchets and famous old people. ",
+        "description": "Ostrov Starichkov - ptichij zapovednik na Kamchatke.  Na nem zhivut 44 gnezdovyh kolonij i 11 vidov morskoj kolonial'noj pticy. Sredi nih baklan Beringova, baklan Krasnolicego, moevki, chistiki tihookeanskie i ochkovye, kajry tolstoklyuvye i tonkoklyuvye, ipatki, toporiki i znamenitye stariki.",
         "images": [
-          "https://www.breeze41.ru/assets/images/KAMCHATKA-TOURS/gallery/527_tihaya_2.jpg",
-          "https://www.breeze41.ru/assets/images/KAMCHATKA-TOURS/gallery/527_tihaya_2.jpg"
+          "/images/ostrov/extra_1.jpg",
+          "/images/ostrov/extra_2.jpg",
+          "/images/ostrov/extra_3.jpg"
         ]
       }
     ],
     "winter": [
       {
-        "name": "Avacha Bay",
-        "image": "https://img.yachtsworld.ru/data/images/yachts/11530/04.jpg",
-        "time": 6,
-        "price": 6000,
-        "description": "Starichkov Island is a bird sanctuary in Kamchatka. 44 nesting colonies and 11 species of sea colonial bird live on it. Among them are the Beringov’s cormorant, Red-faced cormorant, Pacific Rifles and Spectacles, thick-billed and thin-billed guillemots, Ipatki, hatchets and famous old people. ",
+        "name": "",
+        "image": "",
+        "time": 0,
+        "price": 0,
+        "description": "",
         "images": [
-          "https://img.yachtsworld.ru/data/images/yachts/11530/04.jpg",
-          "https://i.ytimg.com/vi/f4aKk2DEg-4/maxresdefault.jpg"
+          ""
         ]
       }
     ]

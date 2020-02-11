@@ -7,10 +7,8 @@
      <heading title="routes" id="routes"/>
      <sections-routes/>
 
-     <template v-if="''">
-       <heading title="boats" id="boats"/>
-       <sections-boat/>
-     </template>
+     <heading title="boats" id="boats"/>
+     <sections-boat/>
 
      <heading title="contacts" id="contacts"/>
      <sections-contacts/>
