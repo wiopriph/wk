@@ -3,8 +3,9 @@ import App from './App.vue'
 import router from './router'
 import i18n from './i18n'
 import Numerate from './plugins/numerate'
-import VueYandexMetrika from 'vue-yandex-metrika'
 
+// https://github.com/vchaptsev/vue-yandex-metrika
+import VueYandexMetrika from 'vue-yandex-metrika'
 // https://github.com/SSENSE/vue-carousel
 import VueCarousel from 'vue-carousel'
 // https://github.com/ocordeiro/vue-smooth-scroll
@@ -18,7 +19,7 @@ Vue.prototype.$numerate = Numerate
 
 Vue.use(VueYandexMetrika, {
   id: 57189649,
-  env: process.env.NODE_ENV
+  env: 'production'
 })
 
 new Vue({
