@@ -108,7 +108,7 @@ export default {
       display flex
       flex-direction row
       justify-content space-between
-      margin-top 2.4rem
+      /*margin-top 2.4rem*/
     }
 
     &__list {

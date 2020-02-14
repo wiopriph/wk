@@ -5,7 +5,7 @@
     <div>
       <div class="header__desktop">
         <phone-icon class="header__icon"/>
-        <a class="header__phone" href="tel:8(4152)307-307">8 (4152) 307-307</a>
+        <a class="header__phone" href="tel:8 (800) 444-02-18">8 (800) 444-02-18</a>
 
         <router-link :to="{name: 'lang-home', params: {lang: 'ru'}}" class="wk-button" active-class="wk-button--active" :class="{'wk-button--active': isRu}">ru</router-link>
         <router-link :to="{name: 'lang-home', params: {lang: 'en'}}" class="wk-button" active-class="wk-button--active">en</router-link>
