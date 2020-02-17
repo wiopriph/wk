@@ -54,7 +54,8 @@
         </div>
 
         <div class="form__buttons">
-          <button class="form__button" :class="{'form__button--invalid': !validate}" @click="send">{{$t('submit')}}</button>
+          <div v-if="loading" class="form__loading"><anim></anim></div>
+          <button v-else class="form__button" :class="{'form__button--invalid': !validate}" @click="send">{{$t('submit')}}</button>
         </div>
       </div>
     </div>
@@ -85,11 +86,13 @@
 <script>
 import api from '@/api/index'
 import popup from '../index'
+import anim from '@/components/anim/index.vue'
 
 export default {
   name: 'popup-form',
   components: {
-    popup
+    popup,
+    anim
   },
   data () {
     return {
@@ -97,7 +100,8 @@ export default {
       name: '',
       phone: '',
       people: '',
-      date: ''
+      date: '',
+      loading: false
     }
   },
   computed: {
@@ -117,6 +121,8 @@ export default {
       if (!this.validate) {
         return e.preventDefault()
       }
+      this.loading = true
+
       api({
         name: this.name,
         phone: this.phone,
@@ -129,8 +135,11 @@ export default {
           this.$metrika.reachGoal('send_application_frompopup')
           this.clear()
           this.close()
+          this.loading = false
         })
-        .catch(() => {})
+        .catch(() => {
+          this.loading = false
+        })
     },
     clear () {
       this.name = ''
@@ -266,6 +275,7 @@ export default {
     }
 
     &__button {
+      height 4rem
       width 100%
       display inline-block
       padding 1.3rem
@@ -287,6 +297,14 @@ export default {
       &--invalid {
         cursor not-allowed
       }
+    }
+    &__loading {
+      height 4rem
+      background #38425A
+      display flex
+      flex-direction row
+      align-items center
+      justify-content center
     }
   }
 

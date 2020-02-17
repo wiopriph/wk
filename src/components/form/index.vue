@@ -27,7 +27,8 @@
       </div>
     </div>
 
-    <button class="wk-form__button" :class="{'wk-form__button--invalid': !validate}" @click="send">{{$t('learn-more')}}</button>
+    <div v-if="loading" class="wk-form__loading"><anim></anim></div>
+    <button v-else class="wk-form__button" :class="{'wk-form__button--invalid': !validate}" @click="send">{{$t('learn-more')}}</button>
   </div>
 </template>
 
@@ -50,15 +51,20 @@
 
 <script>
 import api from '@/api/index'
+import anim from '@/components/anim/index.vue'
 
 export default {
   name: 'wk-form',
+  components: {
+    anim
+  },
   data () {
     return {
       name: '',
       phone: '',
       changeName: false,
-      changePhone: false
+      changePhone: false,
+      loading: false
     }
   },
   computed: {
@@ -71,6 +77,7 @@ export default {
       if (!this.validate) {
         return e.preventDefault()
       }
+      this.loading = true
 
       api({
         name: this.name,
@@ -80,8 +87,11 @@ export default {
           this.$root.$emit('popup-success')
           this.$metrika.reachGoal('learnmore')
           this.clear()
+          this.loading = false
         })
-        .catch(() => {})
+        .catch(() => {
+          this.loading = false
+        })
     },
     clear () {
       this.name = ''
@@ -167,8 +177,8 @@ export default {
     }
 
     &__button {
-      height 4rem
       margin-top 1.6rem
+      height 4rem
       font-size 1.4rem
       font-family SFProText-Heavy
       color #1C212D
@@ -188,6 +198,19 @@ export default {
         font-size 1rem
         letter-spacing: 0.5px
         line-height 3.2rem
+      }
+    }
+
+    &__loading {
+      margin-top 1.6rem
+      height 4rem
+      background #38425A
+      display flex
+      flex-direction row
+      align-items center
+      justify-content center
+      @media (max-width: 1040px) {
+        height 3.2rem
       }
     }
   }
