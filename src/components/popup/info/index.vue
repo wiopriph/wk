@@ -192,16 +192,48 @@ export default {
     }
 
     &__body {
-      padding 2.7rem 0 4rem 0
+      padding 0 0 4rem 0
       font-family SFProText-Regular
       font-size 1.8rem
       color #FFFFFF
-      line-height 26px
-
+      line-height 2.6rem
+      & >>> p {
+        font-family SFProText-Regular
+        padding-top 2.4rem
+        font-size 1.8rem
+        line-height 2.6rem
+      }
+      & >>> strong {
+        font-family SFProText-Regular
+        padding-top 2.4rem
+        font-size 1.8rem
+        line-height 2.6rem
+      }
+      & >>> li {
+        font-family SFProText-Regular
+      }
+      & >>> ul {
+        margin-top 1rem
+        line-height 2.6rem
+      }
       @media (max-width: 1040px) {
-        padding 1.6rem 0 2.4rem 0
+        padding 0 0 2.4rem 0
         font-size 1.2rem
         line-height 1.8rem
+        & >>> p {
+          padding-top 1.6rem
+          font-size 1.2rem
+          line-height 1.8rem
+        }
+        & >>> strong {
+          padding-top 1.6rem
+          font-size 1.2rem
+          line-height 1.8rem
+        }
+        & >>> ul {
+          margin-top .6rem
+          line-height 1.8rem
+        }
       }
     }
 

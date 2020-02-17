@@ -4,8 +4,6 @@
       v-for="boat in list"
       :key="boat.id"
       :name="boat.name"
-      :age="boat.age"
-      :description="boat.description"
       :people="boat.people"
       :images="boat.images"
       class="boats__item"

@@ -2,23 +2,23 @@
   "ru": {
     "summer": [
       {
-        "name": "Морская прогулка",
-        "image": "/images/bukhta/main.jpg",
-        "time": 2,
-        "price": 4000,
-        "description": "Морская прогулка - птичий заповедник на Камчатке.  На нем живут 44 гнездовых колоний и 11 видов морской колониальной птицы. Среди них баклан Берингова, баклан Краснолицего, моевки, чистики тихоокеанские и очковые, кайры толстоклювые и тонкоклювые, ипатки, топорики и знаменитые старики.",
+        "name": "Остров Старичкова",
+        "image": "/images/ostrov/main.jpg",
+        "time": 8,
+        "price": 5500,
+        "description": "<p>Остров Старичков - птичий заповедник на Камчатке. На нем живут 44 гнездовых колоний и 11 видов морской колониальной птицы. Остров заповедный, поэтому высадка на берег запрещена. Мы обойдем весь остров вокруг на катере, в достаточной близости, чтобы рассмотреть всех птиц-обитателей. Увидим Вилючинский вулкам. Если повезет, по пути на остров встретим настоящих касаток в открытом Тихом океане.</p><p><strong>В этом туре мы:</strong></p><ul><li>- посетим заповедный остров Старичкова</li><li>- увидим памятник “Три брата” в Авачинской бухте</li><li>- выйдем в открытый Тихий океан</li><li>- порыбачим</li></ul><p><strong>В стоимость тура входит:</strong></p><ul><li>- место на катере</li><li>- обед</li><li>- рыбалка</li></ul>",
         "images": [
-          "/images/bukhta/extra_1.jpg",
-          "/images/bukhta/extra_2.jpg",
-          "/images/bukhta/extra_3.jpg"
+          "/images/ostrov/extra_1.jpg",
+          "/images/ostrov/extra_2.jpg",
+          "/images/ostrov/extra_3.jpg"
         ]
       },
       {
         "name": "Три брата",
         "image": "/images/tri_brata/main.jpg",
-        "time": 12,
-        "price": 5000,
-        "description": "Морская прогулка - птичий заповедник на Камчатке.  На нем живут 44 гнездовых колоний и 11 видов морской колониальной птицы. Среди них баклан Берингова, баклан Краснолицего, моевки, чистики тихоокеанские и очковые, кайры толстоклювые и тонкоклювые, ипатки, топорики и знаменитые старики. Морская прогулка - птичий заповедник на Камчатке.  На нем живут 44 гнездовых колоний и 11 видов морской колониальной птицы. Среди них баклан Берингова, баклан Краснолицего, моевки, чистики тихоокеанские и очковые, кайры толстоклювые и тонкоклювые, ипатки, топорики и знаменитые старики.Морская прогулка - птичий заповедник на Камчатке.  На нем живут 44 гнездовых колоний и 11 видов морской колониальной птицы. Среди них баклан Берингова, баклан Краснолицего, моевки, чистики тихоокеанские и очковые, кайры толстоклювые и тонкоклювые, ипатки, топорики и знаменитые старики.",
+        "time": 3,
+        "price": 3000,
+        "description": "<p>“Три брата” - скалы, природный памятник на границе Авачинской бухты и открытого Тихого океана. Во время экскурсии мы пройдем по основным достопримечательностям Авачинской бухты и подойдем на максимально близкое расстояние к скалам. От памятника “Три брата” открывается потрясающий вид на город Петропавловск-Камчатский и домашние вулканы</p><p><strong>В этом туре мы:</strong></p><ul><li>- увидим памятник “Три брата” в Авачинской бухте</li><li>- сделаем фотографии на фоне города Петропавловск-Камчатский и домашних вулканов</li><li>- порыбачим</li></ul><p><strong>В стоимость тура входит:</strong></p><ul><li>- место на катере</li><li>- обед</li><li>- рыбалка</li></ul>",
         "images": [
           "/images/tri_brata/extra_1.jpg",
           "/images/tri_brata/extra_2.jpg",
@@ -26,15 +26,15 @@
         ]
       },
       {
-        "name": "Остров Старичкова",
-        "image": "/images/ostrov/main.jpg",
-        "time": 6,
-        "price": 6000,
-        "description": "Остров Старичков - птичий заповедник на Камчатке.  На нем живут 44 гнездовых колоний и 11 видов морской колониальной птицы. Среди них баклан Берингова, баклан Краснолицего, моевки, чистики тихоокеанские и очковые, кайры толстоклювые и тонкоклювые, ипатки, топорики и знаменитые старики.",
+        "name": "Морская прогулка",
+        "image": "/images/bukhta/main.jpg",
+        "time": 2,
+        "price": 2000,
+        "description": "<p>Короткая прогулочная экскурсия по Авачинской бухте, вдоль набережной города Петропавловск-Камчатский.</p><p><strong>В стоимость тура входит:</strong></p><ul><li>- место на катере</li><li>- обед</li><li>- рыбалка</li></ul>",
         "images": [
-          "/images/ostrov/extra_1.jpg",
-          "/images/ostrov/extra_2.jpg",
-          "/images/ostrov/extra_3.jpg"
+          "/images/bukhta/extra_1.jpg",
+          "/images/bukhta/extra_2.jpg",
+          "/images/bukhta/extra_3.jpg"
         ]
       }
     ],
@@ -54,23 +54,23 @@
   "en": {
     "summer": [
       {
-        "name": "Morskaya progulka",
-        "image": "/images/bukhta/main.jpg",
-        "time": 2,
-        "price": 4000,
-        "description": "Morskaya progulka - ptichij zapovednik na Kamchatke.  Na nem zhivut 44 gnezdovyh kolonij i 11 vidov morskoj kolonial'noj pticy. Sredi nih baklan Beringova, baklan Krasnolicego, moevki, chistiki tihookeanskie i ochkovye, kajry tolstoklyuvye i tonkoklyuvye, ipatki, toporiki i znamenitye stariki.",
+        "name": "Ostrov Starichkova",
+        "image": "/images/ostrov/main.jpg",
+        "time": 8,
+        "price": 5500,
+        "description": "<p>Ostrov Starichkov - ptichij zapovednik na Kamchatke. Na nem zhivut 44 gnezdovyh kolonij i 11 vidov morskoj kolonial'noj pticy. Ostrov zapovednyj, poetomu vysadka na bereg zapreshchena. My obojdem ves' ostrov vokrug na katere, v dostatochnoj blizosti, chtoby rassmotret' vsekh ptic-obitatelej. Uvidim Vilyuchinskij vulkam. Esli povezet, po puti na ostrov vstretim nastoyashchih kasatok v otkrytom Tihom okeane.</p><p><strong>V etom ture my:</strong></p><ul><li>- posetim zapovednyj ostrov Starichkova</li><li>- uvidim pamyatnik “Tri brata” v Avachinskoj buhte</li><li>- vyjdem v otkrytyj Tihij okean</li><li>- porybachim</li></ul><p><strong>V stoimost' tura vhodit:</strong></p><ul><li>- mesto na katere</li><li>- obed</li><li>- rybalka</li></ul>",
         "images": [
-          "/images/bukhta/extra_1.jpg",
-          "/images/bukhta/extra_2.jpg",
-          "/images/bukhta/extra_3.jpg"
+          "/images/ostrov/extra_1.jpg",
+          "/images/ostrov/extra_2.jpg",
+          "/images/ostrov/extra_3.jpg"
         ]
       },
       {
         "name": "Tri brata",
         "image": "/images/tri_brata/main.jpg",
-        "time": 12,
-        "price": 5000,
-        "description": "Morskaya progulka - ptichij zapovednik na Kamchatke.  Na nem zhivut 44 gnezdovyh kolonij i 11 vidov morskoj kolonial'noj pticy. Sredi nih baklan Beringova, baklan Krasnolicego, moevki, chistiki tihookeanskie i ochkovye, kajry tolstoklyuvye i tonkoklyuvye, ipatki, toporiki i znamenitye stariki. Morskaya progulka - ptichij zapovednik na Kamchatke.  Na nem zhivut 44 gnezdovyh kolonij i 11 vidov morskoj kolonial'noj pticy. Sredi nih baklan Beringova, baklan Krasnolicego, moevki, chistiki tihookeanskie i ochkovye, kajry tolstoklyuvye i tonkoklyuvye, ipatki, toporiki i znamenitye stariki.Morskaya progulka - ptichij zapovednik na Kamchatke.  Na nem zhivut 44 gnezdovyh kolonij i 11 vidov morskoj kolonial'noj pticy. Sredi nih baklan Beringova, baklan Krasnolicego, moevki, chistiki tihookeanskie i ochkovye, kajry tolstoklyuvye i tonkoklyuvye, ipatki, toporiki i znamenitye stariki.",
+        "time": 3,
+        "price": 3000,
+        "description": "<p>“Tri brata” - skaly, prirodnyj pamyatnik na granice Avachinskoj buhty i otkrytogo Tihogo okeana. Vo vremya ekskursii my projdem po osnovnym dostoprimechatel'nostyam Avachinskoj buhty i podojdem na maksimal'no blizkoe rasstoyanie k skalam. Ot pamyatnika “Tri brata” otkryvaetsya potryasayushchij vid na gorod Petropavlovsk-Kamchatskij i domashnie vulkany</p><p><strong>V etom ture my:</strong></p><ul><li>- uvidim pamyatnik “Tri brata” v Avachinskoj buhte</li><li>- sdelaem fotografii na fone goroda Petropavlovsk-Kamchatskij i domashnih vulkanov</li><li>- porybachim</li></ul><p><strong>V stoimost' tura vhodit:</strong></p><ul><li>- mesto na katere</li><li>- obed</li><li>- rybalka</li></ul>",
         "images": [
           "/images/tri_brata/extra_1.jpg",
           "/images/tri_brata/extra_2.jpg",
@@ -78,15 +78,15 @@
         ]
       },
       {
-        "name": "Ostrov Starichkova",
-        "image": "/images/ostrov/main.jpg",
-        "time": 6,
-        "price": 6000,
-        "description": "Ostrov Starichkov - ptichij zapovednik na Kamchatke.  Na nem zhivut 44 gnezdovyh kolonij i 11 vidov morskoj kolonial'noj pticy. Sredi nih baklan Beringova, baklan Krasnolicego, moevki, chistiki tihookeanskie i ochkovye, kajry tolstoklyuvye i tonkoklyuvye, ipatki, toporiki i znamenitye stariki.",
+        "name": "Morskaya progulka",
+        "image": "/images/bukhta/main.jpg",
+        "time": 2,
+        "price": 2000,
+        "description": "<p>Korotkaya progulochnaya ekskursiya po Avachinskoj buhte, vdol' naberezhnoj goroda Petropavlovsk-Kamchatskij.</p><p><strong>V stoimost' tura vhodit:</strong></p><ul><li>- mesto na katere</li><li>- obed</li><li>- rybalka</li></ul>",
         "images": [
-          "/images/ostrov/extra_1.jpg",
-          "/images/ostrov/extra_2.jpg",
-          "/images/ostrov/extra_3.jpg"
+          "/images/bukhta/extra_1.jpg",
+          "/images/bukhta/extra_2.jpg",
+          "/images/bukhta/extra_3.jpg"
         ]
       }
     ],

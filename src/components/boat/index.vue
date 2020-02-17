@@ -8,9 +8,6 @@
 
     <div class="boat__about">
       <h3 class="boat__name">{{name}}</h3>
-      <span class="boat__age">{{age}}</span>
-      <p class="boat__description">{{description}}</p>
-
       <div class="boat__capacity">
         <users-logo class="boat__icon"/>
         <span class="boat__people">{{people}} {{$numerate($t('person'), this.people)}}</span>
@@ -44,8 +41,6 @@ export default {
   props: {
     images: Array,
     name: String,
-    age: String,
-    description: String,
     people: Number
   }
 }
@@ -72,16 +67,18 @@ export default {
   }
 
   &__about {
-    padding 3.2rem
+    padding 3.2rem 4rem 4rem 4rem
 
     @media (max-width: 1040px) {
-      padding 2rem
+      padding 2rem 3.2rem 3.2rem 3.2rem
     }
   }
 
   &__name {
     font-family SFProText-Black
     font-size 2.6rem
+    text-align center
+    text-transform uppercase
     color #FFFFFF
     letter-spacing 3px
     line-height 4rem
@@ -92,41 +89,14 @@ export default {
     }
   }
 
-  &__age {
-    font-family SFProText-Regular
-    font-size 1.6rem
-    color #72747A
-    letter-spacing 1px
-    line-height 3.2rem
-
-    @media (max-width: 1040px) {
-      font-size 1rem
-      line-height 3rem
-    }
-  }
-
-  &__description {
-    margin-top 1.6rem
-    font-family SFProText-Regular
-    font-size 2rem
-    color #FFFFFF
-    letter-spacing 1px
-    line-height 2.8rem
-
-    @media (max-width: 1040px) {
-      margin-top 1rem
-      font-size 1.4rem
-      line-height 2rem
-    }
-  }
-
   &__capacity {
-    margin-top 3.2rem
+    margin-top 2.4rem
     padding 1.8rem
     display flex
     align-items center
     justify-content center
-    background #191D29
+    border-top 2px solid #2C303C
+    border-bottom 2px solid #2C303C
 
     @media (max-width: 1040px) {
       margin-top 2rem

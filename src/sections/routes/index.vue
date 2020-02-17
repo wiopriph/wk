@@ -18,8 +18,7 @@
           :key="rout.id"
           :data="rout"
           class="routes__routes"
-          @mouseenter.native="active = index"
-          @click.native="active = index"
+          @click.native="selectRout(index, rout.name)"
         />
       </div>
 
@@ -77,6 +76,12 @@ export default {
       return (this.list[this.active] || {}).images
     }
   },
+  methods: {
+    selectRout (index, name) {
+      this.active = index
+      this.$metrika.reachGoal('tour_click', name)
+    }
+  },
   mounted () {
     this.activeKey = this.routesKeys[0]
     this.isMobile = window.innerWidth < 1040
@@ -122,7 +127,7 @@ export default {
       width 100%
       display flex
       flex-direction column
-
+      cursor pointer
       &:last-child {
         margin-bottom 0
       }

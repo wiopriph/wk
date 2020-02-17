@@ -2,18 +2,14 @@
   "ru": [
     {
       "name": "Инсайт",
-      "age": "2014 года выпуска",
-      "description": "Катер для отважных туристов, любящих захватывающие места Камчатки, выбирайте его если готовы к не забываемым преключениям.",
-      "people": 5,
+      "people": 10,
       "images": [
         "/images/insight/insight.jpg"
       ]
     },
     {
       "name": "Шварценгольд",
-      "age": "2016 года выпуска",
-      "description": "Новая модель, не стареющей классики. Этот катер потресет тех, кто впервые на Камчатке, лучше один раз увидеть, чем жалеть что не взглянули на это!",
-      "people": 2,
+      "people": 10,
       "images": [
         "/images/shavrc/shavrc_main.jpeg",
         "/images/shavrc/shavrc_extra.jpg"
@@ -23,18 +19,14 @@
   "en": [
     {
       "name": "Insajt",
-      "age": "2014 goda vypuska",
-      "description": "Kater dlya otvazhnyh turistov, lyubyashchih zahvatyvayushchie mesta Kamchatki, vybirajte ego esli gotovy k ne zabyvaemym preklyucheniyam.",
-      "people": 5,
+      "people": 10,
       "images": [
         "/images/insight/insight.jpg"
       ]
     },
     {
       "name": "Shvarcengol'd",
-      "age": "2016 goda vypuska",
-      "description": "Novaya model', ne stareyushchej klassiki. Etot kater potreset tekh, kto vpervye na Kamchatke, luchshe odin raz uvidet', chem zhalet' chto ne vzglyanuli na eto!",
-      "people": 2,
+      "people": 10,
       "images": [
         "/images/shavrc/shavrc_main.jpeg",
         "/images/shavrc/shavrc_extra.jpg"
