@@ -111,6 +111,7 @@ export default {
   },
   methods: {
     open ({ data }) {
+      this.clear()
       this.data = data
       this.$refs.popup.open()
     },

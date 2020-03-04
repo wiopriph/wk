@@ -70,12 +70,29 @@ export default {
 <style lang="stylus" scoped>
   .active {
     background #2B3245!important
+    border 2px solid #2B3245!important
+
+    &::before {
+      content ""
+      position absolute
+      right -1.6rem
+      bottom 3.2rem
+      width 0
+      height 0
+      border-top 1.7rem solid transparent
+      border-left 1.4rem solid #2B3245
+      border-bottom 1.7rem solid transparent
+      @media (max-width: 1040px) {
+        content none
+      }
+    }
+
     .route {
       &__image {
         height 29rem
 
         @media (max-width: 1040px) {
-          height 14rem
+          height 18rem
         }
 
         &:after {
@@ -86,6 +103,7 @@ export default {
     }
   }
   .route {
+    position relative
     width 100%
     max-width 45.8rem
     border 2px solid #2B303D
