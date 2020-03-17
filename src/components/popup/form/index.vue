@@ -212,7 +212,7 @@ export default {
       flex-direction row
       font-family SFProText-Bold
       font-size 1.6rem
-      color #6E7383
+      color rgba(255, 255, 255, .8)
 
       @media (max-width: 1040px) {
         font-size 1rem

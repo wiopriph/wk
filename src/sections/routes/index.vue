@@ -23,7 +23,7 @@
       </div>
 
       <div class="routes__gallery">
-        <div v-for="img in images" :key="img.id" class="routes__img">
+        <div v-for="img in (this.list[this.active] || {}).images" :key="img" class="routes__img">
           <img :src="img" :alt="img">
         </div>
       </div>
@@ -149,6 +149,7 @@ export default {
       height 36rem
       overflow hidden
       margin-bottom 2.4rem
+      background rgba(25, 29, 41, .6)
 
       img {
         width 100%

@@ -97,7 +97,7 @@ export default {
 
         &:after {
           transition background-image 400ms ease
-          background-image linear-gradient(179deg, rgba(43,50,69,0.00) 50%, #2B3245 100%)
+          background-image linear-gradient(180deg, rgba(43, 50, 69, 0) 50%, #2b3245 100%)
         }
       }
     }
@@ -112,8 +112,8 @@ export default {
     &__image {
       position relative
       width 100%
-      height 140px
-      margin-bottom -30px
+      height 14rem
+      margin-bottom -3rem
       background-position top
       transition height 400ms ease
       overflow hidden
@@ -133,7 +133,10 @@ export default {
 
       img {
         width 100%
-        height auto
+        height 29rem
+        @media (max-width: 1040px) {
+          height auto
+        }
       }
     }
 
@@ -171,7 +174,7 @@ export default {
       font-family SFProText-Medium
       letter-spacing 1px
       font-size 1.6rem
-      color #686C74
+      color rgba(255, 255, 255, .8)
 
       @media (max-width: 1040px) {
         font-size 1rem
@@ -181,7 +184,7 @@ export default {
     &__clock {
       width 1.6rem
       height @width
-      color #686C74
+      color rgba(255, 255, 255, .8)
       margin-right .8rem
     }
 

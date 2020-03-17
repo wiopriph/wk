@@ -87,7 +87,7 @@ export default {
     align-items center
     border 2px solid rgba(255, 255, 255, 0.2)
     color #FFFFFF
-    padding .8rem
+    padding .8rem 1.4rem
     font-family SFProText-Heavy
     font-size 14px
     letter-spacing 1.17px
