@@ -46,7 +46,7 @@
           <span class="form-field__title">{{$t('date')}}</span>
           <input
             v-model="date"
-            type="text"
+            type="date"
             placeholder="дд / мм / гг"
             class="form-field__input"
           >

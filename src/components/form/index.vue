@@ -17,7 +17,8 @@
       <span class="wk-form-field__title">{{$t('phone')}}</span>
       <input
         v-model="phone"
-        type="number"
+        type="tel"
+        pattern="(\+?\d[- .]*){7,13}"
         placeholder="+7 (800) 000 00 00"
         class="wk-form-field__input"
       >

@@ -10,7 +10,7 @@
         <span class="route__time"><clock-icon class="route__clock"/> {{data.time}} {{$numerate($t('time'), this.data.time)}}</span>
       </div>
 
-      <span class="route__cash">{{data.price}} ₽</span>
+      <span class="route__cash">{{data.price}} <span class="rouble">₽</span> </span>
 
       <div class="route__buttons">
         <button class="route__button" :class="{'route__button--active': active}" @click.stop="bookingTour">{{$t('booking')}}</button>
@@ -257,5 +257,10 @@ export default {
         }
       }
     }
+  }
+
+  .rouble {
+    font-family rouble
+    font-weight 700
   }
 </style>
