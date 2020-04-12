@@ -2,7 +2,7 @@
   <div>
     <div class="home">
       <div class="home__description">
-        <p class="qwe">{{$t('sea-tours')}} <br><strong class="qwe">{{$t('kamchatka')}}</strong></p>
+        <p>{{$t('sea-tours')}} <br><strong>{{$t('kamchatka')}}</strong></p>
 
         <ul>
           <li><span></span>{{$t('everyday')}}</li>
@@ -99,10 +99,6 @@ export default {
     @media (max-width: 1040px) {
       font-size 1.6rem
       line-height 3.2rem
-    }
-
-    .qwe {
-      font-family 'PFAgoraSlabPro-UltraBlack'
     }
 
     strong {

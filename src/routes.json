@@ -8,9 +8,9 @@
         "price": 5500,
         "description": "<p>Остров Старичков - птичий заповедник на Камчатке. На нем живут 44 гнездовых колоний и 11 видов морской колониальной птицы. Остров заповедный, поэтому высадка на берег запрещена. Мы обойдем весь остров вокруг на катере, в достаточной близости, чтобы рассмотреть всех птиц-обитателей. Увидим Вилючинский вулкам. Если повезет, по пути на остров встретим настоящих касаток в открытом Тихом океане.</p><p><strong>В этом туре мы:</strong></p><ul><li>- посетим заповедный остров Старичкова</li><li>- увидим памятник “Три брата” в Авачинской бухте</li><li>- выйдем в открытый Тихий океан</li><li>- порыбачим</li></ul><p><strong>В стоимость тура входит:</strong></p><ul><li>- место на катере</li><li>- обед</li><li>- рыбалка</li></ul>",
         "images": [
-          "/images/ostrov/extra_1.jpg",
-          "/images/ostrov/extra_2.jpg",
-          "/images/ostrov/extra_3.jpg"
+          "http://i.piccy.info/i9/5c4f90ce79b5cfe3c3c9f2f4bd179db8/1586733069/95902/1372551/extra_1.jpg",
+          "https://i.piccy.info/i9/4853b835589dbdc83f318a9bc9db116d/1586733175/233993/1372553/extra_2.jpg",
+          "https://i.piccy.info/i9/ad9fa8fdb7817e1f0c15f8bc60e0ebff/1586733247/83899/1372553/extra_3.jpg"
         ]
       },
       {
@@ -20,31 +20,31 @@
         "price": 3000,
         "description": "<p>“Три брата” - скалы, природный памятник на границе Авачинской бухты и открытого Тихого океана. Во время экскурсии мы пройдем по основным достопримечательностям Авачинской бухты и подойдем на максимально близкое расстояние к скалам. От памятника “Три брата” открывается потрясающий вид на город Петропавловск-Камчатский и домашние вулканы</p><p><strong>В этом туре мы:</strong></p><ul><li>- увидим памятник “Три брата” в Авачинской бухте</li><li>- сделаем фотографии на фоне города Петропавловск-Камчатский и домашних вулканов</li><li>- порыбачим</li></ul><p><strong>В стоимость тура входит:</strong></p><ul><li>- место на катере</li><li>- обед</li><li>- рыбалка</li></ul>",
         "images": [
-          "/images/tri_brata/extra_1.jpg",
-          "/images/tri_brata/extra_2.jpg",
-          "/images/tri_brata/extra_3.jpg"
+          "http://i.piccy.info/i9/7431943be2a6a31eedea12b9b42dece4/1586732880/77146/1372550/extra_1.jpg",
+          "http://i.piccy.info/i9/762aef0be563ec468d6115b1f14f5767/1586732976/98519/1372551/extra_2.jpg",
+          "http://i.piccy.info/i9/6aad3b764575418c85f901f9f3d2ba75/1586732994/103694/1372551/extra_3.jpg"
         ]
       },
       {
         "name": "Морская прогулка",
-        "image": "/images/bukhta/main.jpg",
+        "image": "http://i.piccy.info/i9/25f4833d28a3d69d58bff88339e6ea6a/1586732694/140853/1372550/main.jpg",
         "time": 2,
         "price": 2000,
         "description": "<p>Короткая прогулочная экскурсия по Авачинской бухте, вдоль набережной города Петропавловск-Камчатский.</p><p><strong>В стоимость тура входит:</strong></p><ul><li>- место на катере</li><li>- обед</li><li>- рыбалка</li></ul>",
         "images": [
-          "/images/bukhta/extra_1.jpg",
-          "/images/bukhta/extra_2.jpg",
-          "/images/bukhta/extra_3.jpg"
+          "http://i.piccy.info/i9/b4b7e0d5ac806255912a4cf025e58969/1586732746/112109/1372550/extra_1.jpg",
+          "http://i.piccy.info/i9/67f84e691e360637d3844f388798eecb/1586732769/125951/1372550/extra_2.jpg",
+          "http://i.piccy.info/i9/70fef8c68df895e040aae7e1f2c4b346/1586732803/100891/1372550/extra_3.jpg"
         ]
       },
 {
         "name": "Бухта Русская",
-        "image": "/images/russian/main.jpg",
+        "image": "http://i.piccy.info/i9/2b053d0c9ac67a6873879e8cdc1c8a51/1586732848/176831/1372550/main.jpg",
         "time": 10,
         "price": 9000,
         "description": "<p>Морской тур на юг полуострова Камчатка.</p><p><strong>В стоимость тура входит:</strong></p><ul><li>- место на катере</li><li>- обед</li><li>- рыбалка</li></ul>",
         "images": [
-          "/images/russian/main.jpg"
+          "http://i.piccy.info/i9/2b053d0c9ac67a6873879e8cdc1c8a51/1586732848/176831/1372550/main.jpg"
         ]
       }
     ],
@@ -70,9 +70,9 @@
         "price": 5500,
         "description": "<p>Ostrov Starichkov - ptichij zapovednik na Kamchatke. Na nem zhivut 44 gnezdovyh kolonij i 11 vidov morskoj kolonial'noj pticy. Ostrov zapovednyj, poetomu vysadka na bereg zapreshchena. My obojdem ves' ostrov vokrug na katere, v dostatochnoj blizosti, chtoby rassmotret' vsekh ptic-obitatelej. Uvidim Vilyuchinskij vulkam. Esli povezet, po puti na ostrov vstretim nastoyashchih kasatok v otkrytom Tihom okeane.</p><p><strong>V etom ture my:</strong></p><ul><li>- posetim zapovednyj ostrov Starichkova</li><li>- uvidim pamyatnik “Tri brata” v Avachinskoj buhte</li><li>- vyjdem v otkrytyj Tihij okean</li><li>- porybachim</li></ul><p><strong>V stoimost' tura vhodit:</strong></p><ul><li>- mesto na katere</li><li>- obed</li><li>- rybalka</li></ul>",
         "images": [
-          "/images/ostrov/extra_1.jpg",
-          "/images/ostrov/extra_2.jpg",
-          "/images/ostrov/extra_3.jpg"
+          "http://i.piccy.info/i9/5c4f90ce79b5cfe3c3c9f2f4bd179db8/1586733069/95902/1372551/extra_1.jpg",
+          "https://i.piccy.info/i9/4853b835589dbdc83f318a9bc9db116d/1586733175/233993/1372553/extra_2.jpg",
+          "https://i.piccy.info/i9/ad9fa8fdb7817e1f0c15f8bc60e0ebff/1586733247/83899/1372553/extra_3.jpg"
         ]
       },
       {
@@ -82,9 +82,9 @@
         "price": 3000,
         "description": "<p>“Tri brata” - skaly, prirodnyj pamyatnik na granice Avachinskoj buhty i otkrytogo Tihogo okeana. Vo vremya ekskursii my projdem po osnovnym dostoprimechatel'nostyam Avachinskoj buhty i podojdem na maksimal'no blizkoe rasstoyanie k skalam. Ot pamyatnika “Tri brata” otkryvaetsya potryasayushchij vid na gorod Petropavlovsk-Kamchatskij i domashnie vulkany</p><p><strong>V etom ture my:</strong></p><ul><li>- uvidim pamyatnik “Tri brata” v Avachinskoj buhte</li><li>- sdelaem fotografii na fone goroda Petropavlovsk-Kamchatskij i domashnih vulkanov</li><li>- porybachim</li></ul><p><strong>V stoimost' tura vhodit:</strong></p><ul><li>- mesto na katere</li><li>- obed</li><li>- rybalka</li></ul>",
         "images": [
-          "/images/tri_brata/extra_1.jpg",
-          "/images/tri_brata/extra_2.jpg",
-          "/images/tri_brata/extra_3.jpg"
+          "http://i.piccy.info/i9/7431943be2a6a31eedea12b9b42dece4/1586732880/77146/1372550/extra_1.jpg",
+          "http://i.piccy.info/i9/762aef0be563ec468d6115b1f14f5767/1586732976/98519/1372551/extra_2.jpg",
+          "http://i.piccy.info/i9/6aad3b764575418c85f901f9f3d2ba75/1586732994/103694/1372551/extra_3.jpg"
         ]
       },
       {
@@ -94,9 +94,9 @@
         "price": 2000,
         "description": "<p>Korotkaya progulochnaya ekskursiya po Avachinskoj buhte, vdol' naberezhnoj goroda Petropavlovsk-Kamchatskij.</p><p><strong>V stoimost' tura vhodit:</strong></p><ul><li>- mesto na katere</li><li>- obed</li><li>- rybalka</li></ul>",
         "images": [
-          "/images/bukhta/extra_1.jpg",
-          "/images/bukhta/extra_2.jpg",
-          "/images/bukhta/extra_3.jpg"
+          "http://i.piccy.info/i9/b4b7e0d5ac806255912a4cf025e58969/1586732746/112109/1372550/extra_1.jpg",
+          "http://i.piccy.info/i9/67f84e691e360637d3844f388798eecb/1586732769/125951/1372550/extra_2.jpg",
+          "http://i.piccy.info/i9/70fef8c68df895e040aae7e1f2c4b346/1586732803/100891/1372550/extra_3.jpg"
         ]
       }
     ],
