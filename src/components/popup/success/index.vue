@@ -80,7 +80,7 @@ export default {
     &__text {
       margin-top .8rem
       width 80%
-      font-family SFProText-Regular
+      font-family 'SF UI Text Regular'
       font-size 1.4rem
       color #FFFFFF
       text-align center

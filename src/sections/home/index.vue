@@ -2,7 +2,7 @@
   <div>
     <div class="home">
       <div class="home__description">
-        <p>{{$t('sea-tours')}} <br><strong>{{$t('kamchatka')}}</strong></p>
+        <p class="qwe">{{$t('sea-tours')}} <br><strong class="qwe">{{$t('kamchatka')}}</strong></p>
 
         <ul>
           <li><span></span>{{$t('everyday')}}</li>
@@ -92,7 +92,7 @@ export default {
 
   p {
     margin 0
-    font-family PFAgoraSlabPro-Medium
+    font-family 'PFAgoraSlabPro-Medium'
     font-size 3.2rem
     line-height 6.4rem
 
@@ -101,8 +101,12 @@ export default {
       line-height 3.2rem
     }
 
+    .qwe {
+      font-family 'PFAgoraSlabPro-UltraBlack'
+    }
+
     strong {
-      font-family PFAgoraSlabPro-UltraBlack
+      font-family 'PFAgoraSlabPro-UltraBlack'
       font-size 5.6rem
 
       @media (max-width: 1040px) {
@@ -113,7 +117,7 @@ export default {
 
   ul {
     margin-top 2.5rem
-    font-family SFProText-Regular
+    font-family 'SF UI Text Regular'
     font-size 1.6rem
     line-height 3.2rem
 
@@ -168,7 +172,7 @@ export default {
     }
 
     &__text {
-      font-family SFProText-Heavy
+      font-family 'SF UI Display Heavy'
       color #FFFFFF
       font-size 1.4rem
       text-transform uppercase

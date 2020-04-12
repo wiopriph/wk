@@ -10,7 +10,7 @@
         <span class="route__time"><clock-icon class="route__clock"/> {{data.time}} {{$numerate($t('time'), this.data.time)}}</span>
       </div>
 
-      <span class="route__cash">{{data.price}} <span class="rouble">₽</span> </span>
+      <span class="route__cash">{{data.price}} ₽</span>
 
       <div class="route__buttons">
         <button class="route__button" :class="{'route__button--active': active}" @click.stop="bookingTour">{{$t('booking')}}</button>
@@ -157,7 +157,7 @@ export default {
     }
 
     &__name {
-      font-family SFProText-Medium
+      font-family 'SF UI Text Medium'
       font-size 2rem
       color #FFFFFF
       letter-spacing 1px
@@ -171,7 +171,7 @@ export default {
       display flex
       flex-direction row
       align-items center
-      font-family SFProText-Medium
+      font-family 'SF UI Text Medium'
       letter-spacing 1px
       font-size 1.6rem
       color rgba(255, 255, 255, .8)
@@ -191,7 +191,8 @@ export default {
     &__cash {
       margin-top 1.6rem
       display block
-      font-family SFProText-Black
+      font-family 'SF UI Display Black'
+      font-weight 700
       font-size 2.4rem
       color #FFFFFF
       letter-spacing 3px
@@ -226,7 +227,7 @@ export default {
     &__button {
       display inline-block
       padding .8rem
-      font-family SFProText-Heavy
+      font-family 'SF UI Display Heavy'
       font-size 14px
       letter-spacing 1.17px
       text-align center
@@ -257,10 +258,5 @@ export default {
         }
       }
     }
-  }
-
-  .rouble {
-    font-family rouble
-    font-weight 700
   }
 </style>

@@ -53,7 +53,7 @@ export default {
       font-size 1.6rem
       color #FFFFFF
       line-height 3.2rem
-      font-family SFProText-Regular
+      font-family 'SF UI Text Regular'
       letter-spacing 1px
 
       @media (max-width: 1040px) {

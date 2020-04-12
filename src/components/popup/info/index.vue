@@ -193,24 +193,24 @@ export default {
 
     &__body {
       padding 0 0 4rem 0
-      font-family SFProText-Regular
+      font-family 'SF UI Text Regular'
       font-size 1.8rem
       color #FFFFFF
       line-height 2.6rem
       & >>> p {
-        font-family SFProText-Regular
+        font-family 'SF UI Text Regular'
         padding-top 2.4rem
         font-size 1.8rem
         line-height 2.6rem
       }
       & >>> strong {
-        font-family SFProText-Regular
+        font-family 'SF UI Text Regular'
         padding-top 2.4rem
         font-size 1.8rem
         line-height 2.6rem
       }
       & >>> li {
-        font-family SFProText-Regular
+        font-family 'SF UI Text Regular'
       }
       & >>> ul {
         margin-top 1rem
@@ -241,7 +241,7 @@ export default {
       width 100%
       display inline-block
       padding 1.3rem
-      font-family SFProText-Heavy
+      font-family 'SF UI Display Heavy'
       font-size 14px
       letter-spacing 1.17px
       text-align center
@@ -268,7 +268,7 @@ export default {
     &__note {
       margin-top 2rem
       width 100%
-      font-family SFProText-Regular
+      font-family 'SF UI Text Regular'
       font-size 1.4rem
       color #6E7383
       letter-spacing 1px

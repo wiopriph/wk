@@ -138,7 +138,7 @@ export default {
       line-height 3.2rem
       color #FFFFFF
       letter-spacing 1px
-      font-family SFProText-Regular
+      font-family 'SF UI Text Regular'
 
       @media (max-width: 1040px) {
         font-size 1.4rem
@@ -184,7 +184,7 @@ export default {
   .wk-button {
     display inline-block
     padding .8rem
-    font-family SFProText-Heavy
+    font-family 'SF UI Display Heavy'
     font-size 14px
     letter-spacing 1.17px
     text-align center
@@ -228,7 +228,7 @@ export default {
       flex-direction column
 
       a {
-        font-family SFProText-Heavy
+        font-family 'SF UI Display Heavy'
         font-size 2rem
         color #FFFFFF
         text-transform uppercase

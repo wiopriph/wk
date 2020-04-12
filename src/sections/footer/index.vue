@@ -88,7 +88,7 @@ export default {
     border 2px solid rgba(255, 255, 255, 0.2)
     color #FFFFFF
     padding .8rem 1.4rem
-    font-family SFProText-Heavy
+    font-family 'SF UI Display Heavy'
     font-size 14px
     letter-spacing 1.17px
     text-align center
@@ -125,7 +125,7 @@ export default {
 
   &__company {
     max-width 50%
-    font-family SFProText-Regular
+    font-family 'SF UI Text Regular'
     font-size 1.6rem
     color #FFFFFF
     opacity 0.4
@@ -140,7 +140,7 @@ export default {
 
 h3 {
   margin 2.4rem 0 1.6rem 0
-  font-family PFAgoraSlabPro-Black
+  font-family 'PFAgoraSlabPro-Black'
   letter-spacing 3px
   font-size 2.4rem
   text-transform uppercase

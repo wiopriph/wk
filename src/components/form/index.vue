@@ -137,7 +137,7 @@ export default {
       align-items left
 
       &__title {
-        font-family SFProText-Regular
+        font-family 'SF UI Text Regular'
         font-size 1.2rem
         color #6E7383
         letter-spacing 1px
@@ -145,7 +145,7 @@ export default {
       }
 
       &__input {
-        font-family SFProText-Regular
+        font-family 'SF UI Text Regular'
         font-size 1.6rem
         color #FFFFFF
         background initial
@@ -181,7 +181,7 @@ export default {
       margin-top 1.6rem
       height 4rem
       font-size 1.4rem
-      font-family SFProText-Heavy
+      font-family 'SF UI Display Heavy'
       color #1C212D
       letter-spacing 1px
       text-align center

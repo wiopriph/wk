@@ -47,7 +47,7 @@ export default {
       letter-spacing .5rem
       line-height 4rem
       text-transform uppercase
-      font-family PFAgoraSlabPro-Black
+      font-family 'PFAgoraSlabPro-Black'
 
       @media (max-width: 1040px) {
         font-size 2rem

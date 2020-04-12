@@ -161,7 +161,7 @@ export default {
   .wk-button {
     display inline-block
     padding .8rem
-    font-family SFProText-Heavy
+    font-family 'SF UI Display Heavy'
     font-size 14px
     letter-spacing 1.17px
     text-align center

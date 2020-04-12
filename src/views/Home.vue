@@ -68,7 +68,11 @@ export default {
     margin 0 auto
     min-height 100vh
 
-    background url('../assets/images/bg_desktop.jpg') no-repeat center top / cover #0e0e0e
+    background-image url('../assets/images/bg_desktop.jpg')
+    background-color #151A25
+    background-repeat no-repeat
+    background-size cover
+    background-position-x center
   }
 
   .layout {

@@ -75,7 +75,8 @@ export default {
   }
 
   &__name {
-    font-family SFProText-Black
+    font-family 'SF UI Display Black'
+    font-weight 700
     font-size 2.6rem
     text-align center
     text-transform uppercase
@@ -116,7 +117,7 @@ export default {
   }
 
   &__people {
-    font-family SFProText-Medium
+    font-family 'SF UI Text Medium'
     font-size 1.6rem
     color #FFFFFF
     letter-spacing 1px
