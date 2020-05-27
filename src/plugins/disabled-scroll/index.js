@@ -11,6 +11,10 @@ function decrement () {
     }
 }
 
+/**
+ * Отключение скроллинга
+ * @param disabled
+ */
 export default function (disabled) {
     if (disabled) {
         if (counter === 0) {

@@ -10,7 +10,7 @@ export default function numerate (srt, count = 0) {
     const second = variants[1] || ''
     const third = variants[2] || second
     const empty = variants[3] || third
-    let result = ''
+    let result
 
     count = Math.abs(count)
 
@@ -28,4 +28,3 @@ export default function numerate (srt, count = 0) {
 
     return result
 }
-
