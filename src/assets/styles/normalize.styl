@@ -7,7 +7,9 @@
 
 html
   -ms-text-size-adjust 100% // 2
-  -webkit-text-size-adjust 100% // 2
+  -webkit-text-size-adjust 100%
+
+// 2
 
 /**
  * Remove the margin in all browsers (opinionated).
@@ -83,7 +85,9 @@ template, // 1
 
 a
   background-color transparent // 1
-  -webkit-text-decoration-skip objects // 2
+  -webkit-text-decoration-skip objects
+
+// 2
 
 /**
  * Remove  the outline on focused links when they are also active or hovered
@@ -106,7 +110,9 @@ a
 abbr[title]
   border-bottom none // 1
   text-decoration underline // 2
-  text-decoration underline dotted // 2
+  text-decoration underline dotted
+
+// 2
 
 /*
  * Correct the font size and margin on `h1` elements within `section` and
@@ -180,7 +186,9 @@ kbd,
 pre,
 samp
   font-family monospace, monospace // 1
-  font-size 1em // 2
+  font-size 1em
+
+// 2
 
 /**
  * Add the correct marin in IE 8.
@@ -197,7 +205,9 @@ figure
 hr
   box-sizing content-box // 1
   height 0 // 1
-  overflow visible // 2
+  overflow visible
+
+// 2
 
 /* Forms
    ========================================================================== */
@@ -212,7 +222,9 @@ input,
 select,
 textarea
   font inherit // 1
-  margin 0 // 2
+  margin 0
+
+// 2
 
 /**
  * Restore the font weight unset by previous rule.
@@ -249,7 +261,9 @@ button,
 html [type="button"], // 1
 [type="reset"],
 [type="submit"]
-  -webkit-appearance button // 2
+  -webkit-appearance button
+
+// 2
 
 /**
  * Remove the inner border and padding in Firefox
@@ -294,7 +308,9 @@ legend
   display table // 1
   max-width 100% // 1
   padding 0 // 3
-  white-space normal // 1
+  white-space normal
+
+// 1
 
 /**
  * Remove the default vertical scrollbar in IE.
@@ -311,7 +327,9 @@ textarea
 [type="checkbox"],
 [type="radio"]
   box-sizing border-box // 1
-  padding 0 // 2
+  padding 0
+
+// 2
 
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
@@ -353,111 +371,89 @@ textarea
 
 ::-webkit-file-upload-button
   -webkit-appearance button // 1
-  font inherit // 2
+  font inherit
+
+// 2
 
 
-ul,li {
+ul, li
   margin 0
   padding 0
   list-style-type none
-}
 
-input {
+input
   outline none
   border none
-}
 
-textarea {
+textarea
   outline none
   border none
-}
 
-textarea:focus,input:focus {
-  border-color transparent!important
-}
+textarea:focus, input:focus
+  border-color transparent !important
 
-input:focus::-webkit-input-placeholder {
+input:focus::-webkit-input-placeholder
   color transparent
-}
 
-input:focus:-moz-placeholder {
+input:focus:-moz-placeholder
   color transparent
-}
 
-input:focus::-moz-placeholder {
+input:focus::-moz-placeholder
   color transparent
-}
 
-input:focus:-ms-input-placeholder {
+input:focus:-ms-input-placeholder
   color transparent
-}
 
-textarea:focus::-webkit-input-placeholder {
+textarea:focus::-webkit-input-placeholder
   color transparent
-}
 
-textarea:focus:-moz-placeholder {
+textarea:focus:-moz-placeholder
   color transparent
-}
 
-textarea:focus::-moz-placeholder {
+textarea:focus::-moz-placeholder
   color transparent
-}
 
-textarea:focus:-ms-input-placeholder {
+textarea:focus:-ms-input-placeholder
   color transparent
-}
 
-input::-webkit-input-placeholder {
+input::-webkit-input-placeholder
   color #adadad
-}
 
-input:-moz-placeholder {
+input:-moz-placeholder
   color #adadad
-}
 
-input::-moz-placeholder {
+input::-moz-placeholder
   color #adadad
-}
 
-input:-ms-input-placeholder {
+input:-ms-input-placeholder
   color #adadad
-}
 
-input[type="number"] {
+input[type="number"]
   appearance textfield
-}
+
 input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
+input[type=number]::-webkit-outer-spin-button
   -webkit-appearance none
-}
 
-textarea::-webkit-input-placeholder {
+textarea::-webkit-input-placeholder
   color #adadad
-}
 
-textarea:-moz-placeholder {
+textarea:-moz-placeholder
   color #adadad
-}
 
-textarea::-moz-placeholder {
+textarea::-moz-placeholder
   color #adadad
-}
 
-textarea:-ms-input-placeholder {
+textarea:-ms-input-placeholder
   color #adadad
-}
 
-button {
-  outline none!important
+button
+  outline none !important
   border none
   background 0 0
-}
 
-button:hover {
+button:hover
   cursor pointer
-}
 
-iframe {
-  border none!important
-}
+iframe
+  border none !important

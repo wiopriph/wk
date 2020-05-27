@@ -1,315 +1,297 @@
 <template>
-  <popup ref="popup">
-    <div class="form">
-      <div class="form__image">
-        <img :src="data.image" :alt="data.name">
-      </div>
+    <popup ref="popup">
+        <div class="form">
+            <div class="form__image">
+                <img :src="data.image" :alt="data.name">
+            </div>
 
-      <div class="form__description">
-        <div class="form__tour">{{$t('tour')}}</div>
-        <div class="form__name">{{data.name}}</div>
+            <div class="form__description">
+                <div class="form__tour">{{$t('tour')}}</div>
+                <div class="form__name">{{data.name}}</div>
 
-        <div class="form-field">
-          <span class="form-field__title">{{$t('name')}}</span>
-          <input
-            v-model="name"
-            type="text"
-            placeholder="Иван"
-            class="form-field__input"
-          >
-          <div class="form-field__line"></div>
+                <div class="form-field">
+                    <span class="form-field__title">{{$t('name')}}</span>
+                    <input
+                        v-model="name"
+                        type="text"
+                        placeholder="Иван"
+                        class="form-field__input"
+                    >
+                    <div class="form-field__line"></div>
+                </div>
+
+                <div class="form-field">
+                    <span class="form-field__title">{{$t('phone')}}</span>
+                    <input
+                        v-model="phone"
+                        type="number"
+                        placeholder="+7 (800) 000 00 00"
+                        class="form-field__input"
+                    >
+                    <div class="form-field__line"></div>
+                </div>
+
+                <div class="form-field">
+                    <span class="form-field__title">{{$t('people')}}</span>
+                    <input
+                        v-model="people"
+                        type="number"
+                        placeholder="0"
+                        class="form-field__input"
+                    >
+                    <div class="form-field__line"></div>
+                </div>
+
+                <div class="form-field">
+                    <span class="form-field__title">{{$t('date')}}</span>
+                    <input
+                        v-model="date"
+                        type="date"
+                        placeholder="дд / мм / гг"
+                        class="form-field__input"
+                    >
+                    <div class="form-field__line"></div>
+                </div>
+
+                <div class="form__buttons">
+                    <div v-if="loading" class="form__loading">
+                        <anim/>
+                    </div>
+                    <button v-else class="form__button" :class="{'form__button--invalid': !validate}" @click="send">
+                        {{$t('submit')}}
+                    </button>
+                </div>
+            </div>
         </div>
-
-        <div class="form-field">
-          <span class="form-field__title">{{$t('phone')}}</span>
-          <input
-            v-model="phone"
-            type="number"
-            placeholder="+7 (800) 000 00 00"
-            class="form-field__input"
-          >
-          <div class="form-field__line"></div>
-        </div>
-
-        <div class="form-field">
-          <span class="form-field__title">{{$t('people')}}</span>
-          <input
-            v-model="people"
-            type="number"
-            placeholder="0"
-            class="form-field__input"
-          >
-          <div class="form-field__line"></div>
-        </div>
-
-        <div class="form-field">
-          <span class="form-field__title">{{$t('date')}}</span>
-          <input
-            v-model="date"
-            type="date"
-            placeholder="дд / мм / гг"
-            class="form-field__input"
-          >
-          <div class="form-field__line"></div>
-        </div>
-
-        <div class="form__buttons">
-          <div v-if="loading" class="form__loading"><anim></anim></div>
-          <button v-else class="form__button" :class="{'form__button--invalid': !validate}" @click="send">{{$t('submit')}}</button>
-        </div>
-      </div>
-    </div>
-  </popup>
+    </popup>
 </template>
 
 <i18n>
 {
-  "ru": {
-    "tour": "Забронировать тур:",
-    "name": "Ваше имя",
-    "phone": "Телефон",
-    "people": "Количество человек",
-    "date": "Дата тура",
-    "submit": "Отправить заявку"
-  },
-  "en": {
-    "tour": "Tour",
-    "name": "Name",
-    "phone": "Phone",
-    "people": "Number of people",
-    "date": "Date",
-    "submit": "Booking"
-  }
+    "ru": {
+        "tour": "Забронировать тур:",
+        "name": "Ваше имя",
+        "phone": "Телефон",
+        "people": "Количество человек",
+        "date": "Дата тура",
+        "submit": "Отправить заявку"
+    },
+    "en": {
+        "tour": "Tour",
+        "name": "Name",
+        "phone": "Phone",
+        "people": "Number of people",
+        "date": "Date",
+        "submit": "Booking"
+    }
 }
 </i18n>
 
 <script>
-import api from '@/api/index'
-import popup from '../index'
-import anim from '@/components/anim/index.vue'
+    import api from '@/api/index'
+    import popup from '../index'
+    import anim from '@/components/anim/index.vue'
 
-export default {
-  name: 'popup-form',
-  components: {
-    popup,
-    anim
-  },
-  data () {
-    return {
-      data: {},
-      name: '',
-      phone: '',
-      people: '',
-      date: '',
-      loading: false
-    }
-  },
-  computed: {
-    validate () {
-      return this.phone.length && this.name
-    }
-  },
-  methods: {
-    open ({ data }) {
-      this.clear()
-      this.data = data
-      this.$refs.popup.open()
-    },
-    close () {
-      this.$refs.popup.close()
-    },
-    send (e) {
-      if (!this.validate) {
-        return e.preventDefault()
-      }
-      this.loading = true
+    export default {
+        name: 'popup-form',
+        components: {
+            popup,
+            anim
+        },
+        data () {
+            return {
+                data: {},
+                name: '',
+                phone: '',
+                people: '',
+                date: '',
+                loading: false
+            }
+        },
+        computed: {
+            validate () {
+                return this.phone.length && this.name
+            }
+        },
+        methods: {
+            open ({ data }) {
+                this.clear()
+                this.data = data
+                this.$refs.popup.open()
+            },
+            close () {
+                this.$refs.popup.close()
+            },
+            send (e) {
+                if (!this.validate) {
+                    return e.preventDefault()
+                }
+                this.loading = true
 
-      api({
-        name: this.name,
-        phone: this.phone,
-        tour: this.data.name,
-        people: this.people,
-        date: this.date
-      })
-        .then(() => {
-          this.$root.$emit('popup-success')
-          this.$metrika.reachGoal('send_application_frompopup')
-          this.clear()
-          this.close()
-          this.loading = false
-        })
-        .catch(() => {
-          this.loading = false
-        })
-    },
-    clear () {
-      this.name = ''
-      this.phone = ''
-      this.people = ''
-      this.date = ''
+                api({
+                    name: this.name,
+                    phone: this.phone,
+                    tour: this.data.name,
+                    people: this.people,
+                    date: this.date
+                })
+                    .then(() => {
+                        this.$root.$emit('popup-success')
+                        this.$metrika.reachGoal('send_application_frompopup')
+                        this.clear()
+                        this.close()
+                        this.loading = false
+                    })
+                    .catch(() => {
+                        this.loading = false
+                    })
+            },
+            clear () {
+                this.name = ''
+                this.phone = ''
+                this.people = ''
+                this.date = ''
+            }
+        },
+        mounted () {
+            this.$root.$on('popup-form', this.open)
+        },
+        beforeDestroy () {
+            this.$root.$off('popup-form', this.open)
+        }
     }
-  },
-  mounted () {
-    this.$root.$on('popup-form', this.open)
-  },
-  beforeDestroy () {
-    this.$root.$off('popup-form', this.open)
-  }
-}
 </script>
 
 <style lang="stylus" scoped>
-  .form {
-    position relative
-    width 100%
-    max-width 45rem
-    background #2B3245
-
-    &__image {
-      position relative
-      width 100%
-      height 23rem
-      margin-bottom -30px
-      background-position top
-      transition height 400ms ease
-      overflow hidden
-
-      @media (max-width: 1040px) {
-        height 105px
-      }
-
-      &:after {
-        content ""
-        display inline-block
-        position absolute
-        bottom 0
-        left 0
-        z-index 1
+    .form
+        position relative
         width 100%
-        height 100%
-        transition background-image 400ms ease
-        background-image linear-gradient(180deg, rgba(43, 50, 69, 0) 0%, #2B3245 100%)
-      }
+        max-width 45rem
+        background #2B3245
 
-      img {
-        width 100%
-        height auto
-      }
-    }
+        &__image
+            position relative
+            width 100%
+            height 23rem
+            margin-bottom -30px
+            background-position top
+            transition height 400ms ease
+            overflow hidden
 
-    &__description {
-      z-index 4
-      position relative
-      padding 0 4rem 2.7rem 4rem
+            @media (max-width: 1040px)
+                height 105px
 
-      @media (max-width: 1040px) {
-        padding 0 2.4rem 2.1rem 2.4rem
-      }
-    }
+            &:after
+                content ""
+                display inline-block
+                position absolute
+                bottom 0
+                left 0
+                z-index 1
+                width 100%
+                height 100%
+                transition background-image 400ms ease
+                background-image linear-gradient(180deg, rgba(43, 50, 69, 0) 0%, #2B3245 100%)
 
-    &__tour {
-      display flex
-      flex-direction row
-      font-family SFProText-Bold
-      font-size 1.6rem
-      color rgba(255, 255, 255, .8)
+            img
+                width 100%
+                height auto
 
-      @media (max-width: 1040px) {
-        font-size 1rem
-      }
-    }
+        &__description
+            z-index 4
+            position relative
+            padding 0 4rem 2.7rem 4rem
 
-    &__name {
-      margin-top 1rem
-      display flex
-      flex-direction row
-      font-family SFProText-Bold
-      font-size 2.2rem
-      color #FFFFFF
+            @media (max-width: 1040px)
+                padding 0 2.4rem 2.1rem 2.4rem
 
-      @media (max-width: 1040px) {
-        margin-top .8rem
-        font-size 1.4rem
-      }
-    }
+        &__tour
+            display flex
+            flex-direction row
+            font-family SFProText-Bold
+            font-size 1.6rem
+            color rgba(255, 255, 255, .8)
 
-    &-field {
-      margin-top 2.4rem
-      width 100%
-      display flex
-      flex-direction column
-      align-items left
+            @media (max-width: 1040px)
+                font-size 1rem
 
-      &__title {
-        font-family 'SF UI Text Regular'
-        font-size 1.2rem
-        color #6E7383
-        letter-spacing 1px
-        line-height 1.3rem
+        &__name
+            margin-top 1rem
+            display flex
+            flex-direction row
+            font-family SFProText-Bold
+            font-size 2.2rem
+            color #FFFFFF
 
-        @media (max-width: 1040px) {
-          font-size 1rem
-        }
-      }
+            @media (max-width: 1040px)
+                margin-top .8rem
+                font-size 1.4rem
 
-      &__input {
-        font-family 'SF UI Text Regular'
-        font-size 1.6rem
-        color #FFFFFF
-        background initial
-        appearance textfield
-        letter-spacing 1px
-        line-height 3.2rem
+        &-field
+            margin-top 2.4rem
+            width 100%
+            display flex
+            flex-direction column
+            align-items left
 
-        @media (max-width: 1040px) {
-          font-size 1.4rem
-        }
-      }
+            &__title
+                font-family 'SF UI Text Regular'
+                font-size 1.2rem
+                color #6E7383
+                letter-spacing 1px
+                line-height 1.3rem
 
-      &__line {
-        border-top 1px solid #555B6A
-      }
-    }
+                @media (max-width: 1040px)
+                    font-size 1rem
 
-    &__buttons {
-      margin-top 4rem
-    }
+            &__input
+                font-family 'SF UI Text Regular'
+                font-size 1.6rem
+                color #FFFFFF
+                background initial
+                appearance textfield
+                letter-spacing 1px
+                line-height 3.2rem
 
-    &__button {
-      height 4rem
-      width 100%
-      display inline-block
-      padding 1.3rem
-      font-family 'SF UI Display Heavy'
-      font-size 14px
-      letter-spacing 1.17px
-      text-align center
-      line-height 16px
-      text-transform uppercase
-      transition all 400ms ease
-      background #FFFFFF
-      color #182130
+                @media (max-width: 1040px)
+                    font-size 1.4rem
 
-      @media (max-width: 1040px) {
-        padding 1.1rem
-        font-size 1rem
-      }
+            &__line
+                border-top 1px solid #555B6A
 
-      &--invalid {
-        cursor not-allowed
-      }
-    }
-    &__loading {
-      height 4rem
-      background #38425A
-      display flex
-      flex-direction row
-      align-items center
-      justify-content center
-    }
-  }
+        &__buttons
+            margin-top 4rem
 
-  input::placeholder {
-    color #555B6A
-  }
+        &__button
+            height 4rem
+            width 100%
+            display inline-block
+            padding 1.3rem
+            font-family 'SF UI Display Heavy'
+            font-size 14px
+            letter-spacing 1.17px
+            text-align center
+            line-height 16px
+            text-transform uppercase
+            transition all 400ms ease
+            background #FFFFFF
+            color #182130
+
+            @media (max-width: 1040px)
+                padding 1.1rem
+                font-size 1rem
+
+            &--invalid
+                cursor not-allowed
+
+        &__loading
+            height 4rem
+            background #38425A
+            display flex
+            flex-direction row
+            align-items center
+            justify-content center
+
+    input::placeholder
+        color #555B6A
 </style>

@@ -6,29 +6,23 @@ import Home from '../views/Home.vue'
 Vue.use(VueRouter)
 
 const routes = [
-  {
-    path: '/',
-    name: 'home',
-    component: Home
-  },
-  {
-    path: '/:lang(ru|en)',
-    name: 'lang-home',
-    component: Home
-  }
-  // {
-  //   path: '*',
-  //   redirect: {
-  //     name: 'home'
-  //   }
-  // }
+    {
+        path: '/',
+        name: 'home',
+        component: Home
+    },
+    {
+        path: '/:lang(ru|en)',
+        name: 'lang-home',
+        component: Home
+    }
 ]
 
 const router = new VueRouter({
-  mode: 'history',
-  fallback: false,
-  base: '/',
-  routes
+    mode: 'history',
+    fallback: false,
+    base: '/',
+    routes
 })
 
 export default router
