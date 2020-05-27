@@ -88,7 +88,7 @@
         position relative
         width 100%
         max-width 70rem
-        background #2B3245
+        background $color-bg
 
         &__image
             position relative
@@ -99,7 +99,7 @@
             transition height 400ms ease
             overflow hidden
 
-            @media (max-width: 1040px)
+            +layout-md()
                 height 140px
 
             &:after
@@ -112,7 +112,7 @@
                 width 100%
                 height 100%
                 transition background-image 400ms ease
-                background-image linear-gradient(180deg, rgba(43, 50, 69, 0) 0%, #2B3245 100%)
+                background-image linear-gradient(180deg, rgba(43, 50, 69, 0) 0%, $color-bg 100%)
 
             img
                 width 100%
@@ -123,7 +123,7 @@
             position relative
             padding 0 4rem 2.7rem 4rem
 
-            @media (max-width: 1040px)
+            +layout-md()
                 padding 0 2.4rem 2.1rem 2.4rem
 
         &__name
@@ -131,9 +131,9 @@
             flex-direction row
             font-family SFProText-Bold
             font-size 2.2rem
-            color #FFFFFF
+            color $color-base
 
-            @media (max-width: 1040px)
+            +layout-md()
                 font-size 2.4rem
 
         &__line
@@ -148,21 +148,21 @@
             align-items center
             font-family SFProText-Semibold
             font-size 1.6rem
-            color #FFFFFF
+            color $color-base
 
             &:not(:last-child)
                 margin-right 2.4rem
 
-            @media (max-width: 1040px)
+            +layout-md()
                 font-size 1rem
 
         &__clock-icon
             width 1.6rem
             height @width
             margin-right .8rem
-            color #FECC7B
+            color $color-yellow
 
-            @media (max-width: 1040px)
+            +layout-md()
                 width 1rem
                 height @width
 
@@ -170,9 +170,9 @@
             width 2rem
             height 1.6rem
             margin-right .8rem
-            color #FECC7B
+            color $color-yellow
 
-            @media (max-width: 1040px)
+            +layout-md()
                 width 1rem
                 height 1.2rem
 
@@ -180,7 +180,7 @@
             padding 0 0 4rem 0
             font-family 'SF UI Text Regular'
             font-size 1.8rem
-            color #FFFFFF
+            color $color-base
             line-height 2.6rem
 
             & >>> p
@@ -202,7 +202,7 @@
                 margin-top 1rem
                 line-height 2.6rem
 
-            @media (max-width: 1040px)
+            +layout-md()
                 padding 0 0 2.4rem 0
                 font-size 1.2rem
                 line-height 1.8rem
@@ -232,16 +232,16 @@
             line-height 16px
             text-transform uppercase
             transition all 400ms ease
-            background #FECC7B
+            background $color-yellow
             color #182130
 
             &:hover
-                background #E7A761
+                background $color-orange
 
-                @media (max-width: 1040px)
-                    background #FECC7B
+                +layout-md()
+                    background $color-yellow
 
-            @media (max-width: 1040px)
+            +layout-md()
                 padding 1.1rem
                 font-size 1rem
 
@@ -250,10 +250,10 @@
             width 100%
             font-family 'SF UI Text Regular'
             font-size 1.4rem
-            color #6E7383
+            color $color-gray
             letter-spacing 1px
             text-align center
 
-            @media (max-width: 1040px)
+            +layout-md()
                 font-size 1rem
 </style>

@@ -47,21 +47,21 @@
         padding 3.2rem
         display flex
         flex-direction column
-        background rgba(25, 29, 41, .6)
+        background rgba($color-bg-dark, .6)
 
-        @media (max-width: 1040px)
+        +layout-md()
             padding 2.4rem
 
         &__link
             display flex
             align-items center
             font-size 1.6rem
-            color #FFFFFF
+            color $color-base
             line-height 3.2rem
             font-family 'SF UI Text Regular'
             letter-spacing 1px
 
-            @media (max-width: 1040px)
+            +layout-md()
                 font-size 1.4rem
                 letter-spacing .5px
 
@@ -76,16 +76,16 @@
             padding 0
             width 4.8rem
             height @width
-            color #FECC7B
+            color $color-yellow
             transition color 400ms ease
 
             &:hover
-                color #E7A761
+                color $color-orange
 
             &:last-child
                 margin-right 0
 
-            @media (max-width: 1040px)
+            +layout-md()
                 margin-right 1.4rem
 
     .divider

@@ -26,12 +26,12 @@
         align-items center
         justify-content space-between
 
-        @media (max-width: 1040px)
+        +layout-md()
             padding-bottom 4rem
             flex-direction column
             align-items start
 
         &__form
-            @media (max-width: 1040px)
+            +layout-md()
                 margin-top 2.4rem
 </style>

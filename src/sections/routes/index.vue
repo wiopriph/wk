@@ -132,7 +132,7 @@
             display flex
             flex-direction column
 
-            @media (max-width: 1040px)
+            +layout-md()
                 display none
 
         &__img
@@ -150,15 +150,15 @@
         display inline-block
         padding .8rem
         font-family 'SF UI Display Heavy'
-        font-size 14px
-        letter-spacing 1.17px
+        font-size 1.4rem
+        letter-spacing .1rem
         text-align center
         line-height 16px
         text-transform uppercase
 
         border 1px solid rgba(255, 255, 255, 0.2)
         background initial
-        color #FFFFFF
+        color $color-base
         transition all 400ms ease
 
         &:hover

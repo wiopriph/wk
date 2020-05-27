@@ -34,11 +34,11 @@
         flex-direction row
         justify-content space-between
 
-        @media (max-width: 1040px)
+        +layout-md()
             flex-direction column
             align-items start
 
         &__item:not(:last-child)
-            @media (max-width: 1040px)
+            +layout-md()
                 margin-bottom 1.6rem
 </style>

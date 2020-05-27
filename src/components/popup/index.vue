@@ -65,6 +65,7 @@
             background rgba(25, 29, 41, .9)
             backdrop-filter blur(5px)
             transition opacity .3s ease
+            transition-delay .1s
 
             overflow-x hidden
             overflow-y auto
@@ -77,7 +78,7 @@
             position relative
             margin 0 auto
             padding 0
-            background-color #2B3245
+            background-color $color-bg
             transition all .3s ease
 
         &__close
@@ -87,7 +88,7 @@
             z-index 5
             cursor pointer
 
-            @media (max-width: 1040px)
+            +layout-md()
                 top 1.6rem
                 right @top
 
@@ -95,7 +96,7 @@
                 width 2.4rem
                 height @width
 
-                @media (max-width: 1040px)
+                +layout-md()
                     top 2rem
                     right @top
 

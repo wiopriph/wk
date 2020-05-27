@@ -127,9 +127,9 @@
         display flex
         flex-direction column
         padding 4rem
-        background rgba(25, 29, 41, .95)
+        background rgba($color-bg-dark, .9)
 
-        @media (max-width: 1040px)
+        +layout-md()
             padding 2.4rem
 
         &-field
@@ -141,14 +141,14 @@
             &__title
                 font-family 'SF UI Text Regular'
                 font-size 1.2rem
-                color #6E7383
+                color $color-gray
                 letter-spacing 1px
                 line-height 1.3rem
 
             &__input
                 font-family 'SF UI Text Regular'
                 font-size 1.6rem
-                color #FFFFFF
+                color $color-base
                 background initial
                 appearance textfield
                 letter-spacing 1px
@@ -167,7 +167,7 @@
                     span
                         display block
                         margin-top .5rem
-                        font-size 10px
+                        font-size 1rem
                         color #F77585
                         letter-spacing 1px
                         line-height 24px
@@ -178,20 +178,19 @@
             font-size 1.4rem
             font-family 'SF UI Display Heavy'
             color #1C212D
-            letter-spacing 1px
+            letter-spacing .1rem
             text-align center
             line-height 4rem
             text-transform uppercase
-            background #FECC7B
+            background $color-yellow
 
             &--invalid
                 cursor not-allowed
                 background #FFFFFF
 
-            @media (max-width: 1040px)
+            +layout-md()
                 height 3.2rem
                 font-size 1rem
-                letter-spacing: 0.5px
                 line-height 3.2rem
 
         &__loading
@@ -203,7 +202,7 @@
             align-items center
             justify-content center
 
-            @media (max-width: 1040px)
+            +layout-md()
                 height 3.2rem
 
     input::placeholder

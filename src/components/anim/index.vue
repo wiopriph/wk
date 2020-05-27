@@ -45,21 +45,17 @@
     @keyframes anim
         0%
             height .8rem
-            background #fff
 
         25%
             height .8rem
-            background #FECC7B
+            background $color-yellow
 
         50%
             height 1.2rem
-            background #fff
 
         75%
             height 1.2rem
-            background #fff
 
         100%
             height .8rem
-            background #fff
 </style>

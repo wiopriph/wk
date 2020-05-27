@@ -64,7 +64,7 @@
             width 100%
             height 30.2rem
 
-            @media (max-width: 1040px)
+            +layout-md()
                 height 17rem
 
         &__img
@@ -74,20 +74,20 @@
         &__about
             padding 3.2rem 4rem 4rem 4rem
 
-            @media (max-width: 1040px)
+            +layout-md()
                 padding 2rem 3.2rem 3.2rem 3.2rem
 
         &__name
             font-family 'SF UI Display Black'
-            font-weight 700
+            font-weight $font-weight-bold
             font-size 2.6rem
             text-align center
             text-transform uppercase
-            color #FFFFFF
+            color $color-base
             letter-spacing 3px
             line-height 4rem
 
-            @media (max-width: 1040px)
+            +layout-md()
                 font-size 2rem
                 line-height 3.2rem
 
@@ -100,7 +100,7 @@
             border-top 2px solid #2C303C
             border-bottom 2px solid #2C303C
 
-            @media (max-width: 1040px)
+            +layout-md()
                 margin-top 2rem
                 padding 1.2rem
 
@@ -109,16 +109,16 @@
             height @width
             margin-right 1.6rem
 
-            @media (max-width: 1040px)
+            +layout-md()
                 width 2rem
                 height @width
 
         &__people
             font-family 'SF UI Text Medium'
             font-size 1.6rem
-            color #FFFFFF
+            color $color-base
             letter-spacing 1px
 
-            @media (max-width: 1040px)
+            +layout-md()
                 font-size 1.4rem
 </style>

@@ -73,16 +73,16 @@
         flex-direction row
         align-items center
         justify-content space-between
-        color #FFFFFF
+        color $color-base
 
-        @media (max-width: 1040px)
+        +layout-md()
             padding-top 2.4rem
             padding-left 0
             flex-direction column
             align-items start
 
         &__form
-            @media (max-width: 1040px)
+            +layout-md()
                 margin-top 1.5rem
 
     p
@@ -91,7 +91,7 @@
         font-size 3.2rem
         line-height 6.4rem
 
-        @media (max-width: 1040px)
+        +layout-md()
             font-size 1.6rem
             line-height 3.2rem
 
@@ -99,7 +99,7 @@
             font-family 'PFAgoraSlabPro-UltraBlack'
             font-size 5.6rem
 
-            @media (max-width: 1040px)
+            +layout-md()
                 font-size 2.8rem
 
     ul
@@ -108,7 +108,7 @@
         font-size 1.6rem
         line-height 3.2rem
 
-        @media (max-width: 1040px)
+        +layout-md()
             margin-top 1.6rem
             font-size 1.2rem
             line-height 3rem
@@ -118,9 +118,9 @@
             margin-right .8rem
             width .5rem
             height 1.1rem
-            background #FECC7B
+            background $color-yellow
 
-            @media (max-width: 1040px)
+            +layout-md()
                 height .9rem
 
     .home-look
@@ -132,7 +132,7 @@
         &:hover &__icon
             box-shadow 0 4px 24px 0 rgba(254, 204, 123, 0.56)
 
-        @media (max-width: 1040px)
+        +layout-md()
             margin 2.4rem 0 2rem 0
 
         div
@@ -140,9 +140,9 @@
             display flex
             align-items center
             justify-content center
-            background rgba(25, 24, 40, .7)
+            background rgba($color-bg-dark, .7)
 
-            @media (max-width: 1040px)
+            +layout-md()
                 padding .8rem
 
         &__icon
@@ -153,7 +153,7 @@
 
         &__text
             font-family 'SF UI Display Heavy'
-            color #FFFFFF
+            color $color-base
             font-size 1.4rem
             text-transform uppercase
 </style>

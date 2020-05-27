@@ -74,7 +74,6 @@
         min-height 100vh
 
         background-image url('../assets/images/bg_desktop.jpg')
-        background-color #151A25
         background-repeat no-repeat
         background-size cover
         background-position-x center
@@ -100,7 +99,7 @@
             width 33.4rem
             height 100%
             max-height 80rem
-            background-image linear-gradient(180deg, #151A25 0%, rgba(34, 62, 89, 0.00) 100%)
+            background-image linear-gradient(180deg, #151A25 0%, rgba(#151A25, 0) 100%)
 
             @media (max-width: 1088px)
                 display none

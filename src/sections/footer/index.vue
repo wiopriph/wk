@@ -63,7 +63,7 @@
     .footer
         padding 8.5rem 0
 
-        @media (max-width: 1040px)
+        +layout-md()
             padding 3.2rem 0
 
         &__logo
@@ -75,7 +75,7 @@
             justify-content space-between
             align-items center
 
-            @media (max-width: 1040px)
+            +layout-md()
                 flex-direction column
                 align-items start
 
@@ -87,11 +87,11 @@
             display inline-flex
             align-items center
             border 2px solid rgba(255, 255, 255, 0.2)
-            color #FFFFFF
+            color $color-base
             padding .8rem 1.4rem
             font-family 'SF UI Display Heavy'
-            font-size 14px
-            letter-spacing 1.17px
+            font-size 1.4rem
+            letter-spacing .1rem
             text-align center
             line-height 16px
             text-transform uppercase
@@ -106,26 +106,25 @@
             padding 0
             width 4rem
             height @width
-            color #FECC7B
+            color $color-yellow
             transition color 400ms ease
 
             &:hover
-                color #E7A761
+                color $color-orange
 
             &:last-child
                 margin-right 0
 
-            @media (max-width: 1040px)
+            +layout-md()
                 margin-right 1.4rem
 
         &__company
             max-width 50%
             font-family 'SF UI Text Regular'
             font-size 1.6rem
-            color #FFFFFF
-            opacity 0.4
+            color $color-gray
 
-            @media (max-width: 1040px)
+            +layout-md()
                 max-width 100%
                 margin-top 2.4rem
                 font-size 1.4rem
@@ -136,6 +135,6 @@
         letter-spacing 3px
         font-size 2.4rem
         text-transform uppercase
-        color #FFFFFF
+        color $color-base
         line-height 4rem
 </style>

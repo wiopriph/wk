@@ -62,7 +62,7 @@
         flex-direction column
         align-items center
         justify-content center
-        background-color #2B3245
+        background-color $color-bg
 
         &__icon
             width 3.7rem
@@ -73,14 +73,14 @@
             font-family SFProText-Bold
             font-size 1.6rem
             text-align center
-            color #FFFFFF
+            color $color-base
 
         &__text
             margin-top .8rem
             width 80%
             font-family 'SF UI Text Regular'
             font-size 1.4rem
-            color #FFFFFF
+            color $color-base
             text-align center
             line-height 2rem
 </style>

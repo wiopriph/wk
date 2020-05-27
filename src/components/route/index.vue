@@ -71,8 +71,8 @@
 
 <style lang="stylus" scoped>
     .active
-        background #2B3245 !important
-        border 2px solid #2B3245 !important
+        background $color-bg !important
+        border 2px solid $color-bg !important
 
         &::before
             content ""
@@ -82,28 +82,29 @@
             width 0
             height 0
             border-top 1.7rem solid transparent
-            border-left 1.4rem solid #2B3245
             border-bottom 1.7rem solid transparent
-            @media (max-width: 1040px)
+            border-left 1.4rem solid $color-bg
+
+            +layout-md()
                 content none
 
         .route
             &__image
                 height 29rem
 
-                @media (max-width: 1040px)
+                +layout-md()
                     height 18rem
 
                 &:after
                     transition background-image 400ms ease
-                    background-image linear-gradient(180deg, rgba(43, 50, 69, 0) 50%, #2b3245 100%)
+                    background-image linear-gradient(180deg, rgba(43, 50, 69, 0) 50%, $color-bg 100%)
 
     .route
         position relative
         width 100%
         max-width 45.8rem
         border 2px solid #2B303D
-        background #191D28
+        background $color-bg-dark
 
         &__image
             position relative
@@ -124,19 +125,19 @@
                 width 100%
                 height 100%
                 transition background-image 400ms ease
-                background-image linear-gradient(180deg, rgba(25, 29, 40, 0) 0%, #191D28 100%)
+                background-image linear-gradient(180deg, rgba(25, 29, 40, 0) 0%, $color-bg-dark 100%)
 
             img
                 width 100%
                 height 29rem
-                @media (max-width: 1040px)
+                +layout-md()
                     height auto
 
         &__description
             z-index 4
             padding 0 3.2rem 3.2rem 3.2rem
 
-            @media (max-width: 1040px)
+            +layout-md()
                 padding 0 2rem 2rem 2rem
 
         &__line
@@ -148,10 +149,10 @@
         &__name
             font-family 'SF UI Text Medium'
             font-size 2rem
-            color #FFFFFF
+            color $color-base
             letter-spacing 1px
 
-            @media (max-width: 1040px)
+            +layout-md()
                 font-size 1.2rem
 
         &__time
@@ -161,27 +162,27 @@
             font-family 'SF UI Text Medium'
             letter-spacing 1px
             font-size 1.6rem
-            color rgba(255, 255, 255, .8)
+            color rgba($color-base, .8)
 
-            @media (max-width: 1040px)
+            +layout-md()
                 font-size 1rem
 
         &__clock
+            margin-right .8rem
             width 1.6rem
             height @width
-            color rgba(255, 255, 255, .8)
-            margin-right .8rem
+            color rgba($color-base, .8)
 
         &__cash
             margin-top 1.6rem
             display block
             font-family 'SF UI Display Black'
-            font-weight 700
+            font-weight $font-weight-bold
             font-size 2.4rem
-            color #FFFFFF
+            color $color-base
             letter-spacing 3px
 
-            @media (max-width: 1040px)
+            +layout-md()
                 font-size 1.6rem
                 letter-spacing 2px
 
@@ -192,7 +193,7 @@
             justify-content space-between
             align-items center
 
-            @media (max-width: 1040px)
+            +layout-md()
                 margin-top 1.3rem
 
             button
@@ -206,29 +207,29 @@
             display inline-block
             padding .8rem
             font-family 'SF UI Display Heavy'
-            font-size 14px
-            letter-spacing 1.17px
+            font-size 1.4rem
+            letter-spacing .1rem
             text-align center
-            line-height 16px
+            line-height 1.6rem
             text-transform uppercase
 
             border 1px solid rgba(255, 255, 255, 0.2)
             background initial
-            color #FFFFFF
+            color $color-base
             transition all 400ms ease
 
-            @media (max-width: 1040px)
+            +layout-md()
                 font-size 1rem
 
             &:hover
                 border 1px solid #FFFFFF
 
             &--active
-                border 1px solid #FECC7B
-                background #FECC7B
+                border 1px solid $color-yellow
+                background $color-yellow
                 color #182130
 
                 &:hover
-                    border 1px solid #E7A761
-                    background #E7A761
+                    border 1px solid $color-orange
+                    background $color-orange
 </style>

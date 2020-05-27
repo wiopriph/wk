@@ -167,7 +167,7 @@
         position relative
         width 100%
         max-width 45rem
-        background #2B3245
+        background $color-bg
 
         &__image
             position relative
@@ -178,7 +178,7 @@
             transition height 400ms ease
             overflow hidden
 
-            @media (max-width: 1040px)
+            +layout-md()
                 height 105px
 
             &:after
@@ -191,7 +191,7 @@
                 width 100%
                 height 100%
                 transition background-image 400ms ease
-                background-image linear-gradient(180deg, rgba(43, 50, 69, 0) 0%, #2B3245 100%)
+                background-image linear-gradient(180deg, rgba(43, 50, 69, 0) 0%, $color-bg 100%)
 
             img
                 width 100%
@@ -202,7 +202,7 @@
             position relative
             padding 0 4rem 2.7rem 4rem
 
-            @media (max-width: 1040px)
+            +layout-md()
                 padding 0 2.4rem 2.1rem 2.4rem
 
         &__tour
@@ -210,9 +210,9 @@
             flex-direction row
             font-family SFProText-Bold
             font-size 1.6rem
-            color rgba(255, 255, 255, .8)
+            color rgba($color-base, .8)
 
-            @media (max-width: 1040px)
+            +layout-md()
                 font-size 1rem
 
         &__name
@@ -221,9 +221,9 @@
             flex-direction row
             font-family SFProText-Bold
             font-size 2.2rem
-            color #FFFFFF
+            color $color-base
 
-            @media (max-width: 1040px)
+            +layout-md()
                 margin-top .8rem
                 font-size 1.4rem
 
@@ -237,23 +237,23 @@
             &__title
                 font-family 'SF UI Text Regular'
                 font-size 1.2rem
-                color #6E7383
+                color $color-gray
                 letter-spacing 1px
                 line-height 1.3rem
 
-                @media (max-width: 1040px)
+                +layout-md()
                     font-size 1rem
 
             &__input
                 font-family 'SF UI Text Regular'
                 font-size 1.6rem
-                color #FFFFFF
+                color $color-base
                 background initial
                 appearance textfield
                 letter-spacing 1px
                 line-height 3.2rem
 
-                @media (max-width: 1040px)
+                +layout-md()
                     font-size 1.4rem
 
             &__line
@@ -268,16 +268,16 @@
             display inline-block
             padding 1.3rem
             font-family 'SF UI Display Heavy'
-            font-size 14px
-            letter-spacing 1.17px
+            font-size 1.4rem
+            letter-spacing .1rem
             text-align center
-            line-height 16px
+            line-height 1.6rem
             text-transform uppercase
             transition all 400ms ease
             background #FFFFFF
             color #182130
 
-            @media (max-width: 1040px)
+            +layout-md()
                 padding 1.1rem
                 font-size 1rem
 
