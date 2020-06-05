@@ -25,6 +25,7 @@
                     <input
                         v-model="phone"
                         type="number"
+                        onkeydown="return event.keyCode !== 69"
                         placeholder="+7 (800) 000 00 00"
                         class="form-field__input"
                     >
@@ -36,6 +37,7 @@
                     <input
                         v-model="people"
                         type="number"
+                        onkeydown="return event.keyCode !== 69"
                         placeholder="0"
                         class="form-field__input"
                     >
@@ -170,8 +172,12 @@
         background $color-bg
         text-align left
 
-        +layout-md()
+        +layout-sm()
             min-width initial
+            width 100%
+
+        +layout-xs()
+            min-width 28rem
             width 100%
 
         &__image
@@ -183,7 +189,7 @@
             transition height 400ms ease
             overflow hidden
 
-            +layout-md()
+            +layout-sm()
                 height 105px
 
             &:after
@@ -207,7 +213,7 @@
             position relative
             padding 0 4rem 2.7rem 4rem
 
-            +layout-md()
+            +layout-sm()
                 padding 0 2.4rem 2.1rem 2.4rem
 
         &__tour
@@ -217,7 +223,7 @@
             font-size 1.6rem
             color rgba($color-base, .8)
 
-            +layout-md()
+            +layout-sm()
                 font-size 1rem
 
         &__name
@@ -228,7 +234,7 @@
             font-size 2.2rem
             color $color-base
 
-            +layout-md()
+            +layout-sm()
                 margin-top .8rem
                 font-size 1.4rem
 
@@ -246,7 +252,7 @@
                 letter-spacing 1px
                 line-height 1.3rem
 
-                +layout-md()
+                +layout-sm()
                     font-size 1rem
 
             &__input
@@ -258,7 +264,7 @@
                 letter-spacing 1px
                 line-height 3.2rem
 
-                +layout-md()
+                +layout-sm()
                     font-size 1.4rem
 
             &__line
@@ -282,7 +288,7 @@
             background #FFFFFF
             color #182130
 
-            +layout-md()
+            +layout-sm()
                 padding 1.1rem
                 font-size 1rem
 

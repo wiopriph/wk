@@ -18,6 +18,7 @@
             <input
                 v-model="phone"
                 type="number"
+                onkeydown="return event.keyCode !== 69"
                 placeholder="+7 (800) 000 00 00"
                 class="wk-form-field__input"
             >
