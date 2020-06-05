@@ -89,8 +89,8 @@
 
 <script>
     import api from '@/api/index'
-    import popup from '../index'
-    import anim from '@/components/anim/index.vue'
+    import popup from '@/ui/popup/index.vue'
+    import anim from '@/ui/anim/index.vue'
 
     export default {
         name: 'popup-form',
@@ -165,9 +165,14 @@
 <style lang="stylus" scoped>
     .form
         position relative
-        width 100%
+        min-width 45rem
         max-width 45rem
         background $color-bg
+        text-align left
+
+        +layout-md()
+            min-width initial
+            width 100%
 
         &__image
             position relative

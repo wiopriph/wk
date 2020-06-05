@@ -45,7 +45,7 @@
 </i18n>
 
 <script>
-    import popup from '../index'
+    import popup from '@/ui/popup/index.vue'
     import ClockIcon from '@/assets/svg/clock.svg?inline'
     import CreditCardIcon from '@/assets/svg/credit-card.svg?inline'
 
@@ -89,6 +89,7 @@
         width 100%
         max-width 70rem
         background $color-bg
+        text-align left
 
         &__image
             position relative

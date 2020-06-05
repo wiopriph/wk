@@ -23,7 +23,7 @@
 
 <script>
     import CheckCircleIcon from '@/assets/svg/check-circle.svg?inline'
-    import popup from '@/components/popup/index.vue'
+    import popup from '@/ui/popup/index.vue'
 
     export default {
         name: 'success',
@@ -63,6 +63,7 @@
         align-items center
         justify-content center
         background-color $color-bg
+        text-align left
 
         &__icon
             width 3.7rem

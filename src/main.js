@@ -15,6 +15,9 @@ import VueCarousel from 'vue-carousel'
 // https://github.com/ocordeiro/vue-smooth-scroll
 import vueSmoothScroll from 'vue-smooth-scroll'
 
+// id яндекс метрики
+const YM_ID = 57189649
+
 Vue.use(vueSmoothScroll)
 Vue.use(VueCarousel)
 
@@ -22,7 +25,7 @@ Vue.config.productionTip = false
 Vue.prototype.$numerate = Numerate
 
 Vue.use(VueYandexMetrika, {
-    id: 57189649,
+    id: YM_ID,
     env: process.env.NODE_ENV
 })
 

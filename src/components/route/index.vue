@@ -177,7 +177,6 @@
             margin-top 1.6rem
             display block
             font-family 'SF UI Display Black'
-            font-weight $font-weight-bold
             font-size 2.4rem
             color $color-base
             letter-spacing 3px

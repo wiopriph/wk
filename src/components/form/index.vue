@@ -55,7 +55,7 @@
 
 <script>
     import api from '@/api/index'
-    import anim from '@/components/anim/index.vue'
+    import anim from '@/ui/anim/index.vue'
 
     export default {
         name: 'wk-form',
