@@ -1,9 +1,9 @@
 <template>
     <div class="wk-contacts">
-        <a href="tel:8 (800) 444-02-18" class="wk-contacts__link"><phone-icon class="wk-contacts__icon"/>8 (800) 444-02-18</a>
+        <a href="tel:8 (962) 290-27-27" class="wk-contacts__link"><phone-icon class="wk-contacts__icon"/>8 (962) 290-27-27</a>
         <div class="divider"></div>
 
-        <a href="mailto:wild@kamchatka.com" class="wk-contacts__link"><mail-icon class="wk-contacts__icon"/>wild@kamchatka.com</a>
+        <a href="mailto:virtusoffice@mail.ru" class="wk-contacts__link"><mail-icon class="wk-contacts__icon"/>virtusoffice@mail.ru</a>
         <div class="divider"></div>
 
         <div>
